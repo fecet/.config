@@ -11,8 +11,18 @@ dconf/user
 /Code
 
 /coc
+/ibus
+/qqmusic
+*.hash
 
 onedrive/items.sqlite3-shm
 onedrive/items.sqlite3-wal
 onedrive/items.sqlite3
 onedrive/items.sqlite3-shm
+
+ibus/bus/94df7510f00f4b3bb8a2e52f225f47fd-unix-0
+ibus/bus/94df7510f00f4b3bb8a2e52f225f47fd-unix-0
+ibus/bus/94df7510f00f4b3bb8a2e52f225f47fd-unix-0
+ibus/bus/94df7510f00f4b3bb8a2e52f225f47fd-unix-wayland-0
+
+onedrive/.sync_list.hash

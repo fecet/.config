@@ -1,0 +1,4 @@
+set adjust-open "best-fit"
+
+set selection-clipboard clipboard
+
