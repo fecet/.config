@@ -9,5 +9,34 @@
     "posix_terminal_shell": "bash",
     "python_type": "conda",
     "python_version": "3.8.8",
-    "python_path": "~/anaconda3/bin/python"
+    "python_path": "~/anaconda3/bin/python",
+    "panes": {
+        "quadrants": [
+            "Source",
+            "TabSet1",
+            "Console",
+            "TabSet2",
+            "HiddenTabSet"
+        ],
+        "tabSet1": [
+            "Environment",
+            "History",
+            "Connections",
+            "Build",
+            "VCS",
+            "Tutorial",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "Files",
+            "Plots",
+            "Packages",
+            "Help",
+            "Viewer"
+        ],
+        "hiddenTabSet": [],
+        "console_left_on_top": false,
+        "console_right_on_top": true,
+        "additional_source_columns": 0
+    }
 }

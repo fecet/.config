@@ -1,4 +1,15 @@
-set adjust-open "best-fit"
+set adjust-open "width"
+
+set window-title-basename true
+
+set guioptions ""
 
 set selection-clipboard clipboard
+
+set window-title-basename true
+
+set incremental-search true
+
+set show-v-scrollbar true
+
 
