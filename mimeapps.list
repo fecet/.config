@@ -1,0 +1,10 @@
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-03UQ50.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-Telegram Desktop-03UQ50.desktop;
