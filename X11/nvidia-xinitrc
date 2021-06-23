@@ -1,0 +1,6 @@
+xrandr --dpi 220
+if [ $# -gt 0 ]; then
+  $*
+else
+  dwm
+fi

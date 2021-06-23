@@ -4,3 +4,6 @@
 clash/Country.mmdb
 clash/.cache
 /pulse
+
+onedrive/refresh_token
+dconf/user
