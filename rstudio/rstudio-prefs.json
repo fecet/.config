@@ -38,5 +38,7 @@
         "console_left_on_top": false,
         "console_right_on_top": true,
         "additional_source_columns": 0
-    }
+    },
+    "auto_save_on_blur": true,
+    "jobs_tab_visibility": "shown"
 }

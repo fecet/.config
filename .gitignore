@@ -10,6 +10,8 @@ dconf/user
 
 /Code
 
+/baidunetdisk
+
 /coc
 /ibus
 /qqmusic
@@ -26,3 +28,9 @@ ibus/bus/94df7510f00f4b3bb8a2e52f225f47fd-unix-0
 ibus/bus/94df7510f00f4b3bb8a2e52f225f47fd-unix-wayland-0
 
 onedrive/.sync_list.hash
+onedrive/.config.backup
+onedrive/.config.hash
+
+
+
+RStudio/desktop.ini

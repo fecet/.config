@@ -12,4 +12,7 @@ set incremental-search true
 
 set show-v-scrollbar true
 
-
+set recolor   
+set recolor-lightcolor \#222222
+set recolor-keephue
+set default-bg \#222230

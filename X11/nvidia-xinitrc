@@ -1,4 +1,4 @@
-xrandr --dpi 220
+xrandr --dpi 260
 if [ $# -gt 0 ]; then
   $*
 else
