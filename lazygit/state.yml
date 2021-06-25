@@ -1,5 +1,6 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/rok/.config
+- /home/rok/.config/nvim
 - /home/rok/scripts
 startuppopupversion: 5

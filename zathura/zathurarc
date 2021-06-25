@@ -16,3 +16,5 @@ set recolor
 set recolor-lightcolor \#222222
 set recolor-keephue
 set default-bg \#222230
+
+map H feedkeys ":exec sh -c \"cat ~/.local/share/zathura/history | grep -Po '\[\K[^\]]*' | dmenu | xargs zathura\""
