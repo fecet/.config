@@ -1,8 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/rok/.config
+- /home/rok/scripts
+- /home/rok/dwm
 - /home/rok/suckless/st
 - /home/rok/suckless/dwm
-- /home/rok/scripts
 - /home/rok/.config/nvim
 startuppopupversion: 5
