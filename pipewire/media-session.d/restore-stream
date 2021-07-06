@@ -7,5 +7,6 @@
  "restore.stream.Input/Audio.application.name:WEBRTC VoiceEngine": { "volume": 1.000000, "mute": false, "volumes": [ 1.000000, 1.000000 ], "channels": [ "FL", "FR" ] },
  "restore.stream.Output/Audio.application.name:Google Chrome": { "volume": 1.000000, "mute": false, "volumes": [ 1.000000 ], "channels": [ "MONO" ] },
  "restore.stream.Output/Audio.media.role:Music": { "volume": 1.000000, "mute": false, "volumes": [ 1.000000, 1.000000 ], "channels": [ "FL", "FR" ] },
- "restore.stream.Output/Audio.application.name:Firefox": { "volume": 1.000000, "mute": false, "volumes": [ 0.000000, 0.000000 ], "channels": [ "FL", "FR" ] }
+ "restore.stream.Output/Audio.application.name:Firefox": { "volume": 1.000000, "mute": false, "volumes": [ 0.000000, 0.000000 ], "channels": [ "FL", "FR" ] },
+ "restore.stream.Output/Audio.application.name:Microsoft Edge": { "volume": 1.000000, "mute": false, "volumes": [ 1.000000, 1.000000 ], "channels": [ "FL", "FR" ] }
 }

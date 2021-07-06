@@ -41,6 +41,10 @@ onedrive/.config.hash
 /electron-qq
 /microsoft-edge-dev
 /yesplaymusic
+/pipewire
 
 
 RStudio/desktop.ini
+
+pipewire/media-session.d/default-routes
+pipewire/media-session.d/default-routes
