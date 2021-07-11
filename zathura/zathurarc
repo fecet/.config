@@ -1,3 +1,8 @@
+# place in ~/.config/zathura/
+# Zathura configuration file
+# See man `man zathurarc'
+#-----------------------------
+
 set adjust-open "width"
 
 set window-title-basename true
@@ -12,11 +17,15 @@ set incremental-search true
 
 set show-v-scrollbar true
 
+set scroll-step 300
+
 set recolor   
 set recolor-lightcolor \#222222
 set recolor-keephue
 set default-bg \#222230
 
-#map H feedkeys ":exec sh -c \"cat ~/.local/share/zathura/history | grep -Po '\[\K[^\]]*' | dmenu | xargs zathura\""
+
+map H feedkeys ":exec sh -c \"cat ~/.local/share/zathura/history | grep -Po '\[\K[^\]]*' | dmenu | xargs zathura\""
 
 map <C-p> feedkeys ":exec sh -c \"echo $FILE | xclip -i -sel clip\"<Return>"
+

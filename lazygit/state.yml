@@ -1,10 +1,11 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/rok/.config
+- /home/rok/scripts
+- /mnt/win/Advanced-Probability
+- /home/rok/dwm
 - /home/rok/.config/nvim/plugged/vim-snippets
 - /home/rok/.config/nvim
-- /home/rok/scripts
-- /home/rok/dwm
 - /home/rok/suckless/dwm
 - /home/rok/suckless/st
 startuppopupversion: 5

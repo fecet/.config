@@ -42,9 +42,18 @@ onedrive/.config.hash
 /microsoft-edge-dev
 /yesplaymusic
 /pipewire
+/libreoffice
+/gtk-3.0
 
 
 RStudio/desktop.ini
 
 pipewire/media-session.d/default-routes
 pipewire/media-session.d/default-routes
+
+pipewire/media-session.d/restore-stream
+
+gtk-3.0/bookmarks
+QtProject.conf
+cef_user_data/Dictionaries/en-US-8-0.bdic
+onedrive/nohup.out
