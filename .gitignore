@@ -57,3 +57,5 @@ gtk-3.0/bookmarks
 QtProject.conf
 cef_user_data/Dictionaries/en-US-8-0.bdic
 onedrive/nohup.out
+
+nohup.out

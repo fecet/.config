@@ -689,16 +689,6 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-        #proxy-providers:
-        #  provider1:
-        #    type: http
-        #    url: "https://subscribe.a9b.top/link/UpuNZH6guh7sZov6?sub=4"
-        #    interval: 600
-        #    path: ./provider1.yaml
-        #    health-check:
-        #      enable: true
-        #      interval: 3600
-        #      # lazy: true
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -2453,6 +2443,7 @@ rules:
  - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
  - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
+ - DOMAIN-SUFFIX,redirector.gvt1.com,🎯 全球直连
  - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
  - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
@@ -2705,7 +2696,7 @@ rules:
  - IP-CIDR,3.4.16.0/20,🎥 奈飞视频,no-resolve
  - IP-CIDR,3.5.0.0/19,🎥 奈飞视频,no-resolve
  - IP-CIDR,3.5.32.0/20,🎥 奈飞视频,no-resolve
- - IP-CIDR,3.5.48.0/21,🎥 奈飞视频,no-resolve
+ - IP-CIDR,3.5.48.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,3.5.64.0/21,🎥 奈飞视频,no-resolve
  - IP-CIDR,3.5.72.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,3.5.76.0/22,🎥 奈飞视频,no-resolve
@@ -2740,7 +2731,6 @@ rules:
  - IP-CIDR,13.32.0.0/15,🎥 奈飞视频,no-resolve
  - IP-CIDR,13.34.1.0/26,🎥 奈飞视频,no-resolve
  - IP-CIDR,13.34.3.128/25,🎥 奈飞视频,no-resolve
- - IP-CIDR,13.34.4.96/27,🎥 奈飞视频,no-resolve
  - IP-CIDR,13.34.5.12/31,🎥 奈飞视频,no-resolve
  - IP-CIDR,13.34.5.44/31,🎥 奈飞视频,no-resolve
  - IP-CIDR,13.34.5.192/26,🎥 奈飞视频,no-resolve
@@ -2779,13 +2769,9 @@ rules:
  - IP-CIDR,13.34.50.0/25,🎥 奈飞视频,no-resolve
  - IP-CIDR,13.34.50.128/26,🎥 奈飞视频,no-resolve
  - IP-CIDR,13.34.51.0/24,🎥 奈飞视频,no-resolve
- - IP-CIDR,13.34.52.0/24,🎥 奈飞视频,no-resolve
- - IP-CIDR,13.34.53.0/25,🎥 奈飞视频,no-resolve
- - IP-CIDR,13.34.53.160/27,🎥 奈飞视频,no-resolve
- - IP-CIDR,13.34.53.192/26,🎥 奈飞视频,no-resolve
+ - IP-CIDR,13.34.52.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,13.34.54.0/24,🎥 奈飞视频,no-resolve
- - IP-CIDR,13.34.55.0/25,🎥 奈飞视频,no-resolve
- - IP-CIDR,13.34.55.128/27,🎥 奈飞视频,no-resolve
+ - IP-CIDR,13.34.55.0/27,🎥 奈飞视频,no-resolve
  - IP-CIDR,13.35.0.0/16,🎥 奈飞视频,no-resolve
  - IP-CIDR,13.36.0.0/14,🎥 奈飞视频,no-resolve
  - IP-CIDR,13.48.0.0/13,🎥 奈飞视频,no-resolve
@@ -2817,15 +2803,11 @@ rules:
  - IP-CIDR,15.177.80.0/21,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.177.88.0/22,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.181.0.0/19,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.181.32.0/21,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.181.48.0/20,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.181.64.0/19,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.181.96.0/20,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.181.112.0/22,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.181.120.0/21,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.181.128.0/19,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.181.192.0/19,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.181.224.0/20,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.181.240.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.181.243.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.181.244.0/22,🎥 奈飞视频,no-resolve
@@ -2881,18 +2863,16 @@ rules:
  - IP-CIDR,15.230.57.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.58.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.60.0/23,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.230.64.0/21,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.230.72.0/22,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.230.76.0/23,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.230.78.0/24,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.230.79.0/25,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.230.79.128/26,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.230.80.0/21,🎥 奈飞视频,no-resolve
+ - IP-CIDR,15.230.64.0/22,🎥 奈飞视频,no-resolve
+ - IP-CIDR,15.230.68.0/25,🎥 奈飞视频,no-resolve
+ - IP-CIDR,15.230.80.0/22,🎥 奈飞视频,no-resolve
+ - IP-CIDR,15.230.84.0/23,🎥 奈飞视频,no-resolve
+ - IP-CIDR,15.230.86.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.129.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.130.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.131.0/25,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.131.128/27,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.230.131.160/29,🎥 奈飞视频,no-resolve
+ - IP-CIDR,15.230.131.160/31,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.132.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.133.0/28,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.133.16/30,🎥 奈飞视频,no-resolve
@@ -2912,7 +2892,6 @@ rules:
  - IP-CIDR,15.230.156.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.158.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.160.0/23,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.230.170.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.173.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.176.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.178.0/24,🎥 奈飞视频,no-resolve
@@ -2921,8 +2900,6 @@ rules:
  - IP-CIDR,15.230.181.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.182.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.230.184.0/23,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.230.188.0/23,🎥 奈飞视频,no-resolve
- - IP-CIDR,15.230.190.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.236.0.0/15,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.248.8.0/22,🎥 奈飞视频,no-resolve
  - IP-CIDR,15.248.16.0/20,🎥 奈飞视频,no-resolve
@@ -3018,7 +2995,10 @@ rules:
  - IP-CIDR,52.83.0.0/16,🎥 奈飞视频,no-resolve
  - IP-CIDR,52.84.0.0/14,🎥 奈飞视频,no-resolve
  - IP-CIDR,52.88.0.0/14,🎥 奈飞视频,no-resolve
- - IP-CIDR,52.92.0.0/16,🎥 奈飞视频,no-resolve
+ - IP-CIDR,52.92.16.0/20,🎥 奈飞视频,no-resolve
+ - IP-CIDR,52.92.40.0/21,🎥 奈飞视频,no-resolve
+ - IP-CIDR,52.92.72.0/22,🎥 奈飞视频,no-resolve
+ - IP-CIDR,52.92.128.0/17,🎥 奈飞视频,no-resolve
  - IP-CIDR,52.93.0.0/22,🎥 奈飞视频,no-resolve
  - IP-CIDR,52.93.4.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,52.93.8.0/22,🎥 奈飞视频,no-resolve
@@ -3344,10 +3324,16 @@ rules:
  - IP-CIDR,54.222.59.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,54.222.64.0/21,🎥 奈飞视频,no-resolve
  - IP-CIDR,54.222.76.0/22,🎥 奈飞视频,no-resolve
- - IP-CIDR,54.222.80.0/21,🎥 奈飞视频,no-resolve
+ - IP-CIDR,54.222.80.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,54.222.128.0/17,🎥 奈飞视频,no-resolve
  - IP-CIDR,54.223.0.0/16,🎥 奈飞视频,no-resolve
- - IP-CIDR,54.224.0.0/13,🎥 奈飞视频,no-resolve
+ - IP-CIDR,54.224.0.0/14,🎥 奈飞视频,no-resolve
+ - IP-CIDR,54.228.0.0/15,🎥 奈飞视频,no-resolve
+ - IP-CIDR,54.230.0.0/16,🎥 奈飞视频,no-resolve
+ - IP-CIDR,54.231.0.0/17,🎥 奈飞视频,no-resolve
+ - IP-CIDR,54.231.128.0/19,🎥 奈飞视频,no-resolve
+ - IP-CIDR,54.231.192.0/20,🎥 奈飞视频,no-resolve
+ - IP-CIDR,54.231.232.0/21,🎥 奈飞视频,no-resolve
  - IP-CIDR,54.232.0.0/14,🎥 奈飞视频,no-resolve
  - IP-CIDR,54.236.0.0/15,🎥 奈飞视频,no-resolve
  - IP-CIDR,54.238.0.0/16,🎥 奈飞视频,no-resolve
@@ -3534,7 +3520,6 @@ rules:
  - IP-CIDR,104.255.59.104/31,🎥 奈飞视频,no-resolve
  - IP-CIDR,104.255.59.106/32,🎥 奈飞视频,no-resolve
  - IP-CIDR,104.255.59.114/31,🎥 奈飞视频,no-resolve
- - IP-CIDR,104.255.59.118/31,🎥 奈飞视频,no-resolve
  - IP-CIDR,107.20.0.0/14,🎥 奈飞视频,no-resolve
  - IP-CIDR,107.176.0.0/15,🎥 奈飞视频,no-resolve
  - IP-CIDR,108.128.0.0/13,🎥 奈飞视频,no-resolve
@@ -3575,12 +3560,6 @@ rules:
  - IP-CIDR,150.222.6.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,150.222.10.0/24,🎥 奈飞视频,no-resolve
  - IP-CIDR,150.222.11.0/31,🎥 奈飞视频,no-resolve
- - IP-CIDR,150.222.11.74/31,🎥 奈飞视频,no-resolve
- - IP-CIDR,150.222.11.76/30,🎥 奈飞视频,no-resolve
- - IP-CIDR,150.222.11.80/31,🎥 奈飞视频,no-resolve
- - IP-CIDR,150.222.11.84/30,🎥 奈飞视频,no-resolve
- - IP-CIDR,150.222.11.88/29,🎥 奈飞视频,no-resolve
- - IP-CIDR,150.222.11.96/31,🎥 奈飞视频,no-resolve
  - IP-CIDR,150.222.12.0/23,🎥 奈飞视频,no-resolve
  - IP-CIDR,150.222.14.72/31,🎥 奈飞视频,no-resolve
  - IP-CIDR,150.222.15.128/30,🎥 奈飞视频,no-resolve
@@ -3720,7 +3699,6 @@ rules:
  - IP-CIDR,160.1.0.0/16,🎥 奈飞视频,no-resolve
  - IP-CIDR,161.188.128.0/20,🎥 奈飞视频,no-resolve
  - IP-CIDR,161.188.144.0/21,🎥 奈飞视频,no-resolve
- - IP-CIDR,161.188.152.0/22,🎥 奈飞视频,no-resolve
  - IP-CIDR,161.189.0.0/16,🎥 奈飞视频,no-resolve
  - IP-CIDR,162.213.232.0/22,🎥 奈飞视频,no-resolve
  - IP-CIDR,162.222.148.0/22,🎥 奈飞视频,no-resolve
@@ -3878,43 +3856,17 @@ rules:
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
  - DOMAIN-KEYWORD,livedazn,🌍 国外媒体
- - DOMAIN-KEYWORD,vod2dazn,🌍 国外媒体
  - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
  - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
- - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
- - DOMAIN,players.brightcove.net,🌍 国外媒体
- - DOMAIN-SUFFIX,amplify.outbrain.com,🌍 国外媒体
- - DOMAIN-SUFFIX,bluekai.com,🌍 国外媒体
- - DOMAIN-SUFFIX,control.kochava.com,🌍 国外媒体
- - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
  - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,dc1-voddash-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dc1live21715dazn.akamaized.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dc2-live2dash-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dc2-live2hls-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dc2-vodhls-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dca-livedash-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dca-voddash-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dca-vodhls-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dcb-livedash-perform.secure.footprint.net,🌍 国外媒体
- - DOMAIN-SUFFIX,dcb-voddash-perform.secure.footprint.net,🌍 国外媒体
  - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
  - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
- - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
- - DOMAIN-SUFFIX,perfops.doracdn.com,🌍 国外媒体
- - DOMAIN-SUFFIX,s.llnwi.net,🌍 国外媒体
- - DOMAIN-SUFFIX,s.yimg.jp,🌍 国外媒体
- - DOMAIN-SUFFIX,secure.footprint.net,🌍 国外媒体
  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
- - DOMAIN-SUFFIX,urbanairship.com,🌍 国外媒体
- - DOMAIN-SUFFIX,vjs.zencdn.net,🌍 国外媒体
- - DOMAIN-SUFFIX,widevine.entitlement.us.theplatform.com,🌍 国外媒体
- - DOMAIN-SUFFIX,yahoo.co.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
@@ -4135,9 +4087,6 @@ rules:
  - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
  - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
- - PROCESS-NAME,com.google.android.apps.youtube.music,🌍 国外媒体
- - PROCESS-NAME,com.google.android.youtube.tvmusicroot,🌍 国外媒体
- - PROCESS-NAME,com.vanced.android.apps.youtube.music,🌍 国外媒体
  - DOMAIN-SUFFIX,1password.com,🚀 节点选择
  - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
  - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
@@ -10441,6 +10390,7 @@ rules:
  - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
  - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
  - DOMAIN-SUFFIX,ourdvs.com,🎯 全球直连
+ - DOMAIN-SUFFIX,overcast.fm,🎯 全球直连
  - DOMAIN-SUFFIX,paypal.com,🎯 全球直连
  - DOMAIN-SUFFIX,polyv.net,🎯 全球直连
  - DOMAIN-SUFFIX,qbox.me,🎯 全球直连
