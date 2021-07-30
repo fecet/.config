@@ -17,7 +17,7 @@ set incremental-search true
 
 set show-v-scrollbar true
 
-set scroll-step 300
+set scroll-step 200
 
 set recolor   
 set recolor-lightcolor \#222222
