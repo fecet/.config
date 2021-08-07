@@ -1,0 +1,6 @@
+Command=sh /home/rok/scripts/dwmbar-functions/genmon.sh
+UseLabel=0
+Text=(genmon)
+UpdatePeriod=1000
+Font=Sans 10
+
