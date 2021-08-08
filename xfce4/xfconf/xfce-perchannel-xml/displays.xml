@@ -41,4 +41,5 @@
     </property>
   </property>
   <property name="Notify" type="bool" value="true"/>
+  <property name="IdentityPopups" type="bool" value="true"/>
 </channel>

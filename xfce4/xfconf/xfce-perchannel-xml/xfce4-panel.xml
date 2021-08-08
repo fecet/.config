@@ -10,33 +10,43 @@
       <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="icon-size" type="uint" value="0"/>
-      <property name="size" type="uint" value="19"/>
+      <property name="size" type="uint" value="38"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="6"/>
         <value type="int" value="11"/>
         <value type="int" value="8"/>
+        <value type="int" value="4"/>
         <value type="int" value="9"/>
         <value type="int" value="7"/>
         <value type="int" value="15"/>
+        <value type="int" value="1"/>
         <value type="int" value="2"/>
         <value type="int" value="13"/>
         <value type="int" value="5"/>
-        <value type="int" value="12"/>
         <value type="int" value="10"/>
+        <value type="int" value="19"/>
         <value type="int" value="14"/>
       </property>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="disable-struts" type="bool" value="true"/>
     </property>
   </property>
   <property name="plugins" type="empty">
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="false"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="javaembeddedframe"/>
+        <value type="string" value="redshift-gtk"/>
+        <value type="string" value="任务管理器"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="fcitx5 tray window"/>
         <value type="string" value="网络管理器小程序"/>
         <value type="string" value="blueberry-tray.py"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="Translatium1"/>
+        <value type="string" value="TelegramDesktop"/>
         <value type="string" value="discord1"/>
         <value type="string" value="Fcitx"/>
         <value type="string" value="yesplaymusic1"/>
@@ -47,28 +57,25 @@
       <property name="hide-new-items" type="bool" value="false"/>
       <property name="icon-size" type="int" value="0"/>
       <property name="hidden-items" type="array">
+        <value type="string" value="Nutstore"/>
         <value type="string" value="redshift"/>
         <value type="string" value="yesplaymusic1"/>
-        <value type="string" value="Nutstore"/>
         <value type="string" value="Screenkey"/>
+        <value type="string" value="Translatium1"/>
       </property>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="menu-is-primary" type="bool" value="false"/>
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance8395"/>
+      <property name="mpris-players" type="string" value="chromium.instance131514;chromium.instance2197;chromium.instance8395"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
       <property name="expand" type="bool" value="false"/>
-    </property>
-    <property name="plugin-12" type="string" value="clock">
-      <property name="digital-format" type="string" value="%_H:%M"/>
-      <property name="tooltip-format" type="string" value="%x"/>
-      <property name="mode" type="uint" value="2"/>
-      <property name="timezone" type="string" value="Hongkong"/>
     </property>
     <property name="plugin-13" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
@@ -141,10 +148,15 @@
       </property>
       <property name="memory" type="empty">
         <property name="label" type="string" value="MEM"/>
+        <property name="enabled" type="bool" value="true"/>
       </property>
       <property name="network" type="empty">
         <property name="label" type="string" value="NET"/>
+        <property name="enabled" type="bool" value="false"/>
       </property>
     </property>
+    <property name="plugin-1" type="string" value="netload"/>
+    <property name="plugin-4" type="string" value="mailwatch"/>
+    <property name="plugin-19" type="string" value="datetime"/>
   </property>
 </channel>

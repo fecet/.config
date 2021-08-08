@@ -4,7 +4,7 @@ x-scheme-handler/http=google-chrome.desktop
 x-scheme-handler/https=google-chrome.desktop
 x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
-x-scheme-handler/tg=userapp-Telegram Desktop-03UQ50.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-N5Q760.desktop
 application/pdf=org.pwmt.zathura.desktop
 x-scheme-handler/baiduyunguanjia=baidunetdisk.desktop
 x-scheme-handler/chrome=firefox.desktop
@@ -15,9 +15,14 @@ application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 x-scheme-handler/mailto=google-chrome.desktop
+inode/directory=xfce4-file-manager.desktop
+x-scheme-handler/trash=xfce4-file-manager.desktop
 
 [Added Associations]
-x-scheme-handler/tg=userapp-Telegram Desktop-03UQ50.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-03UQ50.desktop;userapp-Telegram Desktop-N5Q760.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 text/html=firefox.desktop;
+inode/directory=xfce4-file-manager.desktop;
+x-scheme-handler/trash=xfce4-file-manager.desktop;
+text/plain=nvim.desktop;

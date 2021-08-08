@@ -1,5 +1,4 @@
 xrandr --dpi 260
-source ~/scripts/tv_arandr.sh
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN:en_US
 if [ $# -gt 0 ]; then
