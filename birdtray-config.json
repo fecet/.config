@@ -1,0 +1,164 @@
+{
+    "accounts": [
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/INBOX.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/Archives.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/[Gmail].msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/Templates.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/Sent.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/[Gmail].sbd/&g0l6Pw-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/[Gmail].sbd/&XfJSIJZkkK5O9g-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/[Gmail].sbd/&V4NXPpCuTvY-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/[Gmail].sbd/&kc2JgQ-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/[Gmail].sbd/&XfJSoGYfaAc-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/[Gmail].sbd/&XfJT0ZCuTvY-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/[Gmail].sbd/&YkBnCZCuTvY-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail-1.com/Drafts.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.gmail.com/INBOX.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/Drafts-1.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/Junk.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/&UXZO1mWHTvZZOQ-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/Deleted Messages.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/INBOX.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/Archives.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/Templates.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/&UXZO1mWHTvZZOQ-.sbd/QQ&kK5O9ouilgU-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/&UXZO1mWHTvZZOQ-.sbd/&kK5O9l9SaGM-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/&UXZO1mWHTvZZOQ-.sbd/&YhF2hGWHTvY-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/&UXZO1mWHTvZZOQ-.sbd/&f6SQrk72-.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/Sent.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/Sent Messages.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/Mailspring.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/ImapMail/imap.qq.com/Drafts.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/Mail/Local Folders/Trash.msf"
+        },
+        {
+            "color": "#c261ff",
+            "path": "/home/rok/.thunderbird/696sy7n3.default-release/Mail/Local Folders/Unsent Messages.msf"
+        }
+    ],
+    "advanced/blinkingusealpha": false,
+    "advanced/forcedRereadInterval": 0,
+    "advanced/ignoreUpdateVersion": "",
+    "advanced/notificationfontmaxsize": 512,
+    "advanced/notificationfontminsize": 4,
+    "advanced/onlyShowIconOnUnreadMessages": false,
+    "advanced/runProcessOnChange": "",
+    "advanced/tbcmdline": [
+        "/usr/bin/thunderbird"
+    ],
+    "advanced/tbwindowmatch": " Mozilla Thunderbird",
+    "advanced/unreadopacitylevel": 0.75,
+    "advanced/updateOnStartup": false,
+    "advanced/watchfiletimeout": 150,
+    "common/allowsuppressingunread": false,
+    "common/blinkspeed": 26,
+    "common/bordercolor": "#00ff7f",
+    "common/borderwidth": 4,
+    "common/defaultcolor": "#c261ff",
+    "common/exitthunderbirdonquit": true,
+    "common/forceIgnoreUnreadEmailsOnMinimize": false,
+    "common/hidewhenminimized": true,
+    "common/hidewhenrestarted": true,
+    "common/hidewhenstarted": true,
+    "common/ignoreStartUnreadCount": false,
+    "common/launchthunderbird": true,
+    "common/launchthunderbirddelay": 0,
+    "common/monitorthunderbirdwindow": true,
+    "common/newemailEnabled": false,
+    "common/notificationfont": "更纱黑体 Mono SC Nerd,76,-1,5,50,0,0,0,0,0",
+    "common/notificationfontweight": 50,
+    "common/notificationicon": "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",
+    "common/restartthunderbird": true,
+    "common/showDialogIfNoAccountsConfigured": true,
+    "common/showhidethunderbird": true,
+    "common/showunreademailcount": true
+}

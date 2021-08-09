@@ -35,9 +35,6 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter -w"/>
-      <property name="&lt;Super&gt;r" type="string" value="xfce4-appfinder -c">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
       <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
       <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
       <property name="&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
@@ -58,6 +55,9 @@
       <property name="HomePage" type="string" value="exo-open --launch WebBrowser"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
+      <property name="&lt;Super&gt;r" type="string" value="/usr/bin/xfce4-popup-whiskermenu">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
     </property>
   </property>
   <property name="xfwm4" type="empty">

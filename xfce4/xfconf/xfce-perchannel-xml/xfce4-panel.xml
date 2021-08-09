@@ -10,12 +10,12 @@
       <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="icon-size" type="uint" value="0"/>
-      <property name="size" type="uint" value="38"/>
+      <property name="size" type="uint" value="19"/>
       <property name="plugin-ids" type="array">
+        <value type="int" value="12"/>
         <value type="int" value="6"/>
         <value type="int" value="11"/>
         <value type="int" value="8"/>
-        <value type="int" value="4"/>
         <value type="int" value="9"/>
         <value type="int" value="7"/>
         <value type="int" value="15"/>
@@ -30,6 +30,15 @@
       <property name="autohide-behavior" type="uint" value="0"/>
       <property name="mode" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="true"/>
+      <property name="enter-opacity" type="uint" value="99"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="1.000000"/>
+        <value type="double" value="1.000000"/>
+        <value type="double" value="1.000000"/>
+        <value type="double" value="0.000000"/>
+      </property>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -45,6 +54,7 @@
         <value type="string" value="blueberry-tray.py"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="Mailspring1"/>
         <value type="string" value="Translatium1"/>
         <value type="string" value="TelegramDesktop"/>
         <value type="string" value="discord1"/>
@@ -53,9 +63,10 @@
         <value type="string" value="Screenkey"/>
         <value type="string" value="Nutstore"/>
         <value type="string" value="redshift"/>
+        <value type="string" value="birdtray"/>
       </property>
       <property name="hide-new-items" type="bool" value="false"/>
-      <property name="icon-size" type="int" value="0"/>
+      <property name="icon-size" type="int" value="21"/>
       <property name="hidden-items" type="array">
         <value type="string" value="Nutstore"/>
         <value type="string" value="redshift"/>
@@ -65,11 +76,12 @@
       </property>
       <property name="single-row" type="bool" value="true"/>
       <property name="menu-is-primary" type="bool" value="false"/>
+      <property name="symbolic-icons" type="bool" value="true"/>
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance131514;chromium.instance2197;chromium.instance8395"/>
+      <property name="mpris-players" type="string" value="chromium.instance131514;chromium.instance134731;chromium.instance201056;chromium.instance2197;chromium.instance248931;chromium.instance4071;chromium.instance8395"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>
@@ -126,7 +138,7 @@
         <property name="layout" type="int" value="1"/>
         <property name="days" type="int" value="5"/>
       </property>
-      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid"/>
+      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid-dark"/>
       <property name="scrollbox" type="empty">
         <property name="show" type="bool" value="true"/>
         <property name="animate" type="bool" value="true"/>
@@ -156,7 +168,7 @@
       </property>
     </property>
     <property name="plugin-1" type="string" value="netload"/>
-    <property name="plugin-4" type="string" value="mailwatch"/>
     <property name="plugin-19" type="string" value="datetime"/>
+    <property name="plugin-12" type="string" value="whiskermenu"/>
   </property>
 </channel>
