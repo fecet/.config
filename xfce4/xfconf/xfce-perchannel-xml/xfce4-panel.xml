@@ -82,7 +82,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance131514;chromium.instance134731;chromium.instance1737;chromium.instance1760;chromium.instance201056;chromium.instance2197;chromium.instance248931;chromium.instance4071;chromium.instance8395"/>
+      <property name="mpris-players" type="string" value="chromium.instance131514;chromium.instance134731;chromium.instance1737;chromium.instance1760;chromium.instance201056;chromium.instance2197;chromium.instance2457;chromium.instance248931;chromium.instance4071;chromium.instance8395;chromium.instance9215"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>
@@ -161,6 +161,12 @@
       <property name="memory" type="empty">
         <property name="label" type="string" value="MEM"/>
         <property name="enabled" type="bool" value="true"/>
+        <property name="color" type="array">
+          <value type="double" value="0.313725"/>
+          <value type="double" value="0.980392"/>
+          <value type="double" value="0.482353"/>
+          <value type="double" value="1.000000"/>
+        </property>
       </property>
       <property name="network" type="empty">
         <property name="label" type="string" value="NET"/>

@@ -20,6 +20,7 @@
     </property>
     <property name="muted_applications" type="array">
       <value type="string" value="xfce4-power-manager"/>
+      <value type="string" value="Nutstore"/>
     </property>
   </property>
   <property name="primary-monitor" type="uint" value="0"/>
@@ -30,6 +31,6 @@
   <property name="do-slideout" type="bool" value="false"/>
   <property name="notification-log" type="bool" value="true"/>
   <property name="initial-opacity" type="double" value="0.710000"/>
-  <property name="expire-timeout" type="int" value="3"/>
+  <property name="expire-timeout" type="int" value="2"/>
   <property name="do-fadeout" type="bool" value="false"/>
 </channel>

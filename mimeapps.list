@@ -26,4 +26,4 @@ x-scheme-handler/https=firefox.desktop;
 text/html=firefox.desktop;
 inode/directory=xfce4-file-manager.desktop;
 x-scheme-handler/trash=xfce4-file-manager.desktop;
-text/plain=google-chrome.desktop;nm-applet.desktop;nvim.desktop;
+text/plain=nvim.desktop;google-chrome.desktop;nm-applet.desktop;
