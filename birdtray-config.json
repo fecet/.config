@@ -140,7 +140,7 @@
     "advanced/updateOnStartup": false,
     "advanced/watchfiletimeout": 150,
     "common/allowsuppressingunread": false,
-    "common/blinkspeed": 26,
+    "common/blinkspeed": 24,
     "common/bordercolor": "#00ff7f",
     "common/borderwidth": 4,
     "common/defaultcolor": "#c261ff",

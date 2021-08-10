@@ -3,6 +3,7 @@
 <channel name="xfce4-notifyd" version="1.0">
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="baidunetdisk"/>
       <value type="string" value="deepin-screen-recorder"/>
       <value type="string" value="discord"/>
       <value type="string" value="Mailspring"/>
@@ -10,6 +11,7 @@
       <value type="string" value="Nutstore"/>
       <value type="string" value="org.kde.kmail2"/>
       <value type="string" value="src/notifications/dnotify.d"/>
+      <value type="string" value="telegramdesktop"/>
       <value type="string" value="Thunderbird"/>
       <value type="string" value="Xfce volume control"/>
       <value type="string" value="Xfce4-notifyd settings"/>
@@ -24,10 +26,10 @@
   <property name="notify-location" type="uint" value="2"/>
   <property name="log-level" type="uint" value="1"/>
   <property name="log-level-apps" type="uint" value="0"/>
-  <property name="theme" type="string" value="Smoke"/>
-  <property name="do-slideout" type="bool" value="true"/>
+  <property name="theme" type="string" value="Dracula"/>
+  <property name="do-slideout" type="bool" value="false"/>
   <property name="notification-log" type="bool" value="true"/>
   <property name="initial-opacity" type="double" value="0.710000"/>
   <property name="expire-timeout" type="int" value="3"/>
-  <property name="do-fadeout" type="bool" value="true"/>
+  <property name="do-fadeout" type="bool" value="false"/>
 </channel>

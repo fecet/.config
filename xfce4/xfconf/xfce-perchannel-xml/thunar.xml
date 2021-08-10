@@ -9,7 +9,7 @@
   <property name="last-separator-position" type="int" value="170"/>
   <property name="last-side-pane" type="string" value="ThunarTreePane"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,94,50,50,1168,50,50,80,50,107"/>
+  <property name="last-details-view-column-widths" type="string" value="50,134,50,50,1092,50,50,89,50,134"/>
   <property name="misc-single-click" type="bool" value="false"/>
   <property name="misc-middle-click-in-tab" type="bool" value="true"/>
   <property name="misc-volume-management" type="bool" value="true"/>
