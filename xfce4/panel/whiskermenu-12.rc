@@ -1,5 +1,5 @@
 favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop
-recent=xfce-settings-manager.desktop,xfce-ui-settings.desktop,baidunetdisk.desktop,firewall-config.desktop,nm-connection-editor.desktop,microsoft-edge-beta.desktop,visual-studio-code.desktop,blueman-manager.desktop,thunderbird.desktop
+recent=discord.desktop,visual-studio-code.desktop,telegramdesktop.desktop,utools.desktop,thunar.desktop,xfce4-power-manager-settings.desktop,zotero.desktop,xfce-display-settings.desktop,xfce-settings-manager.desktop,xfce-ui-settings.desktop
 button-title=<
 button-icon=xfce4-whiskermenu
 button-single-row=false
@@ -22,8 +22,8 @@ position-commands-alternate=false
 position-categories-alternate=true
 stay-on-focus-out=false
 confirm-session-command=true
-menu-width=1620
-menu-height=1061
+menu-width=1080
+menu-height=1080
 menu-opacity=38
 command-settings=xfce4-settings-manager
 show-command-settings=true

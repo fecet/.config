@@ -55,25 +55,30 @@
         <value type="string" value="blueberry-tray.py"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="blueman"/>
+        <value type="string" value="uTools1"/>
         <value type="string" value="Mailspring1"/>
         <value type="string" value="Translatium1"/>
         <value type="string" value="TelegramDesktop"/>
         <value type="string" value="discord1"/>
         <value type="string" value="Fcitx"/>
         <value type="string" value="yesplaymusic1"/>
+        <value type="string" value="birdtray"/>
         <value type="string" value="Screenkey"/>
         <value type="string" value="Nutstore"/>
         <value type="string" value="redshift"/>
-        <value type="string" value="birdtray"/>
       </property>
       <property name="hide-new-items" type="bool" value="false"/>
       <property name="icon-size" type="int" value="21"/>
       <property name="hidden-items" type="array">
-        <value type="string" value="Nutstore"/>
-        <value type="string" value="redshift"/>
         <value type="string" value="yesplaymusic1"/>
-        <value type="string" value="Screenkey"/>
+        <value type="string" value="redshift"/>
+        <value type="string" value="uTools1"/>
+        <value type="string" value="Nutstore"/>
         <value type="string" value="Translatium1"/>
+        <value type="string" value="Mailspring1"/>
+        <value type="string" value="Screenkey"/>
+        <value type="string" value="discord1"/>
       </property>
       <property name="single-row" type="bool" value="true"/>
       <property name="menu-is-primary" type="bool" value="false"/>
@@ -82,7 +87,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance131514;chromium.instance134731;chromium.instance1737;chromium.instance1760;chromium.instance201056;chromium.instance2197;chromium.instance2457;chromium.instance248931;chromium.instance2749;chromium.instance4071;chromium.instance8395;chromium.instance9215"/>
+      <property name="mpris-players" type="string" value="chromium.instance131514;chromium.instance134731;chromium.instance16393;chromium.instance1737;chromium.instance1760;chromium.instance1849;chromium.instance201056;chromium.instance2197;chromium.instance2457;chromium.instance248931;chromium.instance2540;chromium.instance2749;chromium.instance4071;chromium.instance8395;chromium.instance9215;edge.instance12940;edge.instance13209;edge.instance1773;edge.instance1974;edge.instance1981;edge.instance2309;edge.instance2339;edge.instance2377;edge.instance2647;edge.instance2686;edge.instance2849;edge.instance3070;edge.instance37201;edge.instance4810;edge.instance4981;edge.instance5131;edge.instance60104;edge.instance7385"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>
@@ -151,15 +156,17 @@
     <property name="plugin-15" type="string" value="systemload">
       <property name="cpu" type="empty">
         <property name="enabled" type="bool" value="false"/>
+        <property name="label" type="string" value=" "/>
       </property>
       <property name="uptime" type="empty">
         <property name="enabled" type="bool" value="false"/>
       </property>
       <property name="swap" type="empty">
         <property name="enabled" type="bool" value="false"/>
+        <property name="label" type="string" value=" "/>
       </property>
       <property name="memory" type="empty">
-        <property name="label" type="string" value="MEM"/>
+        <property name="label" type="string" value=" "/>
         <property name="enabled" type="bool" value="true"/>
         <property name="color" type="array">
           <value type="double" value="0.313725"/>

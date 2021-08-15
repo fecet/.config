@@ -66,6 +66,7 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-trash" "")
 ; (gtk_accel_path "<Actions>/ThunarLauncher/restore" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-desktop" "")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/a566a7c62812e63d0620c795574a097f" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/create-folder" "<Primary><Shift>n")
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-location" "<Primary>l")
 ; (gtk_accel_path "<Actions>/ThunarWindow/view-menubar" "<Primary>m")

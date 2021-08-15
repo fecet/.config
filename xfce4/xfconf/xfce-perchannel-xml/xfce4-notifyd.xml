@@ -6,21 +6,26 @@
       <value type="string" value="baidunetdisk"/>
       <value type="string" value="deepin-screen-recorder"/>
       <value type="string" value="discord"/>
+      <value type="string" value="Firefox"/>
       <value type="string" value="Mailspring"/>
+      <value type="string" value="microsoft-edge-beta"/>
       <value type="string" value="nm-applet"/>
       <value type="string" value="Nutstore"/>
       <value type="string" value="org.kde.kmail2"/>
       <value type="string" value="src/notifications/dnotify.d"/>
       <value type="string" value="telegramdesktop"/>
       <value type="string" value="Thunderbird"/>
+      <value type="string" value="uTools"/>
       <value type="string" value="Xfce volume control"/>
       <value type="string" value="Xfce4-notifyd settings"/>
       <value type="string" value="xfce4-power-manager"/>
       <value type="string" value="xfce4-settings-helper"/>
+      <value type="string" value="输入法"/>
     </property>
     <property name="muted_applications" type="array">
       <value type="string" value="xfce4-power-manager"/>
       <value type="string" value="Nutstore"/>
+      <value type="string" value="src/notifications/dnotify.d"/>
     </property>
   </property>
   <property name="primary-monitor" type="uint" value="0"/>
@@ -32,5 +37,6 @@
   <property name="notification-log" type="bool" value="true"/>
   <property name="initial-opacity" type="double" value="0.710000"/>
   <property name="expire-timeout" type="int" value="2"/>
-  <property name="do-fadeout" type="bool" value="false"/>
+  <property name="do-fadeout" type="bool" value="true"/>
+  <property name="do-not-disturb" type="bool" value="false"/>
 </channel>
