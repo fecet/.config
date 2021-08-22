@@ -19,12 +19,16 @@ inode/directory=xfce4-file-manager.desktop
 x-scheme-handler/trash=xfce4-file-manager.desktop
 x-scheme-handler/mailspring=Mailspring.desktop
 text/plain=google-chrome.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-03UQ50.desktop;userapp-Telegram Desktop-N5Q760.desktop;
-x-scheme-handler/http=firefox.desktop;
-x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/http=xfce4-web-browser.desktop;
+x-scheme-handler/https=xfce4-web-browser.desktop;
 text/html=firefox.desktop;
 inode/directory=xfce4-file-manager.desktop;
 x-scheme-handler/trash=xfce4-file-manager.desktop;
 text/plain=google-chrome.desktop;nvim.desktop;nm-applet.desktop;
+application/octet-stream=microsoft-edge-beta.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=microsoft-edge-dev.desktop;microsoft-edge-beta.desktop;libreoffice-writer.desktop;
+application/pdf=microsoft-edge-beta.desktop;

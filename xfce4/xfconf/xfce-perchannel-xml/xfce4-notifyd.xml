@@ -4,9 +4,11 @@
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
       <value type="string" value="baidunetdisk"/>
+      <value type="string" value="Cockatrice"/>
       <value type="string" value="deepin-screen-recorder"/>
       <value type="string" value="discord"/>
       <value type="string" value="Firefox"/>
+      <value type="string" value="flameshot"/>
       <value type="string" value="Mailspring"/>
       <value type="string" value="microsoft-edge-beta"/>
       <value type="string" value="nm-applet"/>

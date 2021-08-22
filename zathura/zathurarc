@@ -74,4 +74,4 @@ set recolor true
 map H feedkeys ":exec sh -c \"cat ~/.local/share/zathura/history | grep -Po '\[\K[^\]]*' | dmenu | xargs zathura\""
 
 map <C-p> feedkeys ":exec sh -c \"echo $FILE | xclip -i -sel clip\"<Return>"
-map <C-i> recolor
+map <C-r> recolor

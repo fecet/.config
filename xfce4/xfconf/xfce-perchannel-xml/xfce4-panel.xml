@@ -7,12 +7,11 @@
     <property name="dark-mode" type="bool" value="true"/>
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=2;x=1292;y=14"/>
-      <property name="length" type="uint" value="1"/>
+      <property name="length" type="uint" value="8"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="icon-size" type="uint" value="0"/>
       <property name="size" type="uint" value="19"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="12"/>
         <value type="int" value="6"/>
         <value type="int" value="11"/>
         <value type="int" value="8"/>
@@ -21,6 +20,7 @@
         <value type="int" value="15"/>
         <value type="int" value="1"/>
         <value type="int" value="13"/>
+        <value type="int" value="12"/>
         <value type="int" value="5"/>
         <value type="int" value="10"/>
         <value type="int" value="19"/>
@@ -38,7 +38,7 @@
         <value type="double" value="1.000000"/>
         <value type="double" value="0.000000"/>
       </property>
-      <property name="output-name" type="string" value="eDP-1-1"/>
+      <property name="output-name" type="string" value="Primary"/>
       <property name="span-monitors" type="bool" value="true"/>
     </property>
   </property>
@@ -55,6 +55,11 @@
         <value type="string" value="blueberry-tray.py"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="icalingua1"/>
+        <value type="string" value="Cockatrice"/>
+        <value type="string" value="zoom"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="deepin-screen-recorder"/>
         <value type="string" value="blueman"/>
         <value type="string" value="uTools1"/>
         <value type="string" value="Mailspring1"/>
@@ -87,7 +92,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance131514;chromium.instance134731;chromium.instance16393;chromium.instance1737;chromium.instance1760;chromium.instance1849;chromium.instance201056;chromium.instance2197;chromium.instance2457;chromium.instance248931;chromium.instance2540;chromium.instance2749;chromium.instance4071;chromium.instance8395;chromium.instance9215;edge.instance12940;edge.instance13209;edge.instance1773;edge.instance1974;edge.instance1981;edge.instance2309;edge.instance2339;edge.instance2377;edge.instance2647;edge.instance2686;edge.instance2849;edge.instance3070;edge.instance37201;edge.instance4810;edge.instance4981;edge.instance5131;edge.instance60104;edge.instance7385"/>
+      <property name="mpris-players" type="string" value="chromium.instance131514;chromium.instance134731;chromium.instance16393;chromium.instance1737;chromium.instance1760;chromium.instance1849;chromium.instance201056;chromium.instance21168;chromium.instance2197;chromium.instance2457;chromium.instance248931;chromium.instance2540;chromium.instance2749;chromium.instance31777;chromium.instance4071;chromium.instance8395;chromium.instance9215;edge.instance12940;edge.instance13209;edge.instance1644;edge.instance16510;edge.instance1682;edge.instance16884;edge.instance1773;edge.instance1866;edge.instance1878;edge.instance1919;edge.instance1944;edge.instance1962;edge.instance1974;edge.instance1981;edge.instance2012;edge.instance2135;edge.instance2309;edge.instance2311;edge.instance2339;edge.instance2377;edge.instance2445;edge.instance2647;edge.instance2686;edge.instance2849;edge.instance3070;edge.instance3125;edge.instance3494;edge.instance37201;edge.instance37256;edge.instance3895;edge.instance4003;edge.instance40425;edge.instance41282;edge.instance4449;edge.instance4810;edge.instance4981;edge.instance5131;edge.instance5137;edge.instance55893;edge.instance56252;edge.instance60023;edge.instance60104;edge.instance7385;edge.instance7596;edge.instance77251;edge.instance8058;edge.instance9130;edge.instance93950"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>

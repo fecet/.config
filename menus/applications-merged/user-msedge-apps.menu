@@ -8,6 +8,7 @@
     <Directory>msedge-apps.directory</Directory>
     <Include>
         <Filename>msedge-blmpffegcmaiijohpohogphbohcjdfje-Default.desktop</Filename>
+        <Filename>msedge-epmmlbpbgccbegenicajkfoajjddmaep-Default.desktop</Filename>
     </Include>
 </Menu>
 </Menu>
