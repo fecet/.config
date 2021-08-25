@@ -1,9 +1,21 @@
+[ExtractDialog]
+DirHistory[$e]=/mnt/win/codes/tf/
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME,file:$HOME
+Recent URLs[$e]=file:///mnt/win/codes/tf/
+detailViewIconSize=16
+
 [MainWindow]
-State=AAAA/wAAAAD9AAAAAAAAAxUAAAKDAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAAlMAAALSAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 StatusBar=Disabled
 ToolBarsMovable=Disabled
+eDP-1-1 DP-1-1 Height 1196x798=774
 eDP-1-1 DP-1-1 Height 798x1418=695
+eDP-1-1 DP-1-1 Width 1196x798=595
 eDP-1-1 DP-1-1 Width 798x1418=789
+eDP-1-1 DP-1-1 XPosition 1196x798=4
 eDP-1-1 DP-1-1 XPosition 798x1418=3244
+eDP-1-1 DP-1-1 YPosition 1196x798=19
 eDP-1-1 DP-1-1 YPosition 798x1418=19
-splitterSizes=509,276
+splitterSizes=383,208

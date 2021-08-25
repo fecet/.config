@@ -1,34 +1,3 @@
-[Default Applications]
-text/html=microsoft-edge-beta.desktop
-x-scheme-handler/http=microsoft-edge-beta.desktop
-x-scheme-handler/https=microsoft-edge-beta.desktop
-x-scheme-handler/about=microsoft-edge-beta.desktop
-x-scheme-handler/unknown=microsoft-edge-beta.desktop
-x-scheme-handler/tg=userapp-Telegram Desktop-N5Q760.desktop
-application/pdf=org.pwmt.zathura.desktop
-x-scheme-handler/baiduyunguanjia=baidunetdisk.desktop
-x-scheme-handler/chrome=firefox.desktop
-application/x-extension-htm=firefox.desktop
-application/x-extension-html=firefox.desktop
-application/x-extension-shtml=firefox.desktop
-application/xhtml+xml=firefox.desktop
-application/x-extension-xhtml=firefox.desktop
-application/x-extension-xht=firefox.desktop
-x-scheme-handler/mailto=Mailspring.desktop
-inode/directory=xfce4-file-manager.desktop
-x-scheme-handler/trash=xfce4-file-manager.desktop
-x-scheme-handler/mailspring=Mailspring.desktop
-text/plain=google-chrome.desktop
-application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 
-[Added Associations]
-x-scheme-handler/tg=userapp-Telegram Desktop-03UQ50.desktop;userapp-Telegram Desktop-N5Q760.desktop;
-x-scheme-handler/http=xfce4-web-browser.desktop;
-x-scheme-handler/https=xfce4-web-browser.desktop;
-text/html=firefox.desktop;
-inode/directory=xfce4-file-manager.desktop;
-x-scheme-handler/trash=xfce4-file-manager.desktop;
-text/plain=google-chrome.desktop;nvim.desktop;nm-applet.desktop;
-application/octet-stream=microsoft-edge-beta.desktop;
-application/vnd.openxmlformats-officedocument.wordprocessingml.document=microsoft-edge-dev.desktop;microsoft-edge-beta.desktop;libreoffice-writer.desktop;
-application/pdf=microsoft-edge-beta.desktop;
+[Default Applications]
+application/pdf=org.pwmt.zathura.desktop
