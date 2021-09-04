@@ -7,15 +7,14 @@ set adjust-open "width"
 
 set window-title-basename true
 
-set guioptions ""
-
 set selection-clipboard clipboard
 
 set window-title-basename true
 
 set incremental-search true
 
-set show-v-scrollbar true
+#set show-v-scrollbar true
+set guioptions v
 
 set scroll-step 200
 

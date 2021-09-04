@@ -1,9 +1,9 @@
 [ExtractDialog]
-DirHistory[$e]=/mnt/win/codes/tf/
+DirHistory[$e]=/mnt/sd/OneDrive/Files/,/mnt/win/codes/tf/
 
 [KFileDialog Settings]
-Recent Files[$e]=file:$HOME,file:$HOME
-Recent URLs[$e]=file:///mnt/win/codes/tf/
+Recent Files[$e]=file:$HOME
+Recent URLs[$e]=file:///mnt/win/codes/tf/,file:///mnt/sd/OneDrive/Files/
 detailViewIconSize=16
 
 [MainWindow]

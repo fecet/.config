@@ -1,8 +1,12 @@
 [Hotkey]
-# Enumerate when press trigger key repeatedly
+# 反复按切换键时进行轮换
 EnumerateWithTriggerKeys=True
-# Skip first input method while enumerating
+# 轮换输入法时跳过第一个输入法
 EnumerateSkipFirst=False
+# 默认上一页
+PrevPage=
+# 默认下一页
+NextPage=
 
 [Hotkey/TriggerKeys]
 0=Super+space
@@ -28,37 +32,33 @@ EnumerateSkipFirst=False
 [Hotkey/DeactivateKeys]
 0=Hangul_Romaja
 
-[Hotkey/PrevPage]
-0=Up
-
-[Hotkey/NextPage]
-0=Down
-
 [Hotkey/PrevCandidate]
 0=Shift+Tab
+1=Up
 
 [Hotkey/NextCandidate]
 0=Tab
+1=Down
 
 [Hotkey/TogglePreedit]
 0=Control+Alt+P
 
 [Behavior]
-# Active By Default
+# 默认状态为激活
 ActiveByDefault=False
-# Share Input State
+# 共享输入状态
 ShareInputState=No
-# Show preedit in application
+# 在程序中显示预编辑文本
 PreeditEnabledByDefault=True
-# Show Input Method Information when switch input method
+# 切换输入法时显示输入法信息
 ShowInputMethodInformation=True
-# Show Input Method Information when changing focus
+# 在焦点更改时显示输入法信息
 showInputMethodInformationWhenFocusIn=False
-# Show compact input method information
+# 显示紧凑的输入法信息
 CompactInputMethodInformation=True
-# Show first input method information
+# 显示第一个输入法的信息
 ShowFirstInputMethodInformation=True
-# Default page size
+# 默认页大小
 DefaultPageSize=5
 # Force Enabled Addons
 EnabledAddons=
