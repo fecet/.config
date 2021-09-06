@@ -54,7 +54,6 @@ onedrive/.config.hash
 /BetterDiscord
 /uTools
 /icalingua
-/clash
 /obs-studio
 /xfce4
 /kdeconnect
@@ -101,3 +100,8 @@ cef_user_data/Dictionaries/en-US-8-0.bdic
 onedrive/nohup.out
 
 nohup.out
+
+pavucontrol.ini
+.s
+clash/config.b
+clash/config.b3
