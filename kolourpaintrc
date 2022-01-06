@@ -1,0 +1,46 @@
+[General Settings]
+First Time=false
+Open Images in the Same Window=false
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAQAAAAMAAARsAAAAnPwBAAAAAfsAAAASAEMAbwBsAG8AcgAgAEIAbwB4AQAAAd8AAARsAAACQgD///8AAARsAAAG3wAAAAQAAAAEAAAAAQAAAAL8AAAAAgAAAAAAAAABAAAAEABUAG8AbwBsACAAQgBvAHgDAAAAAP////8AAAAAAAAAAAAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABYAdABlAHgAdABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+eDP-1-1 DP-1-2 Height 3240x2160=2097
+eDP-1-1 DP-1-2 Width 3240x2160=1611
+eDP-1-1 DP-1-2 XPosition 3240x2160=12
+eDP-1-1 DP-1-2 YPosition 3240x2160=51
+eDP-1-1 Height 3240x2160=2097
+eDP-1-1 Width 3240x2160=1611
+eDP-1-1 XPosition 3240x2160=12
+eDP-1-1 YPosition 3240x2160=51
+
+[MainWindow][Toolbar Tool Box]
+ToolButtonStyle=IconOnly
+
+[Recent Files]
+File1[$e]=$HOME/Documents/figures/v2-147835adfa59c88d75dc4d433425bc54_r.png
+File2[$e]=$HOME/Documents/figures/v2-aec8d6ddeb8cbed899d40b6d1718998b_r.png
+File3[$e]=$HOME/Documents/figures/v2-22d876a63f96fe1db4e8472f11f35380_r.png
+Name1[$e]=v2-147835adfa59c88d75dc4d433425bc54_r.png
+Name2[$e]=v2-aec8d6ddeb8cbed899d40b6d1718998b_r.png
+Name3[$e]=v2-22d876a63f96fe1db4e8472f11f35380_r.png
+
+[Tool Settings]
+Last Used Tool=1
+Tool Widget Brush Col=0
+Tool Widget Brush Row=0
+Tool Widget Eraser Size Col=0
+Tool Widget Eraser Size Row=1
+Tool Widget Fill Style Col=0
+Tool Widget Fill Style Row=0
+Tool Widget Line Width Col=0
+Tool Widget Line Width Row=0
+Tool Widget Opaque/Transparent Col=0
+Tool Widget Opaque/Transparent Row=0
+Tool Widget Spraycan Size Col=0
+Tool Widget Spraycan Size Row=0
+
+[Undo/Redo Settings]
+Max Limit=500
+Max Limit Size Limit=16777216
+Min Limit=10

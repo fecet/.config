@@ -1,1 +1,32 @@
-{"no_systray": false, "timeout": 0.5, "recent_thr": 0.1, "compr_cnt": 3, "ignore": [], "position": "fixed", "persist": false, "font_desc": "\u66f4\u7eb1\u9ed1\u4f53 Mono SC Nerd 10", "font_size": "large", "font_color": "#bdbd9393f9f9", "bg_color": "#28282a293636", "opacity": 0.4, "key_mode": "composed", "bak_mode": "baked", "mods_mode": "normal", "mods_only": false, "multiline": false, "vis_shift": true, "vis_space": true, "geometry": [776, 2081, 1666, 79], "screen": 0, "start_disabled": false, "mouse": false, "button_hide_duration": 1, "window": null}
+{
+    "no_systray": false,
+    "timeout": 0.5,
+    "recent_thr": 0.1,
+    "compr_cnt": 3,
+    "ignore": [],
+    "position": "fixed",
+    "persist": false,
+    "font_desc": "\u66f4\u7eb1\u9ed1\u4f53 Mono SC Nerd 10",
+    "font_size": "large",
+    "font_color": "#bdbd9393f9f9",
+    "bg_color": "#28282a293636",
+    "opacity": 0.4,
+    "key_mode": "composed",
+    "bak_mode": "baked",
+    "mods_mode": "normal",
+    "mods_only": false,
+    "multiline": false,
+    "vis_shift": true,
+    "vis_space": true,
+    "geometry": [
+        1151,
+        2101,
+        936,
+        59
+    ],
+    "screen": 0,
+    "start_disabled": false,
+    "mouse": false,
+    "button_hide_duration": 1,
+    "window": null
+}
