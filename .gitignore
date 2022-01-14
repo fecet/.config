@@ -3,6 +3,7 @@
 /google-chrome
 clash/Country.mmdb
 clash/.cache
+clash/config.yaml.bak*
 /pulse
 
 onedrive/refresh_token
@@ -119,3 +120,6 @@ calibre
 netease-cloud-music
 ranger/__pycache__
 ranger/colorschemes/__pycache__
+ranger/plugins
+ranger/plugins
+microsoft-edge

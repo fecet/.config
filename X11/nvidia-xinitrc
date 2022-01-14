@@ -3,6 +3,7 @@ export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN:en_US
 export GDK_SCALE=2
 export GDK_DPI_SCALE=0.5
+export XDG_SESSION_TYPE="x11"
 source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 #export http_proxy="127.0.0.1:7890" 
 #export https_proxy="127.0.0.1:7890"
