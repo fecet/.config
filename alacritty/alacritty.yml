@@ -112,9 +112,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Sarasa Mono SC Nerd
+    # family: Sarasa Mono SC Nerd
     # family: InconsolataGo Nerd Font
     # family: Fira Code Nerd Font
+    family: Anonymice Nerd Font
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -153,7 +154,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 12
+  size: 13
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter

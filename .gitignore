@@ -123,3 +123,8 @@ ranger/colorschemes/__pycache__
 ranger/plugins
 ranger/plugins
 microsoft-edge
+
+clash
+clash/cache.db
+clash/clash.pid
+gh
