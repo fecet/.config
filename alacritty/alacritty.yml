@@ -93,6 +93,7 @@ window:
   # Override the variant of the GTK theme. Commonly supported values are `dark`
   # and `light`. Set this to `None` to use the default theme variant.
   gtk_theme_variant: dark
+  opacity: 0.5
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -225,7 +226,7 @@ draw_bold_text_with_bright_colors: true
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.5
+# background_opacity: 0.5
 
 selection:
   # This string contains all characters that are used as separators for
