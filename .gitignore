@@ -77,7 +77,6 @@ onedrive/.config.hash
 /libaccounts-glib
 /menus
 /mpv
-/neofetch
 /rstudio
 /rtv
 /systemd
@@ -131,3 +130,4 @@ gh
 cef_user_data/Dictionaries
 arkrc
 screenkey.json
+ranger/plugins/ranger-zjumper
