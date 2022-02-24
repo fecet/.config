@@ -131,3 +131,15 @@ cef_user_data/Dictionaries
 arkrc
 screenkey.json
 ranger/plugins/ranger-zjumper
+
+tinymediamanager/cache
+tinymediamanager/backup
+tinymediamanager/data
+tinymediamanager/lib
+tinymediamanager/log/nginx
+tinymediamanager/logs
+tinymediamanager/native
+tinymediamanager/templates
+tinymediamanager/xdg/cache/openbox
+tinymediamanager
+clouddrive
