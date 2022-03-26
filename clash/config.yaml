@@ -5,367 +5,379 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: v2|亚洲|C|混合负载|无敌主力, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7569.sina.cn}, udp: true}
-  - {name: v2|亚洲|B|混合负载|万能主力, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7564.sina.cn}, udp: true}
-  - {name: v2|亚洲|C|混合负载|视频主力, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627776.sina.cn}, udp: true}
-  - {name: v2|亚洲|B|混合负载|低延主力, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627976.sina.cn}, udp: true}
-  - {name: v2|亚洲|A|混合负载|外贸主力, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627876.sina.cn}, udp: true}
-  - {name: v2|亚洲|D|混合负载|极速主力, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7763.sina.cn}, udp: true}
-  - {name: v2|亚洲|E|混合负载|稳定主力, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7169.sina.cn}, udp: true}
-  - {name: v2|香港|A|16台负载, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7568.sina.cn}, udp: true}
-  - {name: v2|香港|B|22台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7565.sina.cn}, udp: true}
-  - {name: v2|香港|C|18台负载, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a62777c.sina.cn}, udp: true}
-  - {name: v2|香港|B|21台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a62797d.sina.cn}, udp: true}
-  - {name: v2|香港|D|15台负载, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7760.sina.cn}, udp: true}
-  - {name: v2|香港|E|14台负载, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7168.sina.cn}, udp: true}
-  - {name: v2|新加坡|A|9台负载, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627871.sina.cn}, udp: true}
-  - {name: v2|新加坡|B|10台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627971.sina.cn}, udp: true}
-  - {name: v2|新加坡|C|12台负载, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627773.sina.cn}, udp: true}
-  - {name: v2|新加坡|C|11台负载, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627771.sina.cn}, udp: true}
-  - {name: v2|新加坡|D|7台负载, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7566.sina.cn}, udp: true}
-  - {name: v2|新加坡|E|5台负载, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7167.sina.cn}, udp: true}
-  - {name: v2|日本|A|10台负载, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627870.sina.cn}, udp: true}
-  - {name: v2|日本|B|11台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627970.sina.cn}, udp: true}
-  - {name: v2|日本|B|6台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7563.sina.cn}, udp: true}
-  - {name: v2|日本|C|12台负载, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627770.sina.cn}, udp: true}
-  - {name: v2|日本|D|4台负载, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7668.sina.cn}, udp: true}
-  - {name: v2|日本|E|5台负载, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7166.sina.cn}, udp: true}
-  - {name: v2|美国|A|7台负载, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7d65.sina.cn}, udp: true}
-  - {name: v2|美国|B|7台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627873.sina.cn}, udp: true}
-  - {name: v2|美国|C|4台负载, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7d66.sina.cn}, udp: true}
-  - {name: v2|美国|D|5台负载, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7661.sina.cn}, udp: true}
-  - {name: v2|美国|E|4台负载, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7165.sina.cn}, udp: true}
-  - {name: v2|香港|A|8台负载|原生, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627874.sina.cn}, udp: true}
-  - {name: v2|香港|B|10台负载|原生, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627974.sina.cn}, udp: true}
-  - {name: v2|香港|C|13台负载|原生, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627774.sina.cn}, udp: true}
-  - {name: v2|香港|B|9台负载|原生, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a62797c.sina.cn}, udp: true}
-  - {name: v2|香港|D|11台负载|原生, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7562.sina.cn}, udp: true}
-  - {name: v2|香港|E|10台负载|原生, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7164.sina.cn}, udp: true}
-  - {name: v2|台湾|A|6台负载|原生, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7660.sina.cn}, udp: true}
-  - {name: v2|台湾|B|5台负载|原生, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7768.sina.cn}, udp: true}
-  - {name: v2|台湾|C|3台负载|原生, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7568.sina.cn}, udp: true}
-  - {name: v2|台湾|D|5台负载|原生, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7268.sina.cn}, udp: true}
-  - {name: v2|台湾|E|5台负载|原生, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7163.sina.cn}, udp: true}
-  - {name: v2|新加坡|A|6台负载|原生, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7c66.sina.cn}, udp: true}
-  - {name: v2|新加坡|B|5台负载|原生, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7c67.sina.cn}, udp: true}
-  - {name: v2|新加坡|C|4台负载|原生, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7565.sina.cn}, udp: true}
-  - {name: v2|新加坡|D|5台负载|原生, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7c63.sina.cn}, udp: true}
-  - {name: v2|新加坡|E|6台负载|原生, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7162.sina.cn}, udp: true}
-  - {name: v2|日本|A|4台负载|原生, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7c65.sina.cn}, udp: true}
-  - {name: v2|日本|B|5台负载|原生, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7265.sina.cn}, udp: true}
-  - {name: v2|日本|C|6台负载|原生, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7264.sina.cn}, udp: true}
-  - {name: v2|日本|D|8台负载|原生, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7266.sina.cn}, udp: true}
-  - {name: v2|日本|E|5台负载|原生, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7267.sina.cn}, udp: true}
-  - {name: v2|美国|A|5台负载|原生, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7462.sina.cn}, udp: true}
-  - {name: v2|美国|B|4台负载|原生, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7463.sina.cn}, udp: true}
-  - {name: v2|美国|C|3台负载|原生, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7660.sina.cn}, udp: true}
-  - {name: v2|美国|D|5台负载|原生, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7c64.sina.cn}, udp: true}
-  - {name: v2|美国|E|4台负载|原生, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7161.sina.cn}, udp: true}
-  - {name: v2|欧洲|A|3台负载, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a62787c.sina.cn}, udp: true}
-  - {name: v2|欧洲|B|4台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7665.sina.cn}, udp: true}
-  - {name: v2|欧洲|C|5台负载, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7160.sina.cn}, udp: true}
-  - {name: v2|欧洲|D|4台负载, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7361.sina.cn}, udp: true}
-  - {name: v2|欧洲|E|4台负载, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7362.sina.cn}, udp: true}
-  - {name: v2|澳洲|A|6台负载, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7468.sina.cn}, udp: true}
-  - {name: v2|澳洲|B|4台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7664.sina.cn}, udp: true}
-  - {name: v2|澳洲|C|5台负载, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7069.sina.cn}, udp: true}
-  - {name: v2|澳洲|D|6台负载, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7369.sina.cn}, udp: true}
-  - {name: v2|澳洲|E|4台负载, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7c60.sina.cn}, udp: true}
-  - {name: v2|韩国|A|4台负载, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7469.sina.cn}, udp: true}
-  - {name: v2|韩国|B|5台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7761.sina.cn}, udp: true}
-  - {name: v2|韩国|C|6台负载, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7068.sina.cn}, udp: true}
-  - {name: v2|韩国|D|5台负载, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7269.sina.cn}, udp: true}
-  - {name: v2|韩国|E|4台负载, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7360.sina.cn}, udp: true}
-  - {name: v2|南美|A|5台负载, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7560.sina.cn}, udp: true}
-  - {name: v2|南美|B|3台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7662.sina.cn}, udp: true}
-  - {name: v2|南美|C|4台负载, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7067.sina.cn}, udp: true}
-  - {name: v2|南美|D|5台负载, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7363.sina.cn}, udp: true}
-  - {name: v2|南美|E|3台负载, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7364.sina.cn}, udp: true}
-  - {name: v2|印度|A|5台负载, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7d68.sina.cn}, udp: true}
-  - {name: v2|印度|B|3台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7666.sina.cn}, udp: true}
-  - {name: v2|印度|C|5台负载, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7066.sina.cn}, udp: true}
-  - {name: v2|印度|D|5台负载, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7367.sina.cn}, udp: true}
-  - {name: v2|印度|E|3台负载, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7368.sina.cn}, udp: true}
-  - {name: v2|俄罗斯|A|4台负载, server: k1.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7460.sina.cn}, udp: true}
-  - {name: v2|俄罗斯|B|5台负载, server: k2.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7765.sina.cn}, udp: true}
-  - {name: v2|俄罗斯|C|3台负载, server: k3.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7065.sina.cn}, udp: true}
-  - {name: v2|俄罗斯|D|5台负载, server: k4.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7365.sina.cn}, udp: true}
-  - {name: v2|俄罗斯|E|3台负载, server: k5.2y7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7366.sina.cn}, udp: true}
+  - {name: v2|亚洲03|MPTCP|★★☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7569.sina.cn}, udp: true}
+  - {name: v2|亚洲02|MPTCP|★★☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7564.sina.cn}, udp: true}
+  - {name: v2|亚洲13|MPTCP|★★☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627776.sina.cn}, udp: true}
+  - {name: v2|亚洲12|MPTCP|★★☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627976.sina.cn}, udp: true}
+  - {name: v2|亚洲01|MPTCP|★★★, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627876.sina.cn}, udp: true}
+  - {name: v2|亚洲04|MPTCP|★★★, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7763.sina.cn}, udp: true}
+  - {name: v2|亚洲05|MPTCP|★★★, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7169.sina.cn}, udp: true}
+  - {name: v2|香港01|MPTCP|★★★, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7568.sina.cn}, udp: true}
+  - {name: v2|香港02|MPTCP|★★★, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7565.sina.cn}, udp: true}
+  - {name: v2|香港03|MPTCP|★★★, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a62777c.sina.cn}, udp: true}
+  - {name: v2|香港12|MPTCP|★★★, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a62797d.sina.cn}, udp: true}
+  - {name: v2|香港04|MPTCP|★★★, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7760.sina.cn}, udp: true}
+  - {name: v2|香港05|MPTCP|★★★, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7168.sina.cn}, udp: true}
+  - {name: v2|新加坡01|MPTCP|★★☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627871.sina.cn}, udp: true}
+  - {name: v2|新加坡02|MPTCP|★★☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627971.sina.cn}, udp: true}
+  - {name: v2|新加坡03|MPTCP|★★☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627773.sina.cn}, udp: true}
+  - {name: v2|新加坡13|MPTCP|★★☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627771.sina.cn}, udp: true}
+  - {name: v2|新加坡04|MPTCP|★★★, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7566.sina.cn}, udp: true}
+  - {name: v2|新加坡05|MPTCP|★★★, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7167.sina.cn}, udp: true}
+  - {name: v2|日本01|MPTCP|★★☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627870.sina.cn}, udp: true}
+  - {name: v2|日本02|MPTCP|★★☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627970.sina.cn}, udp: true}
+  - {name: v2|日本12|MPTCP|★★☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7563.sina.cn}, udp: true}
+  - {name: v2|日本03|MPTCP|★★☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627770.sina.cn}, udp: true}
+  - {name: v2|日本04|MPTCP|★★☆, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7668.sina.cn}, udp: true}
+  - {name: v2|日本05|MPTCP|★★☆, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7166.sina.cn}, udp: true}
+  - {name: v2|美国01|MPTCP|★★★, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7d65.sina.cn}, udp: true}
+  - {name: v2|美国02|MPTCP|★★★, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627873.sina.cn}, udp: true}
+  - {name: v2|美国03|MPTCP|★★★, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7d66.sina.cn}, udp: true}
+  - {name: v2|美国04|MPTCP|★★★, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7661.sina.cn}, udp: true}
+  - {name: v2|美国05|MPTCP|★★★, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7165.sina.cn}, udp: true}
+  - {name: v2|香港01|原生|★★★, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627874.sina.cn}, udp: true}
+  - {name: v2|香港02|原生|★★★, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627974.sina.cn}, udp: true}
+  - {name: v2|香港03|原生|★★★, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627774.sina.cn}, udp: true}
+  - {name: v2|香港12|原生|★★★, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a62797c.sina.cn}, udp: true}
+  - {name: v2|香港04|原生|★★★, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7562.sina.cn}, udp: true}
+  - {name: v2|香港05|原生|★★★, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7164.sina.cn}, udp: true}
+  - {name: v2|香港03|myTVSUPER|限速, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7c67.sina.cn}, udp: true}
+  - {name: v2|香港03|YouTubePre|限速, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7c68.sina.cn}, udp: true}
+  - {name: v2|台湾01|原生|★★☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7660.sina.cn}, udp: true}
+  - {name: v2|台湾02|原生|★★☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7768.sina.cn}, udp: true}
+  - {name: v2|台湾03|原生|★★☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7568.sina.cn}, udp: true}
+  - {name: v2|台湾04|原生|★★☆, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7268.sina.cn}, udp: true}
+  - {name: v2|台湾05|原生|★★☆, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7163.sina.cn}, udp: true}
+  - {name: v2|新加坡01|原生|★★☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7c66.sina.cn}, udp: true}
+  - {name: v2|新加坡02|原生|★★☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7c67.sina.cn}, udp: true}
+  - {name: v2|新加坡03|原生|★★☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7565.sina.cn}, udp: true}
+  - {name: v2|新加坡04|原生|★★☆, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7c63.sina.cn}, udp: true}
+  - {name: v2|新加坡05|原生|★★☆, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7162.sina.cn}, udp: true}
+  - {name: v2|日本01|原生|★★☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7c65.sina.cn}, udp: true}
+  - {name: v2|日本02|原生|★★☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7265.sina.cn}, udp: true}
+  - {name: v2|日本03|原生|★★☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7264.sina.cn}, udp: true}
+  - {name: v2|日本04|原生|★★☆, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7266.sina.cn}, udp: true}
+  - {name: v2|日本05|原生|★★☆, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7267.sina.cn}, udp: true}
+  - {name: v2|日本03|特供原生|限速, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7c66.sina.cn}, udp: true}
+  - {name: v2|美国01|原生|★★☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7462.sina.cn}, udp: true}
+  - {name: v2|美国02|原生|★★☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7463.sina.cn}, udp: true}
+  - {name: v2|美国03|原生|★★☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7660.sina.cn}, udp: true}
+  - {name: v2|美国04|原生|★★☆, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7c64.sina.cn}, udp: true}
+  - {name: v2|美国05|原生|★★☆, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7161.sina.cn}, udp: true}
+  - {name: v2|欧洲01|MPTCP|★☆☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a62787c.sina.cn}, udp: true}
+  - {name: v2|欧洲02|MPTCP|★☆☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7665.sina.cn}, udp: true}
+  - {name: v2|欧洲03|MPTCP|★☆☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7160.sina.cn}, udp: true}
+  - {name: v2|欧洲04|MPTCP|★☆☆, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7361.sina.cn}, udp: true}
+  - {name: v2|欧洲05|MPTCP|★☆☆, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7362.sina.cn}, udp: true}
+  - {name: v2|澳洲01|MPTCP|★☆☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7468.sina.cn}, udp: true}
+  - {name: v2|澳洲02|MPTCP|★☆☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7664.sina.cn}, udp: true}
+  - {name: v2|澳洲03|MPTCP|★☆☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7069.sina.cn}, udp: true}
+  - {name: v2|澳洲04|MPTCP|★☆☆, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7369.sina.cn}, udp: true}
+  - {name: v2|澳洲05|MPTCP|★☆☆, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7c60.sina.cn}, udp: true}
+  - {name: v2|韩国01|MPTCP|★☆☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7469.sina.cn}, udp: true}
+  - {name: v2|韩国02|MPTCP|★☆☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7761.sina.cn}, udp: true}
+  - {name: v2|韩国03|MPTCP|★☆☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7068.sina.cn}, udp: true}
+  - {name: v2|韩国04|MPTCP|★☆☆, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7269.sina.cn}, udp: true}
+  - {name: v2|韩国05|MPTCP|★☆☆, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7360.sina.cn}, udp: true}
+  - {name: v2|南美01|MPTCP|★☆☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7560.sina.cn}, udp: true}
+  - {name: v2|南美02|MPTCP|★☆☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7662.sina.cn}, udp: true}
+  - {name: v2|南美03|MPTCP|★☆☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7067.sina.cn}, udp: true}
+  - {name: v2|南美04|MPTCP|★☆☆, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7363.sina.cn}, udp: true}
+  - {name: v2|南美05|MPTCP|★☆☆, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7364.sina.cn}, udp: true}
+  - {name: v2|印度01|MPTCP|★☆☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627f7d68.sina.cn}, udp: true}
+  - {name: v2|印度02|MPTCP|★☆☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7666.sina.cn}, udp: true}
+  - {name: v2|印度03|MPTCP|★☆☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7066.sina.cn}, udp: true}
+  - {name: v2|印度04|MPTCP|★☆☆, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7367.sina.cn}, udp: true}
+  - {name: v2|印度05|MPTCP|★☆☆, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7368.sina.cn}, udp: true}
+  - {name: v2|俄罗斯01|MPTCP|★☆☆, server: k1.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7460.sina.cn}, udp: true}
+  - {name: v2|俄罗斯02|MPTCP|★☆☆, server: k2.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7765.sina.cn}, udp: true}
+  - {name: v2|俄罗斯03|MPTCP|★☆☆, server: k3.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7065.sina.cn}, udp: true}
+  - {name: v2|俄罗斯04|MPTCP|★☆☆, server: k4.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7365.sina.cn}, udp: true}
+  - {name: v2|俄罗斯05|MPTCP|★☆☆, server: k5.2yy7.top, port: 41322, type: ss, cipher: aes-128-gcm, password: 6125fad9eb0a, plugin: obfs, plugin-opts: {mode: http, host: 6179767060766d272a627c7366.sina.cn}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v2|亚洲|C|混合负载|无敌主力
-      - v2|亚洲|B|混合负载|万能主力
-      - v2|亚洲|C|混合负载|视频主力
-      - v2|亚洲|B|混合负载|低延主力
-      - v2|亚洲|A|混合负载|外贸主力
-      - v2|亚洲|D|混合负载|极速主力
-      - v2|亚洲|E|混合负载|稳定主力
-      - v2|香港|A|16台负载
-      - v2|香港|B|22台负载
-      - v2|香港|C|18台负载
-      - v2|香港|B|21台负载
-      - v2|香港|D|15台负载
-      - v2|香港|E|14台负载
-      - v2|新加坡|A|9台负载
-      - v2|新加坡|B|10台负载
-      - v2|新加坡|C|12台负载
-      - v2|新加坡|C|11台负载
-      - v2|新加坡|D|7台负载
-      - v2|新加坡|E|5台负载
-      - v2|日本|A|10台负载
-      - v2|日本|B|11台负载
-      - v2|日本|B|6台负载
-      - v2|日本|C|12台负载
-      - v2|日本|D|4台负载
-      - v2|日本|E|5台负载
-      - v2|美国|A|7台负载
-      - v2|美国|B|7台负载
-      - v2|美国|C|4台负载
-      - v2|美国|D|5台负载
-      - v2|美国|E|4台负载
-      - v2|香港|A|8台负载|原生
-      - v2|香港|B|10台负载|原生
-      - v2|香港|C|13台负载|原生
-      - v2|香港|B|9台负载|原生
-      - v2|香港|D|11台负载|原生
-      - v2|香港|E|10台负载|原生
-      - v2|台湾|A|6台负载|原生
-      - v2|台湾|B|5台负载|原生
-      - v2|台湾|C|3台负载|原生
-      - v2|台湾|D|5台负载|原生
-      - v2|台湾|E|5台负载|原生
-      - v2|新加坡|A|6台负载|原生
-      - v2|新加坡|B|5台负载|原生
-      - v2|新加坡|C|4台负载|原生
-      - v2|新加坡|D|5台负载|原生
-      - v2|新加坡|E|6台负载|原生
-      - v2|日本|A|4台负载|原生
-      - v2|日本|B|5台负载|原生
-      - v2|日本|C|6台负载|原生
-      - v2|日本|D|8台负载|原生
-      - v2|日本|E|5台负载|原生
-      - v2|美国|A|5台负载|原生
-      - v2|美国|B|4台负载|原生
-      - v2|美国|C|3台负载|原生
-      - v2|美国|D|5台负载|原生
-      - v2|美国|E|4台负载|原生
-      - v2|欧洲|A|3台负载
-      - v2|欧洲|B|4台负载
-      - v2|欧洲|C|5台负载
-      - v2|欧洲|D|4台负载
-      - v2|欧洲|E|4台负载
-      - v2|澳洲|A|6台负载
-      - v2|澳洲|B|4台负载
-      - v2|澳洲|C|5台负载
-      - v2|澳洲|D|6台负载
-      - v2|澳洲|E|4台负载
-      - v2|韩国|A|4台负载
-      - v2|韩国|B|5台负载
-      - v2|韩国|C|6台负载
-      - v2|韩国|D|5台负载
-      - v2|韩国|E|4台负载
-      - v2|南美|A|5台负载
-      - v2|南美|B|3台负载
-      - v2|南美|C|4台负载
-      - v2|南美|D|5台负载
-      - v2|南美|E|3台负载
-      - v2|印度|A|5台负载
-      - v2|印度|B|3台负载
-      - v2|印度|C|5台负载
-      - v2|印度|D|5台负载
-      - v2|印度|E|3台负载
-      - v2|俄罗斯|A|4台负载
-      - v2|俄罗斯|B|5台负载
-      - v2|俄罗斯|C|3台负载
-      - v2|俄罗斯|D|5台负载
-      - v2|俄罗斯|E|3台负载
+      - v2|亚洲03|MPTCP|★★☆
+      - v2|亚洲02|MPTCP|★★☆
+      - v2|亚洲13|MPTCP|★★☆
+      - v2|亚洲12|MPTCP|★★☆
+      - v2|亚洲01|MPTCP|★★★
+      - v2|亚洲04|MPTCP|★★★
+      - v2|亚洲05|MPTCP|★★★
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港12|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|新加坡01|MPTCP|★★☆
+      - v2|新加坡02|MPTCP|★★☆
+      - v2|新加坡03|MPTCP|★★☆
+      - v2|新加坡13|MPTCP|★★☆
+      - v2|新加坡04|MPTCP|★★★
+      - v2|新加坡05|MPTCP|★★★
+      - v2|日本01|MPTCP|★★☆
+      - v2|日本02|MPTCP|★★☆
+      - v2|日本12|MPTCP|★★☆
+      - v2|日本03|MPTCP|★★☆
+      - v2|日本04|MPTCP|★★☆
+      - v2|日本05|MPTCP|★★☆
+      - v2|美国01|MPTCP|★★★
+      - v2|美国02|MPTCP|★★★
+      - v2|美国03|MPTCP|★★★
+      - v2|美国04|MPTCP|★★★
+      - v2|美国05|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港12|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港03|myTVSUPER|限速
+      - v2|香港03|YouTubePre|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
+      - v2|新加坡01|原生|★★☆
+      - v2|新加坡02|原生|★★☆
+      - v2|新加坡03|原生|★★☆
+      - v2|新加坡04|原生|★★☆
+      - v2|新加坡05|原生|★★☆
+      - v2|日本01|原生|★★☆
+      - v2|日本02|原生|★★☆
+      - v2|日本03|原生|★★☆
+      - v2|日本04|原生|★★☆
+      - v2|日本05|原生|★★☆
+      - v2|日本03|特供原生|限速
+      - v2|美国01|原生|★★☆
+      - v2|美国02|原生|★★☆
+      - v2|美国03|原生|★★☆
+      - v2|美国04|原生|★★☆
+      - v2|美国05|原生|★★☆
+      - v2|欧洲01|MPTCP|★☆☆
+      - v2|欧洲02|MPTCP|★☆☆
+      - v2|欧洲03|MPTCP|★☆☆
+      - v2|欧洲04|MPTCP|★☆☆
+      - v2|欧洲05|MPTCP|★☆☆
+      - v2|澳洲01|MPTCP|★☆☆
+      - v2|澳洲02|MPTCP|★☆☆
+      - v2|澳洲03|MPTCP|★☆☆
+      - v2|澳洲04|MPTCP|★☆☆
+      - v2|澳洲05|MPTCP|★☆☆
+      - v2|韩国01|MPTCP|★☆☆
+      - v2|韩国02|MPTCP|★☆☆
+      - v2|韩国03|MPTCP|★☆☆
+      - v2|韩国04|MPTCP|★☆☆
+      - v2|韩国05|MPTCP|★☆☆
+      - v2|南美01|MPTCP|★☆☆
+      - v2|南美02|MPTCP|★☆☆
+      - v2|南美03|MPTCP|★☆☆
+      - v2|南美04|MPTCP|★☆☆
+      - v2|南美05|MPTCP|★☆☆
+      - v2|印度01|MPTCP|★☆☆
+      - v2|印度02|MPTCP|★☆☆
+      - v2|印度03|MPTCP|★☆☆
+      - v2|印度04|MPTCP|★☆☆
+      - v2|印度05|MPTCP|★☆☆
+      - v2|俄罗斯01|MPTCP|★☆☆
+      - v2|俄罗斯02|MPTCP|★☆☆
+      - v2|俄罗斯03|MPTCP|★☆☆
+      - v2|俄罗斯04|MPTCP|★☆☆
+      - v2|俄罗斯05|MPTCP|★☆☆
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - v2|亚洲|C|混合负载|无敌主力
-      - v2|亚洲|B|混合负载|万能主力
-      - v2|亚洲|C|混合负载|视频主力
-      - v2|亚洲|B|混合负载|低延主力
-      - v2|亚洲|A|混合负载|外贸主力
-      - v2|亚洲|D|混合负载|极速主力
-      - v2|亚洲|E|混合负载|稳定主力
-      - v2|香港|A|16台负载
-      - v2|香港|B|22台负载
-      - v2|香港|C|18台负载
-      - v2|香港|B|21台负载
-      - v2|香港|D|15台负载
-      - v2|香港|E|14台负载
-      - v2|新加坡|A|9台负载
-      - v2|新加坡|B|10台负载
-      - v2|新加坡|C|12台负载
-      - v2|新加坡|C|11台负载
-      - v2|新加坡|D|7台负载
-      - v2|新加坡|E|5台负载
-      - v2|日本|A|10台负载
-      - v2|日本|B|11台负载
-      - v2|日本|B|6台负载
-      - v2|日本|C|12台负载
-      - v2|日本|D|4台负载
-      - v2|日本|E|5台负载
-      - v2|美国|A|7台负载
-      - v2|美国|B|7台负载
-      - v2|美国|C|4台负载
-      - v2|美国|D|5台负载
-      - v2|美国|E|4台负载
-      - v2|香港|A|8台负载|原生
-      - v2|香港|B|10台负载|原生
-      - v2|香港|C|13台负载|原生
-      - v2|香港|B|9台负载|原生
-      - v2|香港|D|11台负载|原生
-      - v2|香港|E|10台负载|原生
-      - v2|台湾|A|6台负载|原生
-      - v2|台湾|B|5台负载|原生
-      - v2|台湾|C|3台负载|原生
-      - v2|台湾|D|5台负载|原生
-      - v2|台湾|E|5台负载|原生
-      - v2|新加坡|A|6台负载|原生
-      - v2|新加坡|B|5台负载|原生
-      - v2|新加坡|C|4台负载|原生
-      - v2|新加坡|D|5台负载|原生
-      - v2|新加坡|E|6台负载|原生
-      - v2|日本|A|4台负载|原生
-      - v2|日本|B|5台负载|原生
-      - v2|日本|C|6台负载|原生
-      - v2|日本|D|8台负载|原生
-      - v2|日本|E|5台负载|原生
-      - v2|美国|A|5台负载|原生
-      - v2|美国|B|4台负载|原生
-      - v2|美国|C|3台负载|原生
-      - v2|美国|D|5台负载|原生
-      - v2|美国|E|4台负载|原生
-      - v2|欧洲|A|3台负载
-      - v2|欧洲|B|4台负载
-      - v2|欧洲|C|5台负载
-      - v2|欧洲|D|4台负载
-      - v2|欧洲|E|4台负载
-      - v2|澳洲|A|6台负载
-      - v2|澳洲|B|4台负载
-      - v2|澳洲|C|5台负载
-      - v2|澳洲|D|6台负载
-      - v2|澳洲|E|4台负载
-      - v2|韩国|A|4台负载
-      - v2|韩国|B|5台负载
-      - v2|韩国|C|6台负载
-      - v2|韩国|D|5台负载
-      - v2|韩国|E|4台负载
-      - v2|南美|A|5台负载
-      - v2|南美|B|3台负载
-      - v2|南美|C|4台负载
-      - v2|南美|D|5台负载
-      - v2|南美|E|3台负载
-      - v2|印度|A|5台负载
-      - v2|印度|B|3台负载
-      - v2|印度|C|5台负载
-      - v2|印度|D|5台负载
-      - v2|印度|E|3台负载
-      - v2|俄罗斯|A|4台负载
-      - v2|俄罗斯|B|5台负载
-      - v2|俄罗斯|C|3台负载
-      - v2|俄罗斯|D|5台负载
-      - v2|俄罗斯|E|3台负载
+      - v2|亚洲03|MPTCP|★★☆
+      - v2|亚洲02|MPTCP|★★☆
+      - v2|亚洲13|MPTCP|★★☆
+      - v2|亚洲12|MPTCP|★★☆
+      - v2|亚洲01|MPTCP|★★★
+      - v2|亚洲04|MPTCP|★★★
+      - v2|亚洲05|MPTCP|★★★
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港12|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|新加坡01|MPTCP|★★☆
+      - v2|新加坡02|MPTCP|★★☆
+      - v2|新加坡03|MPTCP|★★☆
+      - v2|新加坡13|MPTCP|★★☆
+      - v2|新加坡04|MPTCP|★★★
+      - v2|新加坡05|MPTCP|★★★
+      - v2|日本01|MPTCP|★★☆
+      - v2|日本02|MPTCP|★★☆
+      - v2|日本12|MPTCP|★★☆
+      - v2|日本03|MPTCP|★★☆
+      - v2|日本04|MPTCP|★★☆
+      - v2|日本05|MPTCP|★★☆
+      - v2|美国01|MPTCP|★★★
+      - v2|美国02|MPTCP|★★★
+      - v2|美国03|MPTCP|★★★
+      - v2|美国04|MPTCP|★★★
+      - v2|美国05|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港12|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港03|myTVSUPER|限速
+      - v2|香港03|YouTubePre|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
+      - v2|新加坡01|原生|★★☆
+      - v2|新加坡02|原生|★★☆
+      - v2|新加坡03|原生|★★☆
+      - v2|新加坡04|原生|★★☆
+      - v2|新加坡05|原生|★★☆
+      - v2|日本01|原生|★★☆
+      - v2|日本02|原生|★★☆
+      - v2|日本03|原生|★★☆
+      - v2|日本04|原生|★★☆
+      - v2|日本05|原生|★★☆
+      - v2|日本03|特供原生|限速
+      - v2|美国01|原生|★★☆
+      - v2|美国02|原生|★★☆
+      - v2|美国03|原生|★★☆
+      - v2|美国04|原生|★★☆
+      - v2|美国05|原生|★★☆
+      - v2|欧洲01|MPTCP|★☆☆
+      - v2|欧洲02|MPTCP|★☆☆
+      - v2|欧洲03|MPTCP|★☆☆
+      - v2|欧洲04|MPTCP|★☆☆
+      - v2|欧洲05|MPTCP|★☆☆
+      - v2|澳洲01|MPTCP|★☆☆
+      - v2|澳洲02|MPTCP|★☆☆
+      - v2|澳洲03|MPTCP|★☆☆
+      - v2|澳洲04|MPTCP|★☆☆
+      - v2|澳洲05|MPTCP|★☆☆
+      - v2|韩国01|MPTCP|★☆☆
+      - v2|韩国02|MPTCP|★☆☆
+      - v2|韩国03|MPTCP|★☆☆
+      - v2|韩国04|MPTCP|★☆☆
+      - v2|韩国05|MPTCP|★☆☆
+      - v2|南美01|MPTCP|★☆☆
+      - v2|南美02|MPTCP|★☆☆
+      - v2|南美03|MPTCP|★☆☆
+      - v2|南美04|MPTCP|★☆☆
+      - v2|南美05|MPTCP|★☆☆
+      - v2|印度01|MPTCP|★☆☆
+      - v2|印度02|MPTCP|★☆☆
+      - v2|印度03|MPTCP|★☆☆
+      - v2|印度04|MPTCP|★☆☆
+      - v2|印度05|MPTCP|★☆☆
+      - v2|俄罗斯01|MPTCP|★☆☆
+      - v2|俄罗斯02|MPTCP|★☆☆
+      - v2|俄罗斯03|MPTCP|★☆☆
+      - v2|俄罗斯04|MPTCP|★☆☆
+      - v2|俄罗斯05|MPTCP|★☆☆
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v2|亚洲|C|混合负载|无敌主力
-      - v2|亚洲|B|混合负载|万能主力
-      - v2|亚洲|C|混合负载|视频主力
-      - v2|亚洲|B|混合负载|低延主力
-      - v2|亚洲|A|混合负载|外贸主力
-      - v2|亚洲|D|混合负载|极速主力
-      - v2|亚洲|E|混合负载|稳定主力
-      - v2|香港|A|16台负载
-      - v2|香港|B|22台负载
-      - v2|香港|C|18台负载
-      - v2|香港|B|21台负载
-      - v2|香港|D|15台负载
-      - v2|香港|E|14台负载
-      - v2|新加坡|A|9台负载
-      - v2|新加坡|B|10台负载
-      - v2|新加坡|C|12台负载
-      - v2|新加坡|C|11台负载
-      - v2|新加坡|D|7台负载
-      - v2|新加坡|E|5台负载
-      - v2|日本|A|10台负载
-      - v2|日本|B|11台负载
-      - v2|日本|B|6台负载
-      - v2|日本|C|12台负载
-      - v2|日本|D|4台负载
-      - v2|日本|E|5台负载
-      - v2|美国|A|7台负载
-      - v2|美国|B|7台负载
-      - v2|美国|C|4台负载
-      - v2|美国|D|5台负载
-      - v2|美国|E|4台负载
-      - v2|香港|A|8台负载|原生
-      - v2|香港|B|10台负载|原生
-      - v2|香港|C|13台负载|原生
-      - v2|香港|B|9台负载|原生
-      - v2|香港|D|11台负载|原生
-      - v2|香港|E|10台负载|原生
-      - v2|台湾|A|6台负载|原生
-      - v2|台湾|B|5台负载|原生
-      - v2|台湾|C|3台负载|原生
-      - v2|台湾|D|5台负载|原生
-      - v2|台湾|E|5台负载|原生
-      - v2|新加坡|A|6台负载|原生
-      - v2|新加坡|B|5台负载|原生
-      - v2|新加坡|C|4台负载|原生
-      - v2|新加坡|D|5台负载|原生
-      - v2|新加坡|E|6台负载|原生
-      - v2|日本|A|4台负载|原生
-      - v2|日本|B|5台负载|原生
-      - v2|日本|C|6台负载|原生
-      - v2|日本|D|8台负载|原生
-      - v2|日本|E|5台负载|原生
-      - v2|美国|A|5台负载|原生
-      - v2|美国|B|4台负载|原生
-      - v2|美国|C|3台负载|原生
-      - v2|美国|D|5台负载|原生
-      - v2|美国|E|4台负载|原生
-      - v2|欧洲|A|3台负载
-      - v2|欧洲|B|4台负载
-      - v2|欧洲|C|5台负载
-      - v2|欧洲|D|4台负载
-      - v2|欧洲|E|4台负载
-      - v2|澳洲|A|6台负载
-      - v2|澳洲|B|4台负载
-      - v2|澳洲|C|5台负载
-      - v2|澳洲|D|6台负载
-      - v2|澳洲|E|4台负载
-      - v2|韩国|A|4台负载
-      - v2|韩国|B|5台负载
-      - v2|韩国|C|6台负载
-      - v2|韩国|D|5台负载
-      - v2|韩国|E|4台负载
-      - v2|南美|A|5台负载
-      - v2|南美|B|3台负载
-      - v2|南美|C|4台负载
-      - v2|南美|D|5台负载
-      - v2|南美|E|3台负载
-      - v2|印度|A|5台负载
-      - v2|印度|B|3台负载
-      - v2|印度|C|5台负载
-      - v2|印度|D|5台负载
-      - v2|印度|E|3台负载
-      - v2|俄罗斯|A|4台负载
-      - v2|俄罗斯|B|5台负载
-      - v2|俄罗斯|C|3台负载
-      - v2|俄罗斯|D|5台负载
-      - v2|俄罗斯|E|3台负载
+      - v2|亚洲03|MPTCP|★★☆
+      - v2|亚洲02|MPTCP|★★☆
+      - v2|亚洲13|MPTCP|★★☆
+      - v2|亚洲12|MPTCP|★★☆
+      - v2|亚洲01|MPTCP|★★★
+      - v2|亚洲04|MPTCP|★★★
+      - v2|亚洲05|MPTCP|★★★
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港12|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|新加坡01|MPTCP|★★☆
+      - v2|新加坡02|MPTCP|★★☆
+      - v2|新加坡03|MPTCP|★★☆
+      - v2|新加坡13|MPTCP|★★☆
+      - v2|新加坡04|MPTCP|★★★
+      - v2|新加坡05|MPTCP|★★★
+      - v2|日本01|MPTCP|★★☆
+      - v2|日本02|MPTCP|★★☆
+      - v2|日本12|MPTCP|★★☆
+      - v2|日本03|MPTCP|★★☆
+      - v2|日本04|MPTCP|★★☆
+      - v2|日本05|MPTCP|★★☆
+      - v2|美国01|MPTCP|★★★
+      - v2|美国02|MPTCP|★★★
+      - v2|美国03|MPTCP|★★★
+      - v2|美国04|MPTCP|★★★
+      - v2|美国05|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港12|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港03|myTVSUPER|限速
+      - v2|香港03|YouTubePre|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
+      - v2|新加坡01|原生|★★☆
+      - v2|新加坡02|原生|★★☆
+      - v2|新加坡03|原生|★★☆
+      - v2|新加坡04|原生|★★☆
+      - v2|新加坡05|原生|★★☆
+      - v2|日本01|原生|★★☆
+      - v2|日本02|原生|★★☆
+      - v2|日本03|原生|★★☆
+      - v2|日本04|原生|★★☆
+      - v2|日本05|原生|★★☆
+      - v2|日本03|特供原生|限速
+      - v2|美国01|原生|★★☆
+      - v2|美国02|原生|★★☆
+      - v2|美国03|原生|★★☆
+      - v2|美国04|原生|★★☆
+      - v2|美国05|原生|★★☆
+      - v2|欧洲01|MPTCP|★☆☆
+      - v2|欧洲02|MPTCP|★☆☆
+      - v2|欧洲03|MPTCP|★☆☆
+      - v2|欧洲04|MPTCP|★☆☆
+      - v2|欧洲05|MPTCP|★☆☆
+      - v2|澳洲01|MPTCP|★☆☆
+      - v2|澳洲02|MPTCP|★☆☆
+      - v2|澳洲03|MPTCP|★☆☆
+      - v2|澳洲04|MPTCP|★☆☆
+      - v2|澳洲05|MPTCP|★☆☆
+      - v2|韩国01|MPTCP|★☆☆
+      - v2|韩国02|MPTCP|★☆☆
+      - v2|韩国03|MPTCP|★☆☆
+      - v2|韩国04|MPTCP|★☆☆
+      - v2|韩国05|MPTCP|★☆☆
+      - v2|南美01|MPTCP|★☆☆
+      - v2|南美02|MPTCP|★☆☆
+      - v2|南美03|MPTCP|★☆☆
+      - v2|南美04|MPTCP|★☆☆
+      - v2|南美05|MPTCP|★☆☆
+      - v2|印度01|MPTCP|★☆☆
+      - v2|印度02|MPTCP|★☆☆
+      - v2|印度03|MPTCP|★☆☆
+      - v2|印度04|MPTCP|★☆☆
+      - v2|印度05|MPTCP|★☆☆
+      - v2|俄罗斯01|MPTCP|★☆☆
+      - v2|俄罗斯02|MPTCP|★☆☆
+      - v2|俄罗斯03|MPTCP|★☆☆
+      - v2|俄罗斯04|MPTCP|★☆☆
+      - v2|俄罗斯05|MPTCP|★☆☆
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -384,450 +396,402 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v2|亚洲|C|混合负载|无敌主力
-      - v2|亚洲|B|混合负载|万能主力
-      - v2|亚洲|C|混合负载|视频主力
-      - v2|亚洲|B|混合负载|低延主力
-      - v2|亚洲|A|混合负载|外贸主力
-      - v2|亚洲|D|混合负载|极速主力
-      - v2|亚洲|E|混合负载|稳定主力
-      - v2|香港|A|16台负载
-      - v2|香港|B|22台负载
-      - v2|香港|C|18台负载
-      - v2|香港|B|21台负载
-      - v2|香港|D|15台负载
-      - v2|香港|E|14台负载
-      - v2|新加坡|A|9台负载
-      - v2|新加坡|B|10台负载
-      - v2|新加坡|C|12台负载
-      - v2|新加坡|C|11台负载
-      - v2|新加坡|D|7台负载
-      - v2|新加坡|E|5台负载
-      - v2|日本|A|10台负载
-      - v2|日本|B|11台负载
-      - v2|日本|B|6台负载
-      - v2|日本|C|12台负载
-      - v2|日本|D|4台负载
-      - v2|日本|E|5台负载
-      - v2|美国|A|7台负载
-      - v2|美国|B|7台负载
-      - v2|美国|C|4台负载
-      - v2|美国|D|5台负载
-      - v2|美国|E|4台负载
-      - v2|香港|A|8台负载|原生
-      - v2|香港|B|10台负载|原生
-      - v2|香港|C|13台负载|原生
-      - v2|香港|B|9台负载|原生
-      - v2|香港|D|11台负载|原生
-      - v2|香港|E|10台负载|原生
-      - v2|台湾|A|6台负载|原生
-      - v2|台湾|B|5台负载|原生
-      - v2|台湾|C|3台负载|原生
-      - v2|台湾|D|5台负载|原生
-      - v2|台湾|E|5台负载|原生
-      - v2|新加坡|A|6台负载|原生
-      - v2|新加坡|B|5台负载|原生
-      - v2|新加坡|C|4台负载|原生
-      - v2|新加坡|D|5台负载|原生
-      - v2|新加坡|E|6台负载|原生
-      - v2|日本|A|4台负载|原生
-      - v2|日本|B|5台负载|原生
-      - v2|日本|C|6台负载|原生
-      - v2|日本|D|8台负载|原生
-      - v2|日本|E|5台负载|原生
-      - v2|美国|A|5台负载|原生
-      - v2|美国|B|4台负载|原生
-      - v2|美国|C|3台负载|原生
-      - v2|美国|D|5台负载|原生
-      - v2|美国|E|4台负载|原生
-      - v2|欧洲|A|3台负载
-      - v2|欧洲|B|4台负载
-      - v2|欧洲|C|5台负载
-      - v2|欧洲|D|4台负载
-      - v2|欧洲|E|4台负载
-      - v2|澳洲|A|6台负载
-      - v2|澳洲|B|4台负载
-      - v2|澳洲|C|5台负载
-      - v2|澳洲|D|6台负载
-      - v2|澳洲|E|4台负载
-      - v2|韩国|A|4台负载
-      - v2|韩国|B|5台负载
-      - v2|韩国|C|6台负载
-      - v2|韩国|D|5台负载
-      - v2|韩国|E|4台负载
-      - v2|南美|A|5台负载
-      - v2|南美|B|3台负载
-      - v2|南美|C|4台负载
-      - v2|南美|D|5台负载
-      - v2|南美|E|3台负载
-      - v2|印度|A|5台负载
-      - v2|印度|B|3台负载
-      - v2|印度|C|5台负载
-      - v2|印度|D|5台负载
-      - v2|印度|E|3台负载
-      - v2|俄罗斯|A|4台负载
-      - v2|俄罗斯|B|5台负载
-      - v2|俄罗斯|C|3台负载
-      - v2|俄罗斯|D|5台负载
-      - v2|俄罗斯|E|3台负载
+      - v2|亚洲03|MPTCP|★★☆
+      - v2|亚洲02|MPTCP|★★☆
+      - v2|亚洲13|MPTCP|★★☆
+      - v2|亚洲12|MPTCP|★★☆
+      - v2|亚洲01|MPTCP|★★★
+      - v2|亚洲04|MPTCP|★★★
+      - v2|亚洲05|MPTCP|★★★
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港12|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|新加坡01|MPTCP|★★☆
+      - v2|新加坡02|MPTCP|★★☆
+      - v2|新加坡03|MPTCP|★★☆
+      - v2|新加坡13|MPTCP|★★☆
+      - v2|新加坡04|MPTCP|★★★
+      - v2|新加坡05|MPTCP|★★★
+      - v2|日本01|MPTCP|★★☆
+      - v2|日本02|MPTCP|★★☆
+      - v2|日本12|MPTCP|★★☆
+      - v2|日本03|MPTCP|★★☆
+      - v2|日本04|MPTCP|★★☆
+      - v2|日本05|MPTCP|★★☆
+      - v2|美国01|MPTCP|★★★
+      - v2|美国02|MPTCP|★★★
+      - v2|美国03|MPTCP|★★★
+      - v2|美国04|MPTCP|★★★
+      - v2|美国05|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港12|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港03|myTVSUPER|限速
+      - v2|香港03|YouTubePre|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
+      - v2|新加坡01|原生|★★☆
+      - v2|新加坡02|原生|★★☆
+      - v2|新加坡03|原生|★★☆
+      - v2|新加坡04|原生|★★☆
+      - v2|新加坡05|原生|★★☆
+      - v2|日本01|原生|★★☆
+      - v2|日本02|原生|★★☆
+      - v2|日本03|原生|★★☆
+      - v2|日本04|原生|★★☆
+      - v2|日本05|原生|★★☆
+      - v2|日本03|特供原生|限速
+      - v2|美国01|原生|★★☆
+      - v2|美国02|原生|★★☆
+      - v2|美国03|原生|★★☆
+      - v2|美国04|原生|★★☆
+      - v2|美国05|原生|★★☆
+      - v2|欧洲01|MPTCP|★☆☆
+      - v2|欧洲02|MPTCP|★☆☆
+      - v2|欧洲03|MPTCP|★☆☆
+      - v2|欧洲04|MPTCP|★☆☆
+      - v2|欧洲05|MPTCP|★☆☆
+      - v2|澳洲01|MPTCP|★☆☆
+      - v2|澳洲02|MPTCP|★☆☆
+      - v2|澳洲03|MPTCP|★☆☆
+      - v2|澳洲04|MPTCP|★☆☆
+      - v2|澳洲05|MPTCP|★☆☆
+      - v2|韩国01|MPTCP|★☆☆
+      - v2|韩国02|MPTCP|★☆☆
+      - v2|韩国03|MPTCP|★☆☆
+      - v2|韩国04|MPTCP|★☆☆
+      - v2|韩国05|MPTCP|★☆☆
+      - v2|南美01|MPTCP|★☆☆
+      - v2|南美02|MPTCP|★☆☆
+      - v2|南美03|MPTCP|★☆☆
+      - v2|南美04|MPTCP|★☆☆
+      - v2|南美05|MPTCP|★☆☆
+      - v2|印度01|MPTCP|★☆☆
+      - v2|印度02|MPTCP|★☆☆
+      - v2|印度03|MPTCP|★☆☆
+      - v2|印度04|MPTCP|★☆☆
+      - v2|印度05|MPTCP|★☆☆
+      - v2|俄罗斯01|MPTCP|★☆☆
+      - v2|俄罗斯02|MPTCP|★☆☆
+      - v2|俄罗斯03|MPTCP|★☆☆
+      - v2|俄罗斯04|MPTCP|★☆☆
+      - v2|俄罗斯05|MPTCP|★☆☆
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - v2|香港|A|16台负载
-      - v2|香港|B|22台负载
-      - v2|香港|C|18台负载
-      - v2|香港|B|21台负载
-      - v2|香港|D|15台负载
-      - v2|香港|E|14台负载
-      - v2|新加坡|A|9台负载
-      - v2|新加坡|B|10台负载
-      - v2|新加坡|C|12台负载
-      - v2|新加坡|C|11台负载
-      - v2|新加坡|D|7台负载
-      - v2|新加坡|E|5台负载
-      - v2|日本|A|10台负载
-      - v2|日本|B|11台负载
-      - v2|日本|B|6台负载
-      - v2|日本|C|12台负载
-      - v2|日本|D|4台负载
-      - v2|日本|E|5台负载
-      - v2|美国|A|7台负载
-      - v2|美国|B|7台负载
-      - v2|美国|C|4台负载
-      - v2|美国|D|5台负载
-      - v2|美国|E|4台负载
-      - v2|香港|A|8台负载|原生
-      - v2|香港|B|10台负载|原生
-      - v2|香港|C|13台负载|原生
-      - v2|香港|B|9台负载|原生
-      - v2|香港|D|11台负载|原生
-      - v2|香港|E|10台负载|原生
-      - v2|台湾|A|6台负载|原生
-      - v2|台湾|B|5台负载|原生
-      - v2|台湾|C|3台负载|原生
-      - v2|台湾|D|5台负载|原生
-      - v2|台湾|E|5台负载|原生
-      - v2|新加坡|A|6台负载|原生
-      - v2|新加坡|B|5台负载|原生
-      - v2|新加坡|C|4台负载|原生
-      - v2|新加坡|D|5台负载|原生
-      - v2|新加坡|E|6台负载|原生
-      - v2|日本|A|4台负载|原生
-      - v2|日本|B|5台负载|原生
-      - v2|日本|C|6台负载|原生
-      - v2|日本|D|8台负载|原生
-      - v2|日本|E|5台负载|原生
-      - v2|美国|A|5台负载|原生
-      - v2|美国|B|4台负载|原生
-      - v2|美国|C|3台负载|原生
-      - v2|美国|D|5台负载|原生
-      - v2|美国|E|4台负载|原生
-      - v2|欧洲|A|3台负载
-      - v2|欧洲|B|4台负载
-      - v2|欧洲|C|5台负载
-      - v2|欧洲|D|4台负载
-      - v2|欧洲|E|4台负载
-      - v2|澳洲|A|6台负载
-      - v2|澳洲|B|4台负载
-      - v2|澳洲|C|5台负载
-      - v2|澳洲|D|6台负载
-      - v2|澳洲|E|4台负载
-      - v2|韩国|A|4台负载
-      - v2|韩国|B|5台负载
-      - v2|韩国|C|6台负载
-      - v2|韩国|D|5台负载
-      - v2|韩国|E|4台负载
-      - v2|南美|A|5台负载
-      - v2|南美|B|3台负载
-      - v2|南美|C|4台负载
-      - v2|南美|D|5台负载
-      - v2|南美|E|3台负载
-      - v2|印度|A|5台负载
-      - v2|印度|B|3台负载
-      - v2|印度|C|5台负载
-      - v2|印度|D|5台负载
-      - v2|印度|E|3台负载
-      - v2|俄罗斯|A|4台负载
-      - v2|俄罗斯|B|5台负载
-      - v2|俄罗斯|C|3台负载
-      - v2|俄罗斯|D|5台负载
-      - v2|俄罗斯|E|3台负载
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港12|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港12|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港03|myTVSUPER|限速
+      - v2|香港03|YouTubePre|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - v2|亚洲|C|混合负载|无敌主力
-      - v2|亚洲|B|混合负载|万能主力
-      - v2|亚洲|C|混合负载|视频主力
-      - v2|亚洲|B|混合负载|低延主力
-      - v2|亚洲|A|混合负载|外贸主力
-      - v2|亚洲|D|混合负载|极速主力
-      - v2|亚洲|E|混合负载|稳定主力
-      - v2|香港|A|16台负载
-      - v2|香港|B|22台负载
-      - v2|香港|C|18台负载
-      - v2|香港|B|21台负载
-      - v2|香港|D|15台负载
-      - v2|香港|E|14台负载
-      - v2|新加坡|A|9台负载
-      - v2|新加坡|B|10台负载
-      - v2|新加坡|C|12台负载
-      - v2|新加坡|C|11台负载
-      - v2|新加坡|D|7台负载
-      - v2|新加坡|E|5台负载
-      - v2|日本|A|10台负载
-      - v2|日本|B|11台负载
-      - v2|日本|B|6台负载
-      - v2|日本|C|12台负载
-      - v2|日本|D|4台负载
-      - v2|日本|E|5台负载
-      - v2|美国|A|7台负载
-      - v2|美国|B|7台负载
-      - v2|美国|C|4台负载
-      - v2|美国|D|5台负载
-      - v2|美国|E|4台负载
-      - v2|香港|A|8台负载|原生
-      - v2|香港|B|10台负载|原生
-      - v2|香港|C|13台负载|原生
-      - v2|香港|B|9台负载|原生
-      - v2|香港|D|11台负载|原生
-      - v2|香港|E|10台负载|原生
-      - v2|台湾|A|6台负载|原生
-      - v2|台湾|B|5台负载|原生
-      - v2|台湾|C|3台负载|原生
-      - v2|台湾|D|5台负载|原生
-      - v2|台湾|E|5台负载|原生
-      - v2|新加坡|A|6台负载|原生
-      - v2|新加坡|B|5台负载|原生
-      - v2|新加坡|C|4台负载|原生
-      - v2|新加坡|D|5台负载|原生
-      - v2|新加坡|E|6台负载|原生
-      - v2|日本|A|4台负载|原生
-      - v2|日本|B|5台负载|原生
-      - v2|日本|C|6台负载|原生
-      - v2|日本|D|8台负载|原生
-      - v2|日本|E|5台负载|原生
-      - v2|美国|A|5台负载|原生
-      - v2|美国|B|4台负载|原生
-      - v2|美国|C|3台负载|原生
-      - v2|美国|D|5台负载|原生
-      - v2|美国|E|4台负载|原生
-      - v2|欧洲|A|3台负载
-      - v2|欧洲|B|4台负载
-      - v2|欧洲|C|5台负载
-      - v2|欧洲|D|4台负载
-      - v2|欧洲|E|4台负载
-      - v2|澳洲|A|6台负载
-      - v2|澳洲|B|4台负载
-      - v2|澳洲|C|5台负载
-      - v2|澳洲|D|6台负载
-      - v2|澳洲|E|4台负载
-      - v2|韩国|A|4台负载
-      - v2|韩国|B|5台负载
-      - v2|韩国|C|6台负载
-      - v2|韩国|D|5台负载
-      - v2|韩国|E|4台负载
-      - v2|南美|A|5台负载
-      - v2|南美|B|3台负载
-      - v2|南美|C|4台负载
-      - v2|南美|D|5台负载
-      - v2|南美|E|3台负载
-      - v2|印度|A|5台负载
-      - v2|印度|B|3台负载
-      - v2|印度|C|5台负载
-      - v2|印度|D|5台负载
-      - v2|印度|E|3台负载
-      - v2|俄罗斯|A|4台负载
-      - v2|俄罗斯|B|5台负载
-      - v2|俄罗斯|C|3台负载
-      - v2|俄罗斯|D|5台负载
-      - v2|俄罗斯|E|3台负载
+      - v2|亚洲03|MPTCP|★★☆
+      - v2|亚洲02|MPTCP|★★☆
+      - v2|亚洲13|MPTCP|★★☆
+      - v2|亚洲12|MPTCP|★★☆
+      - v2|亚洲01|MPTCP|★★★
+      - v2|亚洲04|MPTCP|★★★
+      - v2|亚洲05|MPTCP|★★★
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港12|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|新加坡01|MPTCP|★★☆
+      - v2|新加坡02|MPTCP|★★☆
+      - v2|新加坡03|MPTCP|★★☆
+      - v2|新加坡13|MPTCP|★★☆
+      - v2|新加坡04|MPTCP|★★★
+      - v2|新加坡05|MPTCP|★★★
+      - v2|日本01|MPTCP|★★☆
+      - v2|日本02|MPTCP|★★☆
+      - v2|日本12|MPTCP|★★☆
+      - v2|日本03|MPTCP|★★☆
+      - v2|日本04|MPTCP|★★☆
+      - v2|日本05|MPTCP|★★☆
+      - v2|美国01|MPTCP|★★★
+      - v2|美国02|MPTCP|★★★
+      - v2|美国03|MPTCP|★★★
+      - v2|美国04|MPTCP|★★★
+      - v2|美国05|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港12|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港03|myTVSUPER|限速
+      - v2|香港03|YouTubePre|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
+      - v2|新加坡01|原生|★★☆
+      - v2|新加坡02|原生|★★☆
+      - v2|新加坡03|原生|★★☆
+      - v2|新加坡04|原生|★★☆
+      - v2|新加坡05|原生|★★☆
+      - v2|日本01|原生|★★☆
+      - v2|日本02|原生|★★☆
+      - v2|日本03|原生|★★☆
+      - v2|日本04|原生|★★☆
+      - v2|日本05|原生|★★☆
+      - v2|日本03|特供原生|限速
+      - v2|美国01|原生|★★☆
+      - v2|美国02|原生|★★☆
+      - v2|美国03|原生|★★☆
+      - v2|美国04|原生|★★☆
+      - v2|美国05|原生|★★☆
+      - v2|欧洲01|MPTCP|★☆☆
+      - v2|欧洲02|MPTCP|★☆☆
+      - v2|欧洲03|MPTCP|★☆☆
+      - v2|欧洲04|MPTCP|★☆☆
+      - v2|欧洲05|MPTCP|★☆☆
+      - v2|澳洲01|MPTCP|★☆☆
+      - v2|澳洲02|MPTCP|★☆☆
+      - v2|澳洲03|MPTCP|★☆☆
+      - v2|澳洲04|MPTCP|★☆☆
+      - v2|澳洲05|MPTCP|★☆☆
+      - v2|韩国01|MPTCP|★☆☆
+      - v2|韩国02|MPTCP|★☆☆
+      - v2|韩国03|MPTCP|★☆☆
+      - v2|韩国04|MPTCP|★☆☆
+      - v2|韩国05|MPTCP|★☆☆
+      - v2|南美01|MPTCP|★☆☆
+      - v2|南美02|MPTCP|★☆☆
+      - v2|南美03|MPTCP|★☆☆
+      - v2|南美04|MPTCP|★☆☆
+      - v2|南美05|MPTCP|★☆☆
+      - v2|印度01|MPTCP|★☆☆
+      - v2|印度02|MPTCP|★☆☆
+      - v2|印度03|MPTCP|★☆☆
+      - v2|印度04|MPTCP|★☆☆
+      - v2|印度05|MPTCP|★☆☆
+      - v2|俄罗斯01|MPTCP|★☆☆
+      - v2|俄罗斯02|MPTCP|★☆☆
+      - v2|俄罗斯03|MPTCP|★☆☆
+      - v2|俄罗斯04|MPTCP|★☆☆
+      - v2|俄罗斯05|MPTCP|★☆☆
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - v2|亚洲|C|混合负载|无敌主力
-      - v2|亚洲|B|混合负载|万能主力
-      - v2|亚洲|C|混合负载|视频主力
-      - v2|亚洲|B|混合负载|低延主力
-      - v2|亚洲|A|混合负载|外贸主力
-      - v2|亚洲|D|混合负载|极速主力
-      - v2|亚洲|E|混合负载|稳定主力
-      - v2|香港|A|16台负载
-      - v2|香港|B|22台负载
-      - v2|香港|C|18台负载
-      - v2|香港|B|21台负载
-      - v2|香港|D|15台负载
-      - v2|香港|E|14台负载
-      - v2|新加坡|A|9台负载
-      - v2|新加坡|B|10台负载
-      - v2|新加坡|C|12台负载
-      - v2|新加坡|C|11台负载
-      - v2|新加坡|D|7台负载
-      - v2|新加坡|E|5台负载
-      - v2|日本|A|10台负载
-      - v2|日本|B|11台负载
-      - v2|日本|B|6台负载
-      - v2|日本|C|12台负载
-      - v2|日本|D|4台负载
-      - v2|日本|E|5台负载
-      - v2|美国|A|7台负载
-      - v2|美国|B|7台负载
-      - v2|美国|C|4台负载
-      - v2|美国|D|5台负载
-      - v2|美国|E|4台负载
-      - v2|香港|A|8台负载|原生
-      - v2|香港|B|10台负载|原生
-      - v2|香港|C|13台负载|原生
-      - v2|香港|B|9台负载|原生
-      - v2|香港|D|11台负载|原生
-      - v2|香港|E|10台负载|原生
-      - v2|台湾|A|6台负载|原生
-      - v2|台湾|B|5台负载|原生
-      - v2|台湾|C|3台负载|原生
-      - v2|台湾|D|5台负载|原生
-      - v2|台湾|E|5台负载|原生
-      - v2|新加坡|A|6台负载|原生
-      - v2|新加坡|B|5台负载|原生
-      - v2|新加坡|C|4台负载|原生
-      - v2|新加坡|D|5台负载|原生
-      - v2|新加坡|E|6台负载|原生
-      - v2|日本|A|4台负载|原生
-      - v2|日本|B|5台负载|原生
-      - v2|日本|C|6台负载|原生
-      - v2|日本|D|8台负载|原生
-      - v2|日本|E|5台负载|原生
-      - v2|美国|A|5台负载|原生
-      - v2|美国|B|4台负载|原生
-      - v2|美国|C|3台负载|原生
-      - v2|美国|D|5台负载|原生
-      - v2|美国|E|4台负载|原生
-      - v2|欧洲|A|3台负载
-      - v2|欧洲|B|4台负载
-      - v2|欧洲|C|5台负载
-      - v2|欧洲|D|4台负载
-      - v2|欧洲|E|4台负载
-      - v2|澳洲|A|6台负载
-      - v2|澳洲|B|4台负载
-      - v2|澳洲|C|5台负载
-      - v2|澳洲|D|6台负载
-      - v2|澳洲|E|4台负载
-      - v2|韩国|A|4台负载
-      - v2|韩国|B|5台负载
-      - v2|韩国|C|6台负载
-      - v2|韩国|D|5台负载
-      - v2|韩国|E|4台负载
-      - v2|南美|A|5台负载
-      - v2|南美|B|3台负载
-      - v2|南美|C|4台负载
-      - v2|南美|D|5台负载
-      - v2|南美|E|3台负载
-      - v2|印度|A|5台负载
-      - v2|印度|B|3台负载
-      - v2|印度|C|5台负载
-      - v2|印度|D|5台负载
-      - v2|印度|E|3台负载
-      - v2|俄罗斯|A|4台负载
-      - v2|俄罗斯|B|5台负载
-      - v2|俄罗斯|C|3台负载
-      - v2|俄罗斯|D|5台负载
-      - v2|俄罗斯|E|3台负载
+      - v2|亚洲03|MPTCP|★★☆
+      - v2|亚洲02|MPTCP|★★☆
+      - v2|亚洲13|MPTCP|★★☆
+      - v2|亚洲12|MPTCP|★★☆
+      - v2|亚洲01|MPTCP|★★★
+      - v2|亚洲04|MPTCP|★★★
+      - v2|亚洲05|MPTCP|★★★
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港12|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|新加坡01|MPTCP|★★☆
+      - v2|新加坡02|MPTCP|★★☆
+      - v2|新加坡03|MPTCP|★★☆
+      - v2|新加坡13|MPTCP|★★☆
+      - v2|新加坡04|MPTCP|★★★
+      - v2|新加坡05|MPTCP|★★★
+      - v2|日本01|MPTCP|★★☆
+      - v2|日本02|MPTCP|★★☆
+      - v2|日本12|MPTCP|★★☆
+      - v2|日本03|MPTCP|★★☆
+      - v2|日本04|MPTCP|★★☆
+      - v2|日本05|MPTCP|★★☆
+      - v2|美国01|MPTCP|★★★
+      - v2|美国02|MPTCP|★★★
+      - v2|美国03|MPTCP|★★★
+      - v2|美国04|MPTCP|★★★
+      - v2|美国05|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港12|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港03|myTVSUPER|限速
+      - v2|香港03|YouTubePre|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
+      - v2|新加坡01|原生|★★☆
+      - v2|新加坡02|原生|★★☆
+      - v2|新加坡03|原生|★★☆
+      - v2|新加坡04|原生|★★☆
+      - v2|新加坡05|原生|★★☆
+      - v2|日本01|原生|★★☆
+      - v2|日本02|原生|★★☆
+      - v2|日本03|原生|★★☆
+      - v2|日本04|原生|★★☆
+      - v2|日本05|原生|★★☆
+      - v2|日本03|特供原生|限速
+      - v2|美国01|原生|★★☆
+      - v2|美国02|原生|★★☆
+      - v2|美国03|原生|★★☆
+      - v2|美国04|原生|★★☆
+      - v2|美国05|原生|★★☆
+      - v2|欧洲01|MPTCP|★☆☆
+      - v2|欧洲02|MPTCP|★☆☆
+      - v2|欧洲03|MPTCP|★☆☆
+      - v2|欧洲04|MPTCP|★☆☆
+      - v2|欧洲05|MPTCP|★☆☆
+      - v2|澳洲01|MPTCP|★☆☆
+      - v2|澳洲02|MPTCP|★☆☆
+      - v2|澳洲03|MPTCP|★☆☆
+      - v2|澳洲04|MPTCP|★☆☆
+      - v2|澳洲05|MPTCP|★☆☆
+      - v2|韩国01|MPTCP|★☆☆
+      - v2|韩国02|MPTCP|★☆☆
+      - v2|韩国03|MPTCP|★☆☆
+      - v2|韩国04|MPTCP|★☆☆
+      - v2|韩国05|MPTCP|★☆☆
+      - v2|南美01|MPTCP|★☆☆
+      - v2|南美02|MPTCP|★☆☆
+      - v2|南美03|MPTCP|★☆☆
+      - v2|南美04|MPTCP|★☆☆
+      - v2|南美05|MPTCP|★☆☆
+      - v2|印度01|MPTCP|★☆☆
+      - v2|印度02|MPTCP|★☆☆
+      - v2|印度03|MPTCP|★☆☆
+      - v2|印度04|MPTCP|★☆☆
+      - v2|印度05|MPTCP|★☆☆
+      - v2|俄罗斯01|MPTCP|★☆☆
+      - v2|俄罗斯02|MPTCP|★☆☆
+      - v2|俄罗斯03|MPTCP|★☆☆
+      - v2|俄罗斯04|MPTCP|★☆☆
+      - v2|俄罗斯05|MPTCP|★☆☆
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v2|亚洲|C|混合负载|无敌主力
-      - v2|亚洲|B|混合负载|万能主力
-      - v2|亚洲|C|混合负载|视频主力
-      - v2|亚洲|B|混合负载|低延主力
-      - v2|亚洲|A|混合负载|外贸主力
-      - v2|亚洲|D|混合负载|极速主力
-      - v2|亚洲|E|混合负载|稳定主力
-      - v2|香港|A|16台负载
-      - v2|香港|B|22台负载
-      - v2|香港|C|18台负载
-      - v2|香港|B|21台负载
-      - v2|香港|D|15台负载
-      - v2|香港|E|14台负载
-      - v2|新加坡|A|9台负载
-      - v2|新加坡|B|10台负载
-      - v2|新加坡|C|12台负载
-      - v2|新加坡|C|11台负载
-      - v2|新加坡|D|7台负载
-      - v2|新加坡|E|5台负载
-      - v2|日本|A|10台负载
-      - v2|日本|B|11台负载
-      - v2|日本|B|6台负载
-      - v2|日本|C|12台负载
-      - v2|日本|D|4台负载
-      - v2|日本|E|5台负载
-      - v2|美国|A|7台负载
-      - v2|美国|B|7台负载
-      - v2|美国|C|4台负载
-      - v2|美国|D|5台负载
-      - v2|美国|E|4台负载
-      - v2|香港|A|8台负载|原生
-      - v2|香港|B|10台负载|原生
-      - v2|香港|C|13台负载|原生
-      - v2|香港|B|9台负载|原生
-      - v2|香港|D|11台负载|原生
-      - v2|香港|E|10台负载|原生
-      - v2|台湾|A|6台负载|原生
-      - v2|台湾|B|5台负载|原生
-      - v2|台湾|C|3台负载|原生
-      - v2|台湾|D|5台负载|原生
-      - v2|台湾|E|5台负载|原生
-      - v2|新加坡|A|6台负载|原生
-      - v2|新加坡|B|5台负载|原生
-      - v2|新加坡|C|4台负载|原生
-      - v2|新加坡|D|5台负载|原生
-      - v2|新加坡|E|6台负载|原生
-      - v2|日本|A|4台负载|原生
-      - v2|日本|B|5台负载|原生
-      - v2|日本|C|6台负载|原生
-      - v2|日本|D|8台负载|原生
-      - v2|日本|E|5台负载|原生
-      - v2|美国|A|5台负载|原生
-      - v2|美国|B|4台负载|原生
-      - v2|美国|C|3台负载|原生
-      - v2|美国|D|5台负载|原生
-      - v2|美国|E|4台负载|原生
-      - v2|欧洲|A|3台负载
-      - v2|欧洲|B|4台负载
-      - v2|欧洲|C|5台负载
-      - v2|欧洲|D|4台负载
-      - v2|欧洲|E|4台负载
-      - v2|澳洲|A|6台负载
-      - v2|澳洲|B|4台负载
-      - v2|澳洲|C|5台负载
-      - v2|澳洲|D|6台负载
-      - v2|澳洲|E|4台负载
-      - v2|韩国|A|4台负载
-      - v2|韩国|B|5台负载
-      - v2|韩国|C|6台负载
-      - v2|韩国|D|5台负载
-      - v2|韩国|E|4台负载
-      - v2|南美|A|5台负载
-      - v2|南美|B|3台负载
-      - v2|南美|C|4台负载
-      - v2|南美|D|5台负载
-      - v2|南美|E|3台负载
-      - v2|印度|A|5台负载
-      - v2|印度|B|3台负载
-      - v2|印度|C|5台负载
-      - v2|印度|D|5台负载
-      - v2|印度|E|3台负载
-      - v2|俄罗斯|A|4台负载
-      - v2|俄罗斯|B|5台负载
-      - v2|俄罗斯|C|3台负载
-      - v2|俄罗斯|D|5台负载
-      - v2|俄罗斯|E|3台负载
+      - v2|亚洲03|MPTCP|★★☆
+      - v2|亚洲02|MPTCP|★★☆
+      - v2|亚洲13|MPTCP|★★☆
+      - v2|亚洲12|MPTCP|★★☆
+      - v2|亚洲01|MPTCP|★★★
+      - v2|亚洲04|MPTCP|★★★
+      - v2|亚洲05|MPTCP|★★★
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港12|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|新加坡01|MPTCP|★★☆
+      - v2|新加坡02|MPTCP|★★☆
+      - v2|新加坡03|MPTCP|★★☆
+      - v2|新加坡13|MPTCP|★★☆
+      - v2|新加坡04|MPTCP|★★★
+      - v2|新加坡05|MPTCP|★★★
+      - v2|日本01|MPTCP|★★☆
+      - v2|日本02|MPTCP|★★☆
+      - v2|日本12|MPTCP|★★☆
+      - v2|日本03|MPTCP|★★☆
+      - v2|日本04|MPTCP|★★☆
+      - v2|日本05|MPTCP|★★☆
+      - v2|美国01|MPTCP|★★★
+      - v2|美国02|MPTCP|★★★
+      - v2|美国03|MPTCP|★★★
+      - v2|美国04|MPTCP|★★★
+      - v2|美国05|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港12|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港03|myTVSUPER|限速
+      - v2|香港03|YouTubePre|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
+      - v2|新加坡01|原生|★★☆
+      - v2|新加坡02|原生|★★☆
+      - v2|新加坡03|原生|★★☆
+      - v2|新加坡04|原生|★★☆
+      - v2|新加坡05|原生|★★☆
+      - v2|日本01|原生|★★☆
+      - v2|日本02|原生|★★☆
+      - v2|日本03|原生|★★☆
+      - v2|日本04|原生|★★☆
+      - v2|日本05|原生|★★☆
+      - v2|日本03|特供原生|限速
+      - v2|美国01|原生|★★☆
+      - v2|美国02|原生|★★☆
+      - v2|美国03|原生|★★☆
+      - v2|美国04|原生|★★☆
+      - v2|美国05|原生|★★☆
+      - v2|欧洲01|MPTCP|★☆☆
+      - v2|欧洲02|MPTCP|★☆☆
+      - v2|欧洲03|MPTCP|★☆☆
+      - v2|欧洲04|MPTCP|★☆☆
+      - v2|欧洲05|MPTCP|★☆☆
+      - v2|澳洲01|MPTCP|★☆☆
+      - v2|澳洲02|MPTCP|★☆☆
+      - v2|澳洲03|MPTCP|★☆☆
+      - v2|澳洲04|MPTCP|★☆☆
+      - v2|澳洲05|MPTCP|★☆☆
+      - v2|韩国01|MPTCP|★☆☆
+      - v2|韩国02|MPTCP|★☆☆
+      - v2|韩国03|MPTCP|★☆☆
+      - v2|韩国04|MPTCP|★☆☆
+      - v2|韩国05|MPTCP|★☆☆
+      - v2|南美01|MPTCP|★☆☆
+      - v2|南美02|MPTCP|★☆☆
+      - v2|南美03|MPTCP|★☆☆
+      - v2|南美04|MPTCP|★☆☆
+      - v2|南美05|MPTCP|★☆☆
+      - v2|印度01|MPTCP|★☆☆
+      - v2|印度02|MPTCP|★☆☆
+      - v2|印度03|MPTCP|★☆☆
+      - v2|印度04|MPTCP|★☆☆
+      - v2|印度05|MPTCP|★☆☆
+      - v2|俄罗斯01|MPTCP|★☆☆
+      - v2|俄罗斯02|MPTCP|★☆☆
+      - v2|俄罗斯03|MPTCP|★☆☆
+      - v2|俄罗斯04|MPTCP|★☆☆
+      - v2|俄罗斯05|MPTCP|★☆☆
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -843,92 +807,95 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v2|亚洲|C|混合负载|无敌主力
-      - v2|亚洲|B|混合负载|万能主力
-      - v2|亚洲|C|混合负载|视频主力
-      - v2|亚洲|B|混合负载|低延主力
-      - v2|亚洲|A|混合负载|外贸主力
-      - v2|亚洲|D|混合负载|极速主力
-      - v2|亚洲|E|混合负载|稳定主力
-      - v2|香港|A|16台负载
-      - v2|香港|B|22台负载
-      - v2|香港|C|18台负载
-      - v2|香港|B|21台负载
-      - v2|香港|D|15台负载
-      - v2|香港|E|14台负载
-      - v2|新加坡|A|9台负载
-      - v2|新加坡|B|10台负载
-      - v2|新加坡|C|12台负载
-      - v2|新加坡|C|11台负载
-      - v2|新加坡|D|7台负载
-      - v2|新加坡|E|5台负载
-      - v2|日本|A|10台负载
-      - v2|日本|B|11台负载
-      - v2|日本|B|6台负载
-      - v2|日本|C|12台负载
-      - v2|日本|D|4台负载
-      - v2|日本|E|5台负载
-      - v2|美国|A|7台负载
-      - v2|美国|B|7台负载
-      - v2|美国|C|4台负载
-      - v2|美国|D|5台负载
-      - v2|美国|E|4台负载
-      - v2|香港|A|8台负载|原生
-      - v2|香港|B|10台负载|原生
-      - v2|香港|C|13台负载|原生
-      - v2|香港|B|9台负载|原生
-      - v2|香港|D|11台负载|原生
-      - v2|香港|E|10台负载|原生
-      - v2|台湾|A|6台负载|原生
-      - v2|台湾|B|5台负载|原生
-      - v2|台湾|C|3台负载|原生
-      - v2|台湾|D|5台负载|原生
-      - v2|台湾|E|5台负载|原生
-      - v2|新加坡|A|6台负载|原生
-      - v2|新加坡|B|5台负载|原生
-      - v2|新加坡|C|4台负载|原生
-      - v2|新加坡|D|5台负载|原生
-      - v2|新加坡|E|6台负载|原生
-      - v2|日本|A|4台负载|原生
-      - v2|日本|B|5台负载|原生
-      - v2|日本|C|6台负载|原生
-      - v2|日本|D|8台负载|原生
-      - v2|日本|E|5台负载|原生
-      - v2|美国|A|5台负载|原生
-      - v2|美国|B|4台负载|原生
-      - v2|美国|C|3台负载|原生
-      - v2|美国|D|5台负载|原生
-      - v2|美国|E|4台负载|原生
-      - v2|欧洲|A|3台负载
-      - v2|欧洲|B|4台负载
-      - v2|欧洲|C|5台负载
-      - v2|欧洲|D|4台负载
-      - v2|欧洲|E|4台负载
-      - v2|澳洲|A|6台负载
-      - v2|澳洲|B|4台负载
-      - v2|澳洲|C|5台负载
-      - v2|澳洲|D|6台负载
-      - v2|澳洲|E|4台负载
-      - v2|韩国|A|4台负载
-      - v2|韩国|B|5台负载
-      - v2|韩国|C|6台负载
-      - v2|韩国|D|5台负载
-      - v2|韩国|E|4台负载
-      - v2|南美|A|5台负载
-      - v2|南美|B|3台负载
-      - v2|南美|C|4台负载
-      - v2|南美|D|5台负载
-      - v2|南美|E|3台负载
-      - v2|印度|A|5台负载
-      - v2|印度|B|3台负载
-      - v2|印度|C|5台负载
-      - v2|印度|D|5台负载
-      - v2|印度|E|3台负载
-      - v2|俄罗斯|A|4台负载
-      - v2|俄罗斯|B|5台负载
-      - v2|俄罗斯|C|3台负载
-      - v2|俄罗斯|D|5台负载
-      - v2|俄罗斯|E|3台负载
+      - v2|亚洲03|MPTCP|★★☆
+      - v2|亚洲02|MPTCP|★★☆
+      - v2|亚洲13|MPTCP|★★☆
+      - v2|亚洲12|MPTCP|★★☆
+      - v2|亚洲01|MPTCP|★★★
+      - v2|亚洲04|MPTCP|★★★
+      - v2|亚洲05|MPTCP|★★★
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港12|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|新加坡01|MPTCP|★★☆
+      - v2|新加坡02|MPTCP|★★☆
+      - v2|新加坡03|MPTCP|★★☆
+      - v2|新加坡13|MPTCP|★★☆
+      - v2|新加坡04|MPTCP|★★★
+      - v2|新加坡05|MPTCP|★★★
+      - v2|日本01|MPTCP|★★☆
+      - v2|日本02|MPTCP|★★☆
+      - v2|日本12|MPTCP|★★☆
+      - v2|日本03|MPTCP|★★☆
+      - v2|日本04|MPTCP|★★☆
+      - v2|日本05|MPTCP|★★☆
+      - v2|美国01|MPTCP|★★★
+      - v2|美国02|MPTCP|★★★
+      - v2|美国03|MPTCP|★★★
+      - v2|美国04|MPTCP|★★★
+      - v2|美国05|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港12|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港03|myTVSUPER|限速
+      - v2|香港03|YouTubePre|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
+      - v2|新加坡01|原生|★★☆
+      - v2|新加坡02|原生|★★☆
+      - v2|新加坡03|原生|★★☆
+      - v2|新加坡04|原生|★★☆
+      - v2|新加坡05|原生|★★☆
+      - v2|日本01|原生|★★☆
+      - v2|日本02|原生|★★☆
+      - v2|日本03|原生|★★☆
+      - v2|日本04|原生|★★☆
+      - v2|日本05|原生|★★☆
+      - v2|日本03|特供原生|限速
+      - v2|美国01|原生|★★☆
+      - v2|美国02|原生|★★☆
+      - v2|美国03|原生|★★☆
+      - v2|美国04|原生|★★☆
+      - v2|美国05|原生|★★☆
+      - v2|欧洲01|MPTCP|★☆☆
+      - v2|欧洲02|MPTCP|★☆☆
+      - v2|欧洲03|MPTCP|★☆☆
+      - v2|欧洲04|MPTCP|★☆☆
+      - v2|欧洲05|MPTCP|★☆☆
+      - v2|澳洲01|MPTCP|★☆☆
+      - v2|澳洲02|MPTCP|★☆☆
+      - v2|澳洲03|MPTCP|★☆☆
+      - v2|澳洲04|MPTCP|★☆☆
+      - v2|澳洲05|MPTCP|★☆☆
+      - v2|韩国01|MPTCP|★☆☆
+      - v2|韩国02|MPTCP|★☆☆
+      - v2|韩国03|MPTCP|★☆☆
+      - v2|韩国04|MPTCP|★☆☆
+      - v2|韩国05|MPTCP|★☆☆
+      - v2|南美01|MPTCP|★☆☆
+      - v2|南美02|MPTCP|★☆☆
+      - v2|南美03|MPTCP|★☆☆
+      - v2|南美04|MPTCP|★☆☆
+      - v2|南美05|MPTCP|★☆☆
+      - v2|印度01|MPTCP|★☆☆
+      - v2|印度02|MPTCP|★☆☆
+      - v2|印度03|MPTCP|★☆☆
+      - v2|印度04|MPTCP|★☆☆
+      - v2|印度05|MPTCP|★☆☆
+      - v2|俄罗斯01|MPTCP|★☆☆
+      - v2|俄罗斯02|MPTCP|★☆☆
+      - v2|俄罗斯03|MPTCP|★☆☆
+      - v2|俄罗斯04|MPTCP|★☆☆
+      - v2|俄罗斯05|MPTCP|★☆☆
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -10236,6 +10203,9 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,steamcontent.com,🔰 节点选择
+ - DOMAIN-SUFFIX,steampowered.com,🔰 节点选择
+ - DOMAIN-SUFFIX,steamstatic.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
@@ -10911,9 +10881,6 @@ rules:
  - DOMAIN-SUFFIX,sogo.com,🎯 全球直连
  - DOMAIN-SUFFIX,sogou.com,🎯 全球直连
  - DOMAIN-SUFFIX,sogoucdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
- - DOMAIN-SUFFIX,steampowered.com,🎯 全球直连
- - DOMAIN-SUFFIX,steamstatic.com,🎯 全球直连
  - DOMAIN-SUFFIX,gtimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,idqqimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,igamecj.com,🎯 全球直连
