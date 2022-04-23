@@ -1,0 +1,19 @@
+Brightness=0
+Contrast=0
+Date=2022,3,27
+Hue=0
+IsVideo=false
+Preferred Size=100,30
+Saturation=0
+
+[General]
+TimeFormat=1
+Volume=1
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAADKgAAAeiAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1-1 DP-1-2 Height 3240x2160=2121
+eDP-1-1 DP-1-2 Width 3240x2160=3240
+eDP-1-1 DP-1-2 XPosition 3240x2160=0
+eDP-1-1 DP-1-2 YPosition 3240x2160=39
