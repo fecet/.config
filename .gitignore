@@ -158,3 +158,6 @@ kconf_updaterc
 kdeglobals
 kolourpaintrc
 fontforge
+gpick
+
+ranger/plugins/__pycache__
