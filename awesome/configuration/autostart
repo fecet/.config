@@ -7,13 +7,20 @@ start() {
   fi 
 }
 
+/bin/bash ~/scripts/tap-to-click.sh &
+/bin/bash ~/scripts/inverse-scroll.sh &
+
+/bin/bash ~/scripts/wp-autochange.sh &
+# compositor
+start picom --experimental-backends --config $HOME/.config/awesome/theme/picom.conf
+# start picom --experimental-backends
+
+
 # music
 start mpd
 start mpDris2 # add playerctl support to mpd
 
-# compositor
-# start picom --experimental-backends --config $HOME/.config/awesome/theme/picom.conf
-start picom --experimental-backends
+
 
 # auth
 start /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -21,5 +28,14 @@ start /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # load X colors
 start xrdb $HOME/.Xresources
 
+
+
 # network manager
 start nm-applet
+
+
+sleep 5
+start fcitx5
+start nutstore
+start utools
+# start screenkey

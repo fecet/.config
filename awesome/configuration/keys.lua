@@ -23,6 +23,7 @@ alt = "Mod1"
 ctrl = "Control"
 shift = "Shift"
 
+
 -- Launcher
 awful.keyboard.append_global_keybindings({
 	awful.key({ modkey }, "Return", function()
@@ -31,7 +32,10 @@ awful.keyboard.append_global_keybindings({
 	awful.key({ modkey, shift }, "f", function()
 		awful.spawn(file_manager)
 	end, { description = "open file manager", group = "launcher" }),
-	awful.key({ modkey, shift }, "w", function()
+	-- awful.key({ modkey, shift }, "w", function()
+	-- 	awful.spawn.with_shell(browser)
+	-- end, { description = "open web browser", group = "launcher" }),
+	awful.key({ modkey }, "c", function()
 		awful.spawn.with_shell(browser)
 	end, { description = "open web browser", group = "launcher" }),
 	awful.key({ modkey, shift }, "x", function()
@@ -225,11 +229,11 @@ client.connect_signal("request::default_keybindings", function()
 			c.fullscreen = not c.fullscreen
 			c:raise()
 		end, { description = "toggle fullscreen", group = "client" }),
-		awful.key({ modkey }, "q", function(c)
+		awful.key({ modkey,shift }, "q", function(c)
 			c:kill()
 		end, { description = "close", group = "client" }),
 		-- Kill all visible clients for the current tag
-		awful.key({ modkey, shift }, "q", function()
+		awful.key({ modkey, shift, ctrl }, "q", function()
 			local clients = awful.screen.focused().clients
 			for _, c in pairs(clients) do
 				c:kill()
