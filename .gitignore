@@ -21,19 +21,6 @@ dconf/user
 /qqmusic
 *.hash
 
-onedrive/items.sqlite3-shm
-onedrive/items.sqlite3-wal
-onedrive/items.sqlite3
-onedrive/items.sqlite3-shm
-
-ibus/bus/94df7510f00f4b3bb8a2e52f225f47fd-unix-0
-ibus/bus/94df7510f00f4b3bb8a2e52f225f47fd-unix-0
-ibus/bus/94df7510f00f4b3bb8a2e52f225f47fd-unix-0
-ibus/bus/94df7510f00f4b3bb8a2e52f225f47fd-unix-wayland-0
-
-onedrive/.sync_list.hash
-onedrive/.config.backup
-onedrive/.config.hash
 
 /discord
 /microsoft-edge-beta
@@ -79,7 +66,6 @@ onedrive/.config.hash
 /mpv
 /rstudio
 /rtv
-/systemd
 /visum
 /yay
 /transmission-remote-gtk
@@ -112,8 +98,6 @@ lutris/lutris.conf
 microsoft-edge/NativeMessagingHosts/firenvim.json
 ungoogled-chromium/NativeMessagingHosts/firenvim.json
 BraveSoftware/Brave-Browser/NativeMessagingHosts/firenvim.json
-onedrive/resume_upload
-mimeapps.list
 vimgolf/api_key
 calibre
 netease-cloud-music
@@ -132,15 +116,6 @@ arkrc
 screenkey.json
 ranger/plugins/ranger-zjumper
 
-tinymediamanager/cache
-tinymediamanager/backup
-tinymediamanager/data
-tinymediamanager/lib
-tinymediamanager/log/nginx
-tinymediamanager/logs
-tinymediamanager/native
-tinymediamanager/templates
-tinymediamanager/xdg/cache/openbox
 tinymediamanager
 clouddrive
 MyCardLibrary
@@ -161,3 +136,7 @@ fontforge
 gpick
 
 ranger/plugins/__pycache__
+
+onedrive/items.sqlite3
+onedrive/items.sqlite3-shm
+onedrive/items.sqlite3-wal
