@@ -1,19 +1,11 @@
+
 [Default Applications]
+application/x-directory=ranger.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/octet-stream=nvim.desktop
+inode/x-empty=nvim.desktop
 text/html=google-chrome.desktop
 x-scheme-handler/http=google-chrome.desktop
 x-scheme-handler/https=google-chrome.desktop
 x-scheme-handler/about=google-chrome.desktop
 x-scheme-handler/unknown=google-chrome.desktop
-application/pdf=org.pwmt.zathura.desktop
-application/octet-stream=nvim.desktop
-inode/x-empty=nvim.desktop
-application/x-directory=ranger.desktop
-inode/directory=xfce4-file-manager.desktop
-x-scheme-handler/trash=xfce4-file-manager.desktop
-
-[Added Associations]
-x-scheme-handler/http=xfce4-web-browser.desktop;
-x-scheme-handler/https=xfce4-web-browser.desktop;
-inode/directory=xfce4-file-manager.desktop;
-x-scheme-handler/trash=xfce4-file-manager.desktop;
-
