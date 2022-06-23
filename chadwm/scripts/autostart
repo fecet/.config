@@ -1,0 +1,20 @@
+!/bin/sh
+
+# this is just an example!
+# my autostart stuffs here
+
+/* xbacklight -set 20 & */
+xrdb merge ~/.Xresources &
+xset r rate 200 50 &
+
+
+# run bar script and dwm ( never remove this )
+bash ~/.config/chadwm/scripts/./bar.sh &
+
+sh  ~/scripts/autostart.sh &
+/* sh  ~/scripts/autostart_wait.sh & */
+
+dwm
+
+
+# you can paste the whole thing in .xinitrc to but at the end it should be ```exec dwm```
