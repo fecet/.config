@@ -1,5 +1,5 @@
 #---------------------------------------------------#
-## 上次更新于：2022-06-09 04:47:40
+## 上次更新于：2022-06-10 02:04:20
 #---------------------------------------------------#
 
 port: 7890
@@ -12,1863 +12,738 @@ external-controller: '127.0.0.1:9090'
 secret: ''
 proxies:
   -
-    name: v2|香港01|MPTCP|★★★
+    name: v1|香港01|MPTCP|★★★
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyzamm7gg4q.sina.cn
+      host: uhauscit5cq6wsyjpmmvdoma.sina.cn
   -
-    name: v2|香港02|MPTCP|★★★
+    name: v1|香港02|MPTCP|★★★
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsy3wmm7gg4q.sina.cn
+      host: uhauscit5cq6wsytummvdoma.sina.cn
   -
-    name: v2|香港03|MPTCP|★★★
+    name: v1|香港03|MPTCP|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyrqmm7gg4q.sina.cn
+      host: uhauscit5cq6wsyzxmmvdoma.sina.cn
   -
-    name: v2|香港04|MPTCP|★★★
+    name: v1|香港04|MPTCP|★★★
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gszremm7gg4q.sina.cn
+      host: uhauscit5cq6wszrfmmvdoma.sina.cn
   -
-    name: v2|香港05|MPTCP|★★★
+    name: v1|香港05|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsz3xmm7gg4q.sina.cn
+      host: uhauscit5cq6wszrtmmvdoma.sina.cn
   -
-    name: v2|香港06|MPTCP|★★★
+    name: v1|香港06|MPTCP|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyjqmm7gg4q.sina.cn
+      host: uhauscit5cq6wsyjrmmvdoma.sina.cn
   -
-    name: v2|香港07|MPTCP|★★☆
+    name: v1|香港07|MPTCP|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsy3xmm7gg4q.sina.cn
+      host: uhauscit5cq6wsyj3mmvdoma.sina.cn
   -
-    name: v2|香港08|MPTCP|★★☆
+    name: v1|香港08|MPTCP|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyzdmm7gg4q.sina.cn
+      host: uhauscit5cq6wsyrlmmvdoma.sina.cn
   -
-    name: v2|香港09|MPTCP|★★★
+    name: v1|香港09|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gszrjmm7gg4q.sina.cn
+      host: uhauscit5cq6wszrgmmvdoma.sina.cn
   -
-    name: v2|香港10|MPTCP|★★★
+    name: v1|香港10|MPTCP|★★★
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsz3wmm7gg4q.sina.cn
+      host: uhauscit5cq6wszrsmmvdoma.sina.cn
   -
-    name: v2|香港11|MPTCP|★★☆
+    name: v1|新加坡01|MPTCP|★★☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsytrmm7gg4q.sina.cn
+      host: uhauscit5cq6wsyrymmvdoma.sina.cn
   -
-    name: v2|香港12|MPTCP|★★★
+    name: v1|新加坡02|MPTCP|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsytwmm7gg4q.sina.cn
+      host: uhauscit5cq6wsy3smmvdoma.sina.cn
   -
-    name: v2|香港13|MPTCP|★★☆
+    name: v1|新加坡03|MPTCP|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyrkmm7gg4q.sina.cn
+      host: uhauscit5cq6wsy3zmmvdoma.sina.cn
   -
-    name: v2|新加坡01|MPTCP|★★★
+    name: v1|新加坡04|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyjvmm7gg4q.sina.cn
+      host: uhauscit5cq6wszjymmvdoma.sina.cn
   -
-    name: v2|新加坡02|MPTCP|★★★
+    name: v1|新加坡05|MPTCP|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsytsmm7gg4q.sina.cn
+      host: uhauscit5cq6wszrqmmvdoma.sina.cn
   -
-    name: v2|新加坡03|MPTCP|★★★
+    name: v1|新加坡06|MPTCP|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyrrmm7gg4q.sina.cn
+      host: uhauscit5cq6wsyrommvdoma.sina.cn
   -
-    name: v2|新加坡04|MPTCP|★★★
+    name: v1|日本01|MPTCP|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsztrmm7gg4q.sina.cn
+      host: uhauscit5cq6wsyjtmmvdoma.sina.cn
   -
-    name: v2|新加坡05|MPTCP|★★★
+    name: v1|日本02|MPTCP|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsz3umm7gg4q.sina.cn
+      host: uhauscit5cq6wsy3vmmvdoma.sina.cn
   -
-    name: v2|新加坡06|MPTCP|★★★
+    name: v1|日本03|MPTCP|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyrpmm7gg4q.sina.cn
+      host: uhauscit5cq6wsyrnmmvdoma.sina.cn
   -
-    name: v2|新加坡07|MPTCP|★★★
+    name: v1|日本04|MPTCP|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gs2jomm7gg4q.sina.cn
+      host: uhauscit5cq6wszrdmmvdoma.sina.cn
   -
-    name: v2|日本01|MPTCP|★★☆
+    name: v1|日本05|MPTCP|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyjsmm7gg4q.sina.cn
+      host: uhauscit5cq6wszrrmmvdoma.sina.cn
   -
-    name: v2|日本02|MPTCP|★★☆
+    name: v1|日本06|MPTCP|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyttmm7gg4q.sina.cn
+      host: uhauscit5cq6wsytqmmvdoma.sina.cn
   -
-    name: v2|日本03|MPTCP|★★☆
+    name: v1|美国01|MPTCP|★★★
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyrmmm7gg4q.sina.cn
+      host: uhauscit5cq6wszjfmmvdoma.sina.cn
   -
-    name: v2|日本04|MPTCP|★★☆
+    name: v1|美国02|MPTCP|★★★
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gszrcmm7gg4q.sina.cn
+      host: uhauscit5cq6wsyjummvdoma.sina.cn
   -
-    name: v2|日本05|MPTCP|★★☆
+    name: v1|美国03|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsz3vmm7gg4q.sina.cn
+      host: uhauscit5cq6wszjemmvdoma.sina.cn
   -
-    name: v2|日本06|MPTCP|★★☆
+    name: v1|美国04|MPTCP|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsy3umm7gg4q.sina.cn
+      host: uhauscit5cq6wsztsmmvdoma.sina.cn
   -
-    name: v2|美国01|MPTCP|★★★
+    name: v1|美国05|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gszjhmm7gg4q.sina.cn
+      host: uhauscit5cq6wszrommvdoma.sina.cn
   -
-    name: v2|美国02|MPTCP|★★★
+    name: v1|香港01|原生|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyjxmm7gg4q.sina.cn
+      host: uhauscit5cq6wsyjzmmvdoma.sina.cn
   -
-    name: v2|美国03|MPTCP|★★★
+    name: v1|香港02|原生|★★★
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gszjgmm7gg4q.sina.cn
+      host: uhauscit5cq6wsyzwmmvdoma.sina.cn
   -
-    name: v2|美国04|MPTCP|★★★
+    name: v1|香港03|原生|★★★
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsztumm7gg4q.sina.cn
+      host: uhauscit5cq6wsy3ymmvdoma.sina.cn
   -
-    name: v2|美国05|MPTCP|★★★
+    name: v1|香港04|原生|★★★
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsz3smm7gg4q.sina.cn
+      host: uhauscit5cq6wszjxmmvdoma.sina.cn
   -
-    name: v2|美国06|MPTCP|★★★
+    name: v1|香港05|原生|★★★
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gs2jqmm7gg4q.sina.cn
+      host: uhauscit5cq6wszrpmmvdoma.sina.cn
   -
-    name: v2|香港01|原生|★★★
+    name: v1|台湾01|原生|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyjomm7gg4q.sina.cn
+      host: uhauscit5cq6wsyrjmmvdoma.sina.cn
   -
-    name: v2|香港02|原生|★★★
+    name: v1|台湾02|原生|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyjymm7gg4q.sina.cn
+      host: uhauscit5cq6wsyzvmmvdoma.sina.cn
   -
-    name: v2|香港03|原生|★★★
+    name: v1|台湾03|原生|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyrimm7gg4q.sina.cn
+      host: uhauscit5cq6wsztqmmvdoma.sina.cn
   -
-    name: v2|香港04|原生|★★★
+    name: v1|台湾04|原生|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gszjwmm7gg4q.sina.cn
+      host: uhauscit5cq6wszrmmmvdoma.sina.cn
   -
-    name: v2|香港05|原生|★★★
+    name: v1|新加坡01|原生|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsz3tmm7gg4q.sina.cn
+      host: uhauscit5cq6wszlzmmvdoma.sina.cn
   -
-    name: v2|香港06|原生|★★★
+    name: v1|新加坡02|原生|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsytxmm7gg4q.sina.cn
+      host: uhauscit5cq6wszlymmvdoma.sina.cn
   -
-    name: v2|香港01|myTVSUPER|限速
+    name: v1|新加坡03|原生|★★☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gszz3mm7gg4q.sina.cn
+      host: uhauscit5cq6wszjzmmvdoma.sina.cn
   -
-    name: v2|香港01|YouTubePre|限速
+    name: v1|新加坡04|原生|★★☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gs2drmm7gg4q.sina.cn
+      host: uhauscit5cq6wszrnmmvdoma.sina.cn
   -
-    name: v2|香港02|防送中|限速
+    name: v1|美国01|原生|★★★
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gs2jpmm7gg4q.sina.cn
+      host: uhauscit5cq6wszjnmmvdoma.sina.cn
   -
-    name: v2|台湾01|YouTubePre|限速
+    name: v1|澳洲01|MPTCP|★☆☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gs2b3mm7gg4q.sina.cn
+      host: uhauscit5cq6wsyr3mmvdoma.sina.cn
   -
-    name: v2|美国01|YouTubePre|限速
+    name: v1|澳洲02|MPTCP|★☆☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gs2lumm7gg4q.sina.cn
+      host: uhauscit5cq6wsztwmmvdoma.sina.cn
   -
-    name: v2|美国02|谷歌商店|限速
+    name: v1|澳洲03|MPTCP|★☆☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gs2jmmm7gg4q.sina.cn
+      host: uhauscit5cq6wszrkmmvdoma.sina.cn
   -
-    name: v2|台湾01|原生|★★☆
+    name: v1|澳洲04|MPTCP|★☆☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyzcmm7gg4q.sina.cn
+      host: uhauscit5cq6wszzvmmvdoma.sina.cn
   -
-    name: v2|台湾02|原生|★★☆
+    name: v1|澳洲05|MPTCP|★☆☆
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gsyzumm7gg4q.sina.cn
+      host: uhauscit5cq6wszzummvdoma.sina.cn
   -
-    name: v2|台湾03|原生|★★☆
+    name: v1|印度01|MPTCP|★☆☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gszttmm7gg4q.sina.cn
+      host: uhauscit5cq6wszjjmmvdoma.sina.cn
   -
-    name: v2|台湾04|原生|★★☆
+    name: v1|俄罗斯01|MPTCP|★☆☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p3665.top
+    port: 30410
     cipher: aes-128-gcm
-    password: 6125fad9eb0a
+    password: e15ed89153d8
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: umrycult5ei2gszzgmm7gg4q.sina.cn
-  -
-    name: v2|台湾05|原生|★★☆
-    type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsz3qmm7gg4q.sina.cn
-  -
-    name: v2|台湾06|原生|★★☆
-    type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jvmm7gg4q.sina.cn
-  -
-    name: v2|新加坡01|原生|★★☆
-    type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszlxmm7gg4q.sina.cn
-  -
-    name: v2|新加坡02|原生|★★☆
-    type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszlwmm7gg4q.sina.cn
-  -
-    name: v2|新加坡03|原生|★★☆
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszj3mm7gg4q.sina.cn
-  -
-    name: v2|新加坡04|原生|★★☆
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszzxmm7gg4q.sina.cn
-  -
-    name: v2|新加坡05|原生|★★☆
-    type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsz3rmm7gg4q.sina.cn
-  -
-    name: v2|新加坡06|原生|★★☆
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jrmm7gg4q.sina.cn
-  -
-    name: v2|日本01|原生|★★☆
-    type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszzzmm7gg4q.sina.cn
-  -
-    name: v2|日本02|原生|★★☆
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszzfmm7gg4q.sina.cn
-  -
-    name: v2|日本03|原生|★★☆
-    type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszzcmm7gg4q.sina.cn
-  -
-    name: v2|日本04|原生|★★☆
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszzemm7gg4q.sina.cn
-  -
-    name: v2|日本05|原生|★★☆
-    type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszzhmm7gg4q.sina.cn
-  -
-    name: v2|日本01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszzymm7gg4q.sina.cn
-  -
-    name: v2|美国01|原生|★★☆
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszjmmm7gg4q.sina.cn
-  -
-    name: v2|美国02|原生|★★☆
-    type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszjpmm7gg4q.sina.cn
-  -
-    name: v2|美国03|原生|★★☆
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsztvmm7gg4q.sina.cn
-  -
-    name: v2|美国04|原生|★★☆
-    type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszzwmm7gg4q.sina.cn
-  -
-    name: v2|美国05|原生|★★☆
-    type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszr3mm7gg4q.sina.cn
-  -
-    name: v2|美国06|原生|★★☆
-    type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jtmm7gg4q.sina.cn
-  -
-    name: v2|美国01|hulu|限速
-    type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2btmm7gg4q.sina.cn
-  -
-    name: v2|英国01|原生|★★☆
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2bsmm7gg4q.sina.cn
-  -
-    name: v2|英国02|原生|★★☆
-    type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2bvmm7gg4q.sina.cn
-  -
-    name: v2|英国03|原生|★★☆
-    type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2bumm7gg4q.sina.cn
-  -
-    name: v2|英国04|原生|★★☆
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2bxmm7gg4q.sina.cn
-  -
-    name: v2|英国05|原生|★★☆
-    type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2bwmm7gg4q.sina.cn
-  -
-    name: v2|英国06|原生|★★☆
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jsmm7gg4q.sina.cn
-  -
-    name: v2|澳洲01|MPTCP|★☆☆
-    type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsy3rmm7gg4q.sina.cn
-  -
-    name: v2|澳洲02|MPTCP|★☆☆
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsztzmm7gg4q.sina.cn
-  -
-    name: v2|澳洲03|MPTCP|★☆☆
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszrzmm7gg4q.sina.cn
-  -
-    name: v2|澳洲04|MPTCP|★☆☆
-    type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszztmm7gg4q.sina.cn
-  -
-    name: v2|澳洲05|MPTCP|★☆☆
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszzsmm7gg4q.sina.cn
-  -
-    name: v2|韩国01|MPTCP|★☆☆
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsy3qmm7gg4q.sina.cn
-  -
-    name: v2|韩国02|MPTCP|★☆☆
-    type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszrhmm7gg4q.sina.cn
-  -
-    name: v2|韩国03|MPTCP|★☆☆
-    type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszrwmm7gg4q.sina.cn
-  -
-    name: v2|韩国04|MPTCP|★☆☆
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszzjmm7gg4q.sina.cn
-  -
-    name: v2|韩国05|MPTCP|★☆☆
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszzimm7gg4q.sina.cn
-  -
-    name: v2|阿根廷01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2bymm7gg4q.sina.cn
-  -
-    name: v2|巴西01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2lvmm7gg4q.sina.cn
-  -
-    name: v2|智利01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsmlsmm7gg4q.sina.cn
-  -
-    name: v2|阿联酋01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsmlqmm7gg4q.sina.cn
-  -
-    name: v2|马来西亚01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2lqmm7gg4q.sina.cn
-  -
-    name: v2|泰国01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2ltmm7gg4q.sina.cn
-  -
-    name: v2|菲律宾01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2lsmm7gg4q.sina.cn
-  -
-    name: v2|越南01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2lwmm7gg4q.sina.cn
-  -
-    name: v2|印尼01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jzmm7gg4q.sina.cn
-  -
-    name: v2|以色列01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsmlwmm7gg4q.sina.cn
-  -
-    name: v2|南非01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jamm7gg4q.sina.cn
-  -
-    name: v2|尼日利亚01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jimm7gg4q.sina.cn
-  -
-    name: v2|加拿大01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jdmm7gg4q.sina.cn
-  -
-    name: v2|墨西哥01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jfmm7gg4q.sina.cn
-  -
-    name: v2|巴基斯坦01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jjmm7gg4q.sina.cn
-  -
-    name: v2|法国01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2lzmm7gg4q.sina.cn
-  -
-    name: v2|意大利01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2lymm7gg4q.sina.cn
-  -
-    name: v2|冰岛01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2lxmm7gg4q.sina.cn
-  -
-    name: v2|荷兰01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jcmm7gg4q.sina.cn
-  -
-    name: v2|西班牙01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jlmm7gg4q.sina.cn
-  -
-    name: v2|葡萄牙01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsmlumm7gg4q.sina.cn
-  -
-    name: v2|瑞典01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jnmm7gg4q.sina.cn
-  -
-    name: v2|德国01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jxmm7gg4q.sina.cn
-  -
-    name: v2|爱尔兰01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jwmm7gg4q.sina.cn
-  -
-    name: v2|俄罗斯01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszjkmm7gg4q.sina.cn
-  -
-    name: v2|俄罗斯02|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszrlmm7gg4q.sina.cn
-  -
-    name: v2|俄罗斯03|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszrvmm7gg4q.sina.cn
-  -
-    name: v2|立陶宛01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jymm7gg4q.sina.cn
-  -
-    name: v2|匈牙利01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2j3mm7gg4q.sina.cn
-  -
-    name: v2|比利时01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsmlrmm7gg4q.sina.cn
-  -
-    name: v2|乌克兰01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsmltmm7gg4q.sina.cn
-  -
-    name: v2|罗马尼亚01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsmlvmm7gg4q.sina.cn
-  -
-    name: v2|瑞士01|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jkmm7gg4q.sina.cn
-  -
-    name: v2|奥地利01|特供原生|限速
-    type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gsmlxmm7gg4q.sina.cn
-  -
-    name: v2|土耳其01|特供原生|限速
-    type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2lrmm7gg4q.sina.cn
-  -
-    name: v2|土耳其02|特供原生|限速
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gs2jumm7gg4q.sina.cn
-  -
-    name: v2|印度01|MPTCP|★☆☆
-    type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszjimm7gg4q.sina.cn
-  -
-    name: v2|印度02|MPTCP|★☆☆
-    type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.k2h5.com
-    port: 45471
-    cipher: aes-128-gcm
-    password: 6125fad9eb0a
-    udp: false
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: umrycult5ei2gszramm7gg4q.sina.cn
+      host: uhauscit5cq6wszjlmmvdoma.sina.cn
 proxy-groups:
   -
     name: 🐸速蛙云
     type: select
     proxies:
-      - v2|香港01|MPTCP|★★★
-      - v2|香港02|MPTCP|★★★
-      - v2|香港03|MPTCP|★★★
-      - v2|香港04|MPTCP|★★★
-      - v2|香港05|MPTCP|★★★
-      - v2|香港06|MPTCP|★★★
-      - v2|香港07|MPTCP|★★☆
-      - v2|香港08|MPTCP|★★☆
-      - v2|香港09|MPTCP|★★★
-      - v2|香港10|MPTCP|★★★
-      - v2|香港11|MPTCP|★★☆
-      - v2|香港12|MPTCP|★★★
-      - v2|香港13|MPTCP|★★☆
-      - v2|新加坡01|MPTCP|★★★
-      - v2|新加坡02|MPTCP|★★★
-      - v2|新加坡03|MPTCP|★★★
-      - v2|新加坡04|MPTCP|★★★
-      - v2|新加坡05|MPTCP|★★★
-      - v2|新加坡06|MPTCP|★★★
-      - v2|新加坡07|MPTCP|★★★
-      - v2|日本01|MPTCP|★★☆
-      - v2|日本02|MPTCP|★★☆
-      - v2|日本03|MPTCP|★★☆
-      - v2|日本04|MPTCP|★★☆
-      - v2|日本05|MPTCP|★★☆
-      - v2|日本06|MPTCP|★★☆
-      - v2|美国01|MPTCP|★★★
-      - v2|美国02|MPTCP|★★★
-      - v2|美国03|MPTCP|★★★
-      - v2|美国04|MPTCP|★★★
-      - v2|美国05|MPTCP|★★★
-      - v2|美国06|MPTCP|★★★
-      - v2|香港01|原生|★★★
-      - v2|香港02|原生|★★★
-      - v2|香港03|原生|★★★
-      - v2|香港04|原生|★★★
-      - v2|香港05|原生|★★★
-      - v2|香港06|原生|★★★
-      - v2|香港01|myTVSUPER|限速
-      - v2|香港01|YouTubePre|限速
-      - v2|香港02|防送中|限速
-      - v2|台湾01|YouTubePre|限速
-      - v2|美国01|YouTubePre|限速
-      - v2|美国02|谷歌商店|限速
-      - v2|台湾01|原生|★★☆
-      - v2|台湾02|原生|★★☆
-      - v2|台湾03|原生|★★☆
-      - v2|台湾04|原生|★★☆
-      - v2|台湾05|原生|★★☆
-      - v2|台湾06|原生|★★☆
-      - v2|新加坡01|原生|★★☆
-      - v2|新加坡02|原生|★★☆
-      - v2|新加坡03|原生|★★☆
-      - v2|新加坡04|原生|★★☆
-      - v2|新加坡05|原生|★★☆
-      - v2|新加坡06|原生|★★☆
-      - v2|日本01|原生|★★☆
-      - v2|日本02|原生|★★☆
-      - v2|日本03|原生|★★☆
-      - v2|日本04|原生|★★☆
-      - v2|日本05|原生|★★☆
-      - v2|日本01|特供原生|限速
-      - v2|美国01|原生|★★☆
-      - v2|美国02|原生|★★☆
-      - v2|美国03|原生|★★☆
-      - v2|美国04|原生|★★☆
-      - v2|美国05|原生|★★☆
-      - v2|美国06|原生|★★☆
-      - v2|美国01|hulu|限速
-      - v2|英国01|原生|★★☆
-      - v2|英国02|原生|★★☆
-      - v2|英国03|原生|★★☆
-      - v2|英国04|原生|★★☆
-      - v2|英国05|原生|★★☆
-      - v2|英国06|原生|★★☆
-      - v2|澳洲01|MPTCP|★☆☆
-      - v2|澳洲02|MPTCP|★☆☆
-      - v2|澳洲03|MPTCP|★☆☆
-      - v2|澳洲04|MPTCP|★☆☆
-      - v2|澳洲05|MPTCP|★☆☆
-      - v2|韩国01|MPTCP|★☆☆
-      - v2|韩国02|MPTCP|★☆☆
-      - v2|韩国03|MPTCP|★☆☆
-      - v2|韩国04|MPTCP|★☆☆
-      - v2|韩国05|MPTCP|★☆☆
-      - v2|阿根廷01|特供原生|限速
-      - v2|巴西01|特供原生|限速
-      - v2|智利01|特供原生|限速
-      - v2|阿联酋01|特供原生|限速
-      - v2|马来西亚01|特供原生|限速
-      - v2|泰国01|特供原生|限速
-      - v2|菲律宾01|特供原生|限速
-      - v2|越南01|特供原生|限速
-      - v2|印尼01|特供原生|限速
-      - v2|以色列01|特供原生|限速
-      - v2|南非01|特供原生|限速
-      - v2|尼日利亚01|特供原生|限速
-      - v2|加拿大01|特供原生|限速
-      - v2|墨西哥01|特供原生|限速
-      - v2|巴基斯坦01|特供原生|限速
-      - v2|法国01|特供原生|限速
-      - v2|意大利01|特供原生|限速
-      - v2|冰岛01|特供原生|限速
-      - v2|荷兰01|特供原生|限速
-      - v2|西班牙01|特供原生|限速
-      - v2|葡萄牙01|特供原生|限速
-      - v2|瑞典01|特供原生|限速
-      - v2|德国01|特供原生|限速
-      - v2|爱尔兰01|特供原生|限速
-      - v2|俄罗斯01|特供原生|限速
-      - v2|俄罗斯02|特供原生|限速
-      - v2|俄罗斯03|特供原生|限速
-      - v2|立陶宛01|特供原生|限速
-      - v2|匈牙利01|特供原生|限速
-      - v2|比利时01|特供原生|限速
-      - v2|乌克兰01|特供原生|限速
-      - v2|罗马尼亚01|特供原生|限速
-      - v2|瑞士01|特供原生|限速
-      - v2|奥地利01|特供原生|限速
-      - v2|土耳其01|特供原生|限速
-      - v2|土耳其02|特供原生|限速
-      - v2|印度01|MPTCP|★☆☆
-      - v2|印度02|MPTCP|★☆☆
+      - v1|香港01|MPTCP|★★★
+      - v1|香港02|MPTCP|★★★
+      - v1|香港03|MPTCP|★★★
+      - v1|香港04|MPTCP|★★★
+      - v1|香港05|MPTCP|★★★
+      - v1|香港06|MPTCP|★★★
+      - v1|香港07|MPTCP|★★☆
+      - v1|香港08|MPTCP|★★☆
+      - v1|香港09|MPTCP|★★★
+      - v1|香港10|MPTCP|★★★
+      - v1|新加坡01|MPTCP|★★☆
+      - v1|新加坡02|MPTCP|★★☆
+      - v1|新加坡03|MPTCP|★★☆
+      - v1|新加坡04|MPTCP|★★★
+      - v1|新加坡05|MPTCP|★★★
+      - v1|新加坡06|MPTCP|★★☆
+      - v1|日本01|MPTCP|★★☆
+      - v1|日本02|MPTCP|★★☆
+      - v1|日本03|MPTCP|★★☆
+      - v1|日本04|MPTCP|★★☆
+      - v1|日本05|MPTCP|★★☆
+      - v1|日本06|MPTCP|★★☆
+      - v1|美国01|MPTCP|★★★
+      - v1|美国02|MPTCP|★★★
+      - v1|美国03|MPTCP|★★★
+      - v1|美国04|MPTCP|★★★
+      - v1|美国05|MPTCP|★★★
+      - v1|香港01|原生|★★★
+      - v1|香港02|原生|★★★
+      - v1|香港03|原生|★★★
+      - v1|香港04|原生|★★★
+      - v1|香港05|原生|★★★
+      - v1|台湾01|原生|★★☆
+      - v1|台湾02|原生|★★☆
+      - v1|台湾03|原生|★★☆
+      - v1|台湾04|原生|★★☆
+      - v1|新加坡01|原生|★★☆
+      - v1|新加坡02|原生|★★☆
+      - v1|新加坡03|原生|★★☆
+      - v1|新加坡04|原生|★★☆
+      - v1|美国01|原生|★★★
+      - v1|澳洲01|MPTCP|★☆☆
+      - v1|澳洲02|MPTCP|★☆☆
+      - v1|澳洲03|MPTCP|★☆☆
+      - v1|澳洲04|MPTCP|★☆☆
+      - v1|澳洲05|MPTCP|★☆☆
+      - v1|印度01|MPTCP|★☆☆
+      - v1|俄罗斯01|MPTCP|★☆☆
   -
     name: 🎬Netflix
     type: select
     proxies:
-      - v2|香港01|MPTCP|★★★
-      - v2|香港02|MPTCP|★★★
-      - v2|香港03|MPTCP|★★★
-      - v2|香港04|MPTCP|★★★
-      - v2|香港05|MPTCP|★★★
-      - v2|香港06|MPTCP|★★★
-      - v2|香港07|MPTCP|★★☆
-      - v2|香港08|MPTCP|★★☆
-      - v2|香港09|MPTCP|★★★
-      - v2|香港10|MPTCP|★★★
-      - v2|香港11|MPTCP|★★☆
-      - v2|香港12|MPTCP|★★★
-      - v2|香港13|MPTCP|★★☆
-      - v2|新加坡01|MPTCP|★★★
-      - v2|新加坡02|MPTCP|★★★
-      - v2|新加坡03|MPTCP|★★★
-      - v2|新加坡04|MPTCP|★★★
-      - v2|新加坡05|MPTCP|★★★
-      - v2|新加坡06|MPTCP|★★★
-      - v2|新加坡07|MPTCP|★★★
-      - v2|日本01|MPTCP|★★☆
-      - v2|日本02|MPTCP|★★☆
-      - v2|日本03|MPTCP|★★☆
-      - v2|日本04|MPTCP|★★☆
-      - v2|日本05|MPTCP|★★☆
-      - v2|日本06|MPTCP|★★☆
-      - v2|美国01|MPTCP|★★★
-      - v2|美国02|MPTCP|★★★
-      - v2|美国03|MPTCP|★★★
-      - v2|美国04|MPTCP|★★★
-      - v2|美国05|MPTCP|★★★
-      - v2|美国06|MPTCP|★★★
-      - v2|香港01|原生|★★★
-      - v2|香港02|原生|★★★
-      - v2|香港03|原生|★★★
-      - v2|香港04|原生|★★★
-      - v2|香港05|原生|★★★
-      - v2|香港06|原生|★★★
-      - v2|香港01|myTVSUPER|限速
-      - v2|香港01|YouTubePre|限速
-      - v2|香港02|防送中|限速
-      - v2|台湾01|YouTubePre|限速
-      - v2|美国01|YouTubePre|限速
-      - v2|美国02|谷歌商店|限速
-      - v2|台湾01|原生|★★☆
-      - v2|台湾02|原生|★★☆
-      - v2|台湾03|原生|★★☆
-      - v2|台湾04|原生|★★☆
-      - v2|台湾05|原生|★★☆
-      - v2|台湾06|原生|★★☆
-      - v2|新加坡01|原生|★★☆
-      - v2|新加坡02|原生|★★☆
-      - v2|新加坡03|原生|★★☆
-      - v2|新加坡04|原生|★★☆
-      - v2|新加坡05|原生|★★☆
-      - v2|新加坡06|原生|★★☆
-      - v2|日本01|原生|★★☆
-      - v2|日本02|原生|★★☆
-      - v2|日本03|原生|★★☆
-      - v2|日本04|原生|★★☆
-      - v2|日本05|原生|★★☆
-      - v2|日本01|特供原生|限速
-      - v2|美国01|原生|★★☆
-      - v2|美国02|原生|★★☆
-      - v2|美国03|原生|★★☆
-      - v2|美国04|原生|★★☆
-      - v2|美国05|原生|★★☆
-      - v2|美国06|原生|★★☆
-      - v2|美国01|hulu|限速
-      - v2|英国01|原生|★★☆
-      - v2|英国02|原生|★★☆
-      - v2|英国03|原生|★★☆
-      - v2|英国04|原生|★★☆
-      - v2|英国05|原生|★★☆
-      - v2|英国06|原生|★★☆
-      - v2|澳洲01|MPTCP|★☆☆
-      - v2|澳洲02|MPTCP|★☆☆
-      - v2|澳洲03|MPTCP|★☆☆
-      - v2|澳洲04|MPTCP|★☆☆
-      - v2|澳洲05|MPTCP|★☆☆
-      - v2|韩国01|MPTCP|★☆☆
-      - v2|韩国02|MPTCP|★☆☆
-      - v2|韩国03|MPTCP|★☆☆
-      - v2|韩国04|MPTCP|★☆☆
-      - v2|韩国05|MPTCP|★☆☆
-      - v2|阿根廷01|特供原生|限速
-      - v2|巴西01|特供原生|限速
-      - v2|智利01|特供原生|限速
-      - v2|阿联酋01|特供原生|限速
-      - v2|马来西亚01|特供原生|限速
-      - v2|泰国01|特供原生|限速
-      - v2|菲律宾01|特供原生|限速
-      - v2|越南01|特供原生|限速
-      - v2|印尼01|特供原生|限速
-      - v2|以色列01|特供原生|限速
-      - v2|南非01|特供原生|限速
-      - v2|尼日利亚01|特供原生|限速
-      - v2|加拿大01|特供原生|限速
-      - v2|墨西哥01|特供原生|限速
-      - v2|巴基斯坦01|特供原生|限速
-      - v2|法国01|特供原生|限速
-      - v2|意大利01|特供原生|限速
-      - v2|冰岛01|特供原生|限速
-      - v2|荷兰01|特供原生|限速
-      - v2|西班牙01|特供原生|限速
-      - v2|葡萄牙01|特供原生|限速
-      - v2|瑞典01|特供原生|限速
-      - v2|德国01|特供原生|限速
-      - v2|爱尔兰01|特供原生|限速
-      - v2|俄罗斯01|特供原生|限速
-      - v2|俄罗斯02|特供原生|限速
-      - v2|俄罗斯03|特供原生|限速
-      - v2|立陶宛01|特供原生|限速
-      - v2|匈牙利01|特供原生|限速
-      - v2|比利时01|特供原生|限速
-      - v2|乌克兰01|特供原生|限速
-      - v2|罗马尼亚01|特供原生|限速
-      - v2|瑞士01|特供原生|限速
-      - v2|奥地利01|特供原生|限速
-      - v2|土耳其01|特供原生|限速
-      - v2|土耳其02|特供原生|限速
-      - v2|印度01|MPTCP|★☆☆
-      - v2|印度02|MPTCP|★☆☆
+      - v1|香港01|MPTCP|★★★
+      - v1|香港02|MPTCP|★★★
+      - v1|香港03|MPTCP|★★★
+      - v1|香港04|MPTCP|★★★
+      - v1|香港05|MPTCP|★★★
+      - v1|香港06|MPTCP|★★★
+      - v1|香港07|MPTCP|★★☆
+      - v1|香港08|MPTCP|★★☆
+      - v1|香港09|MPTCP|★★★
+      - v1|香港10|MPTCP|★★★
+      - v1|新加坡01|MPTCP|★★☆
+      - v1|新加坡02|MPTCP|★★☆
+      - v1|新加坡03|MPTCP|★★☆
+      - v1|新加坡04|MPTCP|★★★
+      - v1|新加坡05|MPTCP|★★★
+      - v1|新加坡06|MPTCP|★★☆
+      - v1|日本01|MPTCP|★★☆
+      - v1|日本02|MPTCP|★★☆
+      - v1|日本03|MPTCP|★★☆
+      - v1|日本04|MPTCP|★★☆
+      - v1|日本05|MPTCP|★★☆
+      - v1|日本06|MPTCP|★★☆
+      - v1|美国01|MPTCP|★★★
+      - v1|美国02|MPTCP|★★★
+      - v1|美国03|MPTCP|★★★
+      - v1|美国04|MPTCP|★★★
+      - v1|美国05|MPTCP|★★★
+      - v1|香港01|原生|★★★
+      - v1|香港02|原生|★★★
+      - v1|香港03|原生|★★★
+      - v1|香港04|原生|★★★
+      - v1|香港05|原生|★★★
+      - v1|台湾01|原生|★★☆
+      - v1|台湾02|原生|★★☆
+      - v1|台湾03|原生|★★☆
+      - v1|台湾04|原生|★★☆
+      - v1|新加坡01|原生|★★☆
+      - v1|新加坡02|原生|★★☆
+      - v1|新加坡03|原生|★★☆
+      - v1|新加坡04|原生|★★☆
+      - v1|美国01|原生|★★★
+      - v1|澳洲01|MPTCP|★☆☆
+      - v1|澳洲02|MPTCP|★☆☆
+      - v1|澳洲03|MPTCP|★☆☆
+      - v1|澳洲04|MPTCP|★☆☆
+      - v1|澳洲05|MPTCP|★☆☆
+      - v1|印度01|MPTCP|★☆☆
+      - v1|俄罗斯01|MPTCP|★☆☆
   -
     name: 🎞️Disney+
     type: select
     proxies:
-      - v2|香港01|MPTCP|★★★
-      - v2|香港02|MPTCP|★★★
-      - v2|香港03|MPTCP|★★★
-      - v2|香港04|MPTCP|★★★
-      - v2|香港05|MPTCP|★★★
-      - v2|香港06|MPTCP|★★★
-      - v2|香港07|MPTCP|★★☆
-      - v2|香港08|MPTCP|★★☆
-      - v2|香港09|MPTCP|★★★
-      - v2|香港10|MPTCP|★★★
-      - v2|香港11|MPTCP|★★☆
-      - v2|香港12|MPTCP|★★★
-      - v2|香港13|MPTCP|★★☆
-      - v2|新加坡01|MPTCP|★★★
-      - v2|新加坡02|MPTCP|★★★
-      - v2|新加坡03|MPTCP|★★★
-      - v2|新加坡04|MPTCP|★★★
-      - v2|新加坡05|MPTCP|★★★
-      - v2|新加坡06|MPTCP|★★★
-      - v2|新加坡07|MPTCP|★★★
-      - v2|日本01|MPTCP|★★☆
-      - v2|日本02|MPTCP|★★☆
-      - v2|日本03|MPTCP|★★☆
-      - v2|日本04|MPTCP|★★☆
-      - v2|日本05|MPTCP|★★☆
-      - v2|日本06|MPTCP|★★☆
-      - v2|美国01|MPTCP|★★★
-      - v2|美国02|MPTCP|★★★
-      - v2|美国03|MPTCP|★★★
-      - v2|美国04|MPTCP|★★★
-      - v2|美国05|MPTCP|★★★
-      - v2|美国06|MPTCP|★★★
-      - v2|香港01|原生|★★★
-      - v2|香港02|原生|★★★
-      - v2|香港03|原生|★★★
-      - v2|香港04|原生|★★★
-      - v2|香港05|原生|★★★
-      - v2|香港06|原生|★★★
-      - v2|香港01|myTVSUPER|限速
-      - v2|香港01|YouTubePre|限速
-      - v2|香港02|防送中|限速
-      - v2|台湾01|YouTubePre|限速
-      - v2|美国01|YouTubePre|限速
-      - v2|美国02|谷歌商店|限速
-      - v2|台湾01|原生|★★☆
-      - v2|台湾02|原生|★★☆
-      - v2|台湾03|原生|★★☆
-      - v2|台湾04|原生|★★☆
-      - v2|台湾05|原生|★★☆
-      - v2|台湾06|原生|★★☆
-      - v2|新加坡01|原生|★★☆
-      - v2|新加坡02|原生|★★☆
-      - v2|新加坡03|原生|★★☆
-      - v2|新加坡04|原生|★★☆
-      - v2|新加坡05|原生|★★☆
-      - v2|新加坡06|原生|★★☆
-      - v2|日本01|原生|★★☆
-      - v2|日本02|原生|★★☆
-      - v2|日本03|原生|★★☆
-      - v2|日本04|原生|★★☆
-      - v2|日本05|原生|★★☆
-      - v2|日本01|特供原生|限速
-      - v2|美国01|原生|★★☆
-      - v2|美国02|原生|★★☆
-      - v2|美国03|原生|★★☆
-      - v2|美国04|原生|★★☆
-      - v2|美国05|原生|★★☆
-      - v2|美国06|原生|★★☆
-      - v2|美国01|hulu|限速
-      - v2|英国01|原生|★★☆
-      - v2|英国02|原生|★★☆
-      - v2|英国03|原生|★★☆
-      - v2|英国04|原生|★★☆
-      - v2|英国05|原生|★★☆
-      - v2|英国06|原生|★★☆
-      - v2|澳洲01|MPTCP|★☆☆
-      - v2|澳洲02|MPTCP|★☆☆
-      - v2|澳洲03|MPTCP|★☆☆
-      - v2|澳洲04|MPTCP|★☆☆
-      - v2|澳洲05|MPTCP|★☆☆
-      - v2|韩国01|MPTCP|★☆☆
-      - v2|韩国02|MPTCP|★☆☆
-      - v2|韩国03|MPTCP|★☆☆
-      - v2|韩国04|MPTCP|★☆☆
-      - v2|韩国05|MPTCP|★☆☆
-      - v2|阿根廷01|特供原生|限速
-      - v2|巴西01|特供原生|限速
-      - v2|智利01|特供原生|限速
-      - v2|阿联酋01|特供原生|限速
-      - v2|马来西亚01|特供原生|限速
-      - v2|泰国01|特供原生|限速
-      - v2|菲律宾01|特供原生|限速
-      - v2|越南01|特供原生|限速
-      - v2|印尼01|特供原生|限速
-      - v2|以色列01|特供原生|限速
-      - v2|南非01|特供原生|限速
-      - v2|尼日利亚01|特供原生|限速
-      - v2|加拿大01|特供原生|限速
-      - v2|墨西哥01|特供原生|限速
-      - v2|巴基斯坦01|特供原生|限速
-      - v2|法国01|特供原生|限速
-      - v2|意大利01|特供原生|限速
-      - v2|冰岛01|特供原生|限速
-      - v2|荷兰01|特供原生|限速
-      - v2|西班牙01|特供原生|限速
-      - v2|葡萄牙01|特供原生|限速
-      - v2|瑞典01|特供原生|限速
-      - v2|德国01|特供原生|限速
-      - v2|爱尔兰01|特供原生|限速
-      - v2|俄罗斯01|特供原生|限速
-      - v2|俄罗斯02|特供原生|限速
-      - v2|俄罗斯03|特供原生|限速
-      - v2|立陶宛01|特供原生|限速
-      - v2|匈牙利01|特供原生|限速
-      - v2|比利时01|特供原生|限速
-      - v2|乌克兰01|特供原生|限速
-      - v2|罗马尼亚01|特供原生|限速
-      - v2|瑞士01|特供原生|限速
-      - v2|奥地利01|特供原生|限速
-      - v2|土耳其01|特供原生|限速
-      - v2|土耳其02|特供原生|限速
-      - v2|印度01|MPTCP|★☆☆
-      - v2|印度02|MPTCP|★☆☆
+      - v1|香港01|MPTCP|★★★
+      - v1|香港02|MPTCP|★★★
+      - v1|香港03|MPTCP|★★★
+      - v1|香港04|MPTCP|★★★
+      - v1|香港05|MPTCP|★★★
+      - v1|香港06|MPTCP|★★★
+      - v1|香港07|MPTCP|★★☆
+      - v1|香港08|MPTCP|★★☆
+      - v1|香港09|MPTCP|★★★
+      - v1|香港10|MPTCP|★★★
+      - v1|新加坡01|MPTCP|★★☆
+      - v1|新加坡02|MPTCP|★★☆
+      - v1|新加坡03|MPTCP|★★☆
+      - v1|新加坡04|MPTCP|★★★
+      - v1|新加坡05|MPTCP|★★★
+      - v1|新加坡06|MPTCP|★★☆
+      - v1|日本01|MPTCP|★★☆
+      - v1|日本02|MPTCP|★★☆
+      - v1|日本03|MPTCP|★★☆
+      - v1|日本04|MPTCP|★★☆
+      - v1|日本05|MPTCP|★★☆
+      - v1|日本06|MPTCP|★★☆
+      - v1|美国01|MPTCP|★★★
+      - v1|美国02|MPTCP|★★★
+      - v1|美国03|MPTCP|★★★
+      - v1|美国04|MPTCP|★★★
+      - v1|美国05|MPTCP|★★★
+      - v1|香港01|原生|★★★
+      - v1|香港02|原生|★★★
+      - v1|香港03|原生|★★★
+      - v1|香港04|原生|★★★
+      - v1|香港05|原生|★★★
+      - v1|台湾01|原生|★★☆
+      - v1|台湾02|原生|★★☆
+      - v1|台湾03|原生|★★☆
+      - v1|台湾04|原生|★★☆
+      - v1|新加坡01|原生|★★☆
+      - v1|新加坡02|原生|★★☆
+      - v1|新加坡03|原生|★★☆
+      - v1|新加坡04|原生|★★☆
+      - v1|美国01|原生|★★★
+      - v1|澳洲01|MPTCP|★☆☆
+      - v1|澳洲02|MPTCP|★☆☆
+      - v1|澳洲03|MPTCP|★☆☆
+      - v1|澳洲04|MPTCP|★☆☆
+      - v1|澳洲05|MPTCP|★☆☆
+      - v1|印度01|MPTCP|★☆☆
+      - v1|俄罗斯01|MPTCP|★☆☆
 
 
 rules:

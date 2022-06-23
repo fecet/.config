@@ -15,3 +15,4 @@ application/zip=org.kde.ark.desktop;
 text/x-r-markdown=neovide.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-SIKIM1.desktop;
 application/pdf=google-chrome.desktop;
+application/xhtml+xml=google-chrome.desktop;
