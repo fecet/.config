@@ -3,8 +3,8 @@
 
 # save pid file
 echo $$ > ${HOME}/.config/clash/clash.pid
-# CLASH_URL="https://subscribe.y9d3.top/link/UpuNZH6guh7sZov6?clash=1"
-CLASH_URL="https://subscribe.y3d4.top/link/mcT54cJh23vqjfZ3?clash=1"
+CLASH_URL="https://api.nxtlnodes.com/Subscription/Clash?sid=27160&token=TBOkMJW6onV"
+# CLASH_URL="https://subscribe.y3d4.top/link/mcT54cJh23vqjfZ3?clash=1"
 
 diff ${HOME}/.config/clash/config.yaml <(curl -s ${CLASH_URL})
 if [ "$0" == 0 ]
