@@ -1,5 +1,4 @@
 /nvim
-/clash
 
 /google-chrome
 clash/Country.mmdb
@@ -108,7 +107,6 @@ ranger/plugins
 ranger/plugins
 microsoft-edge
 
-clash
 clash/cache.db
 clash/clash.pid
 gh
@@ -156,4 +154,10 @@ Moonlight Game Streaming Project
 kingsoft
 rustdesk
 
-clash
+klanguageoverridesrc
+mimeapps.list
+
+zoomus.conf
+remmina
+
+clash/config.yaml
