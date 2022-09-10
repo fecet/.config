@@ -9,37 +9,37 @@ interval=0
 . ~/.config/chadwm/scripts/bar_themes/nord
 
 cpu() {
-  cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
+	cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
 
-  printf "^c$black^ ^b$green^ CPU"
-  printf "^c$white^ ^b$grey^ $cpu_val"
+	printf "^c$black^ ^b$green^ CPU"
+	printf "^c$white^ ^b$grey^ $cpu_val"
 }
 
 pkg_updates() {
-  updates=$(doas xbps-install -un | wc -l) # void
-  # updates=$(checkupdates | wc -l)   # arch , needs pacman contrib
-  # updates=$(aptitude search '~U' | wc -l)  # apt (ubuntu,debian etc)
+	updates=$(doas xbps-install -un | wc -l) # void
+	# updates=$(checkupdates | wc -l)   # arch , needs pacman contrib
+	# updates=$(aptitude search '~U' | wc -l)  # apt (ubuntu,debian etc)
 
-  if [ -z "$updates" ]; then
-    printf "^c$green^  Fully Updated"
-  else
-    printf "^c$green^  $updates"" updates"
-  fi
+	if [ -z "$updates" ]; then
+		printf "^c$green^  Fully Updated"
+	else
+		printf "^c$green^  $updates"" updates"
+	fi
 }
 
 battery() {
-  get_capacity="$(cat /sys/class/power_supply/BAT1/capacity)"
-  printf "^c$blue^   $get_capacity"
+	get_capacity="$(cat /sys/class/power_supply/BAT1/capacity)"
+	printf "^c$blue^   $get_capacity"
 }
 
 brightness() {
-  printf "^c$red^   "
-  printf "^c$red^%.0f\n" $(cat /sys/class/backlight/*/brightness)
+	printf "^c$red^   "
+	printf "^c$red^%.0f\n" $(cat /sys/class/backlight/*/brightness)
 }
 
 mem() {
-  printf "^c$blue^^b$black^  "
-  printf "^c$blue^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
+	printf "^c$blue^^b$black^  "
+	printf "^c$blue^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
 }
 
 wlan() {
@@ -56,8 +56,8 @@ clock() {
 
 while true; do
 
-  [ $interval = 0 ] || [ $(($interval % 3600)) = 0 ] && updates=$(pkg_updates)
-  interval=$((interval + 1))
+	[ $interval = 0 ] || [ $(($interval % 3600)) = 0 ] && updates=$(pkg_updates)
+	interval=$((interval + 1))
 
-  sleep 1 && xsetroot -name "$updates $(battery) $(brightness) $(cpu) $(mem) $(wlan) $(clock)"
+	sleep 1 && xsetroot -name "$updates $(battery) $(brightness) $(cpu) $(mem) $(wlan) $(clock)"
 done

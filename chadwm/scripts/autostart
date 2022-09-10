@@ -9,10 +9,11 @@ xset r rate 200 50 &
 
 
 # run bar script and dwm ( never remove this )
-bash ~/.config/chadwm/scripts/./bar.sh &
+/* bash ~/.config/chadwm/scripts/./bar.sh & */
+/* bash ~/scripts/bar.sh & */
 
-sh  ~/scripts/autostart.sh &
-google-chrome-stable &
+/* sh  ~/scripts/autostart.sh & */
+/* google-chrome-stable & */
 /* sh  ~/scripts/autostart_wait.sh & */
 
 dwm
