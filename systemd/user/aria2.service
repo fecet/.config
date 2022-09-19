@@ -1,8 +1,8 @@
 [Unit]
-Description=Aria2 Daemon    # 守护进程描述
+Description=Aria2 Daemon... 
 
 [Service]
-ExecStart=/usr/bin/aria2c   # aria2c 路径
+ExecStart=/usr/bin/aria2c
 
 [Install]
 WantedBy=default.target
