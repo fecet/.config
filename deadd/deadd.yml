@@ -1,0 +1,121 @@
+margin-top: 0
+margin-right: 0
+margin-bottom: 0
+width: 300
+monitor: 0
+
+follow-mouse: false
+
+notification-center:
+  hide-on-mouse-leave: true
+
+  new-first: true
+
+  ignore-transient: false
+
+  buttons:
+    actions:
+notification:
+  use-markup: true
+  parse-html-entities: true
+  dbus:
+    send-noti-closed: false
+  app-icon:
+    guess-icon-from-name: true
+    icon-size: 20
+
+  image:
+    size: 100
+    margin-top: 15
+    margin-bottom: 15
+    margin-left: 15
+    margin-right: 0
+  modifications:
+    ### Match:
+    ### Matches the notifications against these rules. If all of the
+    ### values (of one modification rule) match, the "modify"/"script"
+    ### part is applied.
+    # - match:
+    ### Possible match criteria:
+    # title: "Notification title"
+    # body: "Notification body"
+    # time: "12:44"
+    # app-name: "App name"
+
+    # modify:
+    ### Possible modifications
+    # title: "abc"
+    # body: "abc"
+    # app-name: "abc"
+    # app-icon: "file:///abc.png"
+    ### The timeout has three special values:
+    ### timeout: 0 -> don't time out at all
+    ### timeout: -1 -> use default timeout
+    ### timeout: 1 -> don't show as pop-up
+    ### timeout: >1 -> milliseconds until timeout
+    # timeout: 1
+    # margin-right: 10
+    # margin-top: 10
+    # image: "file:///abc.png"
+    # image-size: 10
+    # transient: true
+    # send-noti-closed: false
+    ### Remove action buttons from notifications
+    # remove-actions: true
+    ### Add a class-name to the notification container, that can be
+    ### used for specific styling of notifications using the
+    ### deadd.css file
+    # class-name: "abc"
+
+    # - match:
+    # app-name: "Chromium"
+
+    ### Instead of modifying a notification directly, a script can be
+    ### run, which will receive the notification as JSON on STDIN. It
+    ### is expected to return JSON/YAML configuration that defines the
+    ### modifications that should be applied. Minimum complete return
+    ### value must be '{"modify": {}, "match": {}}'. Always leave the "match"
+    ### object empty (technical reasons, i.e. I am lazy).
+    # script: "linux-notification-center-parse-chromium"
+    - match:
+        app-name: "Spotify"
+      modify:
+        image-size: 80
+        timeout: 1
+        send-noti-closed: true
+        class-name: "Spotify"
+  # - match:
+  #     title: Bildschirmhelligkeit
+  #   modify:
+  #     image-size: 60
+  popup:
+    ### Default timeout used for notifications in milli-seconds.  This can
+    ### be overwritten with the "-t" option (or "--expire-time") of the
+    ### notify-send command.
+    default-timeout: 3000
+
+    # Margin above/right/between notifications (in pixels). This can
+    # be used to avoid overlap between notifications and a bar such as
+    # polybar or i3blocks.
+    margin-top: 50
+    margin-right: 50
+    margin-between: 20
+
+    ### Monitor on which the notifications will be
+    ### printed. If "follow-mouse" is set true, this does nothing.
+    # monitor: 0
+
+    ### If true, the notifications will open on the
+    ### screen, on which the mouse is. Overrides the "monitor" setting.
+    # follow-mouse: false
+
+    click-behavior:
+      ### The mouse button for dismissing a popup. Must be either "mouse1",
+      ### "mouse2", "mouse3", "mouse4", or "mouse5"
+      dismiss: mouse1
+
+      ### The mouse button for opening a popup with the default action.
+      ### Must be either "mouse1", "mouse2", "mouse3", "mouse4", or "mouse5"
+      default-action: mouse3
+  pop-up:
+      max-lines-in-body: 10
