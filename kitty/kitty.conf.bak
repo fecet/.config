@@ -6,10 +6,11 @@
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-# font_family      monospace
+font_family Iosevka Nerd Font
 # bold_font        auto
-# italic_font      auto
+# # italic_font "VictorMono Nerd Font"
 # bold_italic_font auto
+# italic_font "Iosevka NF Italic"
 
 #: You can specify different fonts for the bold/italic/bold-italic
 #: variants. To get a full list of supported fonts use the `kitty
@@ -24,7 +25,7 @@
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
 
-# font_size 11.0
+font_size 36
 
 #: Font size (in pts)
 
@@ -282,7 +283,7 @@
 
 #: Scrollback {{{
 
-# scrollback_lines 2000
+scrollback_lines 8000
 
 #: Number of lines of history to keep in memory for scrolling back.
 #: Memory is allocated on demand. Negative numbers are (effectively)
@@ -401,7 +402,7 @@
 #: When the mouse hovers over a terminal hyperlink, show the actual
 #: URL that will be activated when the hyperlink is clicked.
 
-# copy_on_select no
+copy_on_select clipboard
 
 #: Copy to clipboard or a private buffer on select. With this set to
 #: clipboard, selecting text with the mouse will cause the text to be
@@ -649,7 +650,7 @@
 #: refresh rate. Also, to minimize latency when there is pending input
 #: to be processed, this option is ignored.
 
-# input_delay 3
+input_delay 2
 
 #: Delay before input from the program running in the terminal is
 #: processed (in milliseconds). Note that decreasing it will increase
@@ -657,7 +658,7 @@
 #: in full screen programs that redraw the entire screen on each loop,
 #: because kitty is so fast that partial screen updates will be drawn.
 
-# sync_to_monitor yes
+sync_to_monitor yes
 
 #: Sync screen updates to the refresh rate of the monitor. This
 #: prevents screen tearing
@@ -879,7 +880,7 @@
 #: insensitive, from the set [0-9A-Z]. Specify your preference as a
 #: string of characters.
 
-# confirm_os_window_close -1
+confirm_os_window_close 0
 
 #: Ask for confirmation when closing an OS window or a tab with at
 #: least this number of kitty windows in it by window manager (e.g.
@@ -1066,7 +1067,7 @@
 
 #: The foreground and background colors.
 
-# background_opacity 1.0
+background_opacity 0.7
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -1101,7 +1102,7 @@
 #: When background image is scaled, whether linear interpolation
 #: should be used.
 
-# dynamic_background_opacity no
+dynamic_background_opacity yes
 
 #: Allow changing of the background_opacity dynamically, using either
 #: keyboard shortcuts (increase_background_opacity and
@@ -1215,7 +1216,7 @@
 
 #: Advanced {{{
 
-# shell .
+shell zsh --login
 
 #: The shell program to execute. The default value of . means to use
 #: whatever shell is set as the default shell for the current user.
@@ -1801,7 +1802,9 @@
 
 #: Browse scrollback buffer in pager
 
-# map kitty_mod+h show_scrollback
+# unmap kitty_mod+h show_scrollback
+map kitty_mod+h no_op
+map kitty_mod+l no_op
 
 #::  You can pipe the contents of the current screen and history
 #::  buffer as STDIN to an arbitrary program using launch --stdin-
@@ -2072,7 +2075,7 @@
 # map kitty_mod+equal  change_font_size all +2.0
 # map kitty_mod+plus   change_font_size all +2.0
 # map kitty_mod+kp_add change_font_size all +2.0
-# map cmd+plus         change_font_size all +2.0
+map ctrl+equal         change_font_size all +2.0
 # map cmd+equal        change_font_size all +2.0
 # map shift+cmd+equal  change_font_size all +2.0
 
@@ -2080,7 +2083,7 @@
 
 # map kitty_mod+minus       change_font_size all -2.0
 # map kitty_mod+kp_subtract change_font_size all -2.0
-# map cmd+minus             change_font_size all -2.0
+map ctrl+minus             change_font_size all -2.0
 # map shift+cmd+minus       change_font_size all -2.0
 
 #: Reset font size
@@ -2341,3 +2344,9 @@
 #: }}}
 
 #: }}}
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Macchiato
+include current-theme.conf
+# END_KITTY_THEME

@@ -1,8 +1,8 @@
 wsl = false
 multigrid = true
-vsync = true
 maximized = false
-# srgb = false
+srgb = true
+vsync=false
 idle = false
 # neovim_bin = "/usr/bin/nvim"
 # frame = "Full"
