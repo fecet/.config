@@ -1,0 +1,25 @@
+{
+    "label" : "lock",
+    "action" : "~/.config/sway/wlogout/actions --lock",
+    "keybind" : "l"
+}
+{
+    "label" : "logout",
+    "action" : "~/.config/sway/wlogout/actions --logout",
+    "keybind" : "e"
+}
+{
+    "label" : "suspend",
+    "action" : "~/.config/sway/wlogout/actions --suspend",
+    "keybind" : "u"
+}
+{
+    "label" : "reboot",
+    "action" : "~/.config/sway/wlogout/actions --reboot",
+    "keybind" : "r"
+}
+{
+    "label" : "shutdown",
+    "action" : "~/.config/sway/wlogout/actions --shutdown",
+    "keybind" : "s"
+}

@@ -1,0 +1,17 @@
+/* 
+ * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+*/
+
+/** ********** Colors ********** **/
+@define-color background     #1E2128;
+@define-color background-alt #292d37;
+@define-color foreground     #ABB2BF;
+@define-color selected       #E06B74;
+@define-color black          #32363D;
+@define-color red            #E06B74;
+@define-color green          #98C379;
+@define-color yellow         #E5C07A;
+@define-color blue           #62AEEF;
+@define-color magenta        #C778DD;
+@define-color cyan           #55B6C2;
+@define-color white          #ABB2BF;

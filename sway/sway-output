@@ -1,0 +1,15 @@
+##-- Output configuration ----------------
+
+# You can get the names of your outputs by running: swaymsg -t get_outputs
+
+# wallpaper
+output * bg ~/.config/sway/wallpapers/wallpaper.jpg fill
+
+# Multiheads
+#
+#output HDMI-A-1 resolution 1920x1080 position 1920,0
+#output eDP-1 resolution 1680x1050 position 1680,0
+
+# HiDPI
+#
+#output HDMI1 scale 2

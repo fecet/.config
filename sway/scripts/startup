@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+## Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+##
+## Autostart Programs
+
+# Kill already running process
+_ps=(waybar mako)
+for _prs in "${_ps[@]}"; do
+	if [[ `pidof ${_prs}` ]]; then
+		killall -9 ${_prs}
+	fi
+done
+
+# Polkit agent
+if [[ ! `pidof xfce-polkit` ]]; then
+	/usr/lib/xfce-polkit/xfce-polkit &
+fi
+
+# Lauch notification daemon (mako)
+~/.config/sway/scripts/notifications &
+
+# Lauch statusbar (waybar)
+~/.config/sway/scripts/statusbar &
+
+# Start network manager applet
+nm-applet --indicator &
+
+# Start mpd
+exec mpd &
