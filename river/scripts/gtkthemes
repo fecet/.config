@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+## Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+##
+## Set GTK Themes, Icons, Cursor and Fonts
+
+THEME='Arc-Dark'
+ICONS='Arc-Circle'
+FONT='Noto Sans 9'
+CURSOR='Qogirr'
+BTN_LAYOUT=':close'
+
+SCHEMA='gsettings set org.gnome.desktop.interface'
+LSCHEMA='gsettings set org.gnome.desktop.wm.preferences'
+
+apply_themes () {
+	${SCHEMA} gtk-theme "$THEME"
+	${SCHEMA} icon-theme "$ICONS"
+	${SCHEMA} cursor-theme "$CURSOR"
+	${SCHEMA} font-name "$FONT"
+}
+
+apply_layout () {
+	${LSCHEMA} button-layout "$BTN_LAYOUT"
+}
+
+apply_themes
+apply_layout

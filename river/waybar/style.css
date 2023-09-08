@@ -1,0 +1,460 @@
+/* 
+ * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+*/
+
+/** ********** Import Colors ********** **/
+@import "./colors.css";
+
+/** ********** Fonts ********** **/
+* {
+    font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
+    font-size: 16px;
+}
+
+/** ********** Waybar Window ********** **/
+window#waybar {
+    background-color: @background;
+	color: @foreground;
+    border-right: 0px solid @background-alt;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.5;
+}
+
+window#waybar.empty {
+}
+window#waybar.solo {
+}
+window#waybar.thunar {
+}
+window#waybar.geany {
+}
+
+/** ********** Backlight ********** **/
+#backlight {
+    background-color: @yellow;
+}
+#backlight.2 {
+}
+
+/** ********** Battery ********** **/
+#battery {
+    background-color: @blue;
+}
+#battery.charging {
+}
+#battery.plugged {
+}
+
+#battery.2 {
+}
+#battery.2.charging {
+}
+#battery.2.plugged {
+}
+@keyframes blink {
+    to {
+        color: @red;
+    }
+}
+#battery.2.critical:not(.charging) {
+    color: @white;
+    border-bottom: 2px solid @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/** ********** Clock ********** **/
+#clock {
+    background-color: @background-alt;
+    color: @green;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px 12px 0px 0px;
+    padding: 10px 5px 0px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#clock.2 {
+    color: @yellow;
+    border-radius: 0px 0px 12px 12px;
+    padding: 0px 5px 10px 5px;
+    margin-bottom: 5px;
+}
+#clock.3 {
+    color: @blue;
+    font-size: 14px;
+    border-radius: 12px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+/** ********** Sway ********** **/
+#workspaces {
+	background-color: @background-alt;
+	color: @foreground;
+	border-radius: 0px 12px 0px 0px;
+	padding: 4px;
+}
+
+#workspaces button {
+	color: @white;
+	padding: 2px 6px;
+}
+
+#workspaces button:hover {
+	background-color: @background;
+	color: @white;
+	border: 0px solid @background;
+	border-radius: 12px;
+	padding: 2px 6px;
+}
+
+#workspaces button.visible {
+	background-image: linear-gradient(to right, @blue , @green);
+}
+
+#workspaces button.focused {
+	background-image: linear-gradient(to right, @red , @magenta);
+}
+
+#workspaces button.urgent {
+	background-image: linear-gradient(to right, @red , @yellow);
+}
+
+#workspaces button.persistent {
+	background-image: linear-gradient(to right, @yellow , @magenta);
+}
+
+#workspaces button.visible,
+#workspaces button.focused,
+#workspaces button.urgent,
+#workspaces button.persistent {
+	color: @background;
+	border-radius: 12px;
+	padding: 2px 6px;
+}
+
+#workspaces button.current_output {
+}
+
+#workspaces button#sway-workspace-1 {
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#mode {
+	background-color: @magenta;
+    font-weight: bold;
+}
+
+#window {
+	background-color: @background-alt;
+	color: @white;
+}
+window#waybar.empty #window {
+	background-color: transparent;
+}
+
+/** ********** River ********** **/
+#tags button {
+    border-radius: 12px;
+    padding: 5px;
+    margin: 2px 2px;
+}
+
+#tags button.occupied {
+	background-color: @background-alt;
+    border: 1px solid @background;
+}
+
+#tags button.focused {
+	background-image: linear-gradient(to right, @cyan , @magenta);
+    color: @background;
+    border: 1px solid @background;
+}
+
+#tags button.urgent {
+	background-color: @red;
+    color: @background;
+    border: 1px solid @background;
+}
+
+#window.focused {
+	background-color: @background-alt;
+    color: @foreground;
+	font-size: 10px;
+    border-radius: 12px;
+    padding: 5px;
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/** ********** Tray ********** **/
+#tray {
+    padding: 10px 5px 10px 5px;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+#tray > .active {
+}
+
+/** ********** MPD ********** **/
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#mpd {
+    background-color: @background-alt;
+    color: @foreground;
+    padding: 2px 5px 2px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#mpd.disconnected {
+	background-color: @red;
+	color: @background;
+}
+#mpd.stopped {
+	background-image: linear-gradient(to right, @red , @yellow);
+	color: @background;
+}
+#mpd.playing {
+    background: linear-gradient(90deg, @blue 25%, @cyan 50%, @magenta 75%, @blue 100%); 
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+    color: @background;
+}
+#mpd.paused {
+}
+
+#mpd.2 {
+    border-radius: 12px 12px 0px 0px;
+    padding-top: 8px;
+}
+#mpd.3 {
+    border-radius: 0px 0px 12px 12px;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+}
+
+/** ********** Spotify ********** **/
+#custom-spotify {
+    font-size: 14px;
+    background-color: @background-alt;
+    color: @foreground;
+    border-radius: 12px;
+    padding: 10px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#custom-spotify.paused {
+    background-color: @background-alt;
+    color: @foreground;
+}
+
+#custom-spotify.playing {
+    background: linear-gradient(60deg, @yellow 25%, @blue 50%, @magenta 75%, @cyan 100%); 
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+    color: @background;
+}
+
+#custom-spotify.offline {
+	background-color: @red;
+	color: @background;
+}
+
+/** ********** Pulseaudio ********** **/
+#pulseaudio {
+    background-color: @green;
+}
+#pulseaudio.bluetooth {
+    background-color: @cyan;
+}
+#pulseaudio.muted {
+    background-color: @red;
+}
+
+#pulseaudio.2 {
+}
+#pulseaudio.2.bluetooth {
+}
+#pulseaudio.2.muted {
+}
+
+/** ********** Network ********** **/
+#network {
+    background-color: @cyan;
+}
+
+#network.disconnected {
+    background-color: @background-alt;
+    color: @foreground;
+}
+#network.disabled {
+    background-color: @red;
+    color: @background;
+}
+#network.linked {
+}
+#network.ethernet {
+}
+#network.wifi {
+}
+
+/** ********** Bluetooth ********** **/
+#bluetooth {
+    background-color: @magenta;
+}
+#bluetooth.disabled{
+    background-color: @red;
+    color: @background;
+}
+#bluetooth.off{
+    background-color: @background-alt;
+    color: @foreground;
+}
+#bluetooth.on{
+}
+#bluetooth.connected{
+}
+#bluetooth.discoverable{
+}
+#bluetooth.discovering{
+}
+#bluetooth.pairable{
+}
+
+/** ********** Taskbar ********** **/
+#taskbar {
+/*    background-color: @background-alt;	*/
+	border-radius: 12px 12px 0px 0px;
+	margin-top: 6px;
+	padding: 0px 4px;
+}
+#taskbar button {
+	border-radius: 0px;
+	margin: 0px 4px;
+	padding: 0px 4px;
+}
+#taskbar button:hover {
+	background-color: @background-tag;
+}
+#taskbar button.maximized {
+	border-bottom: 2px solid @yellow;
+}
+#taskbar button.minimized {
+	border-bottom: 2px solid @red;
+}
+#taskbar button.active {
+	border-bottom: 2px solid @cyan;
+}
+#taskbar button.fullscreen {
+	border-bottom: 2px solid @magenta;
+}
+
+/** ********** Workspace ********** **/
+/*#workspaces
+#workspaces button
+#workspaces button.active
+#workspaces button.urgent
+#workspaces button.hidden */
+
+/** ********** Custom ********** **/
+
+#custom-themes {
+    background-color: @selected;
+    margin-top: 8px;
+}
+
+#custom-menu {
+    background-color: @blue;
+    margin-top: 8px;
+}
+
+#custom-power {
+    background-color: @red;
+    margin-bottom: 8px;
+}
+
+/** Common style **/
+#backlight, 
+#battery,
+#pulseaudio {
+    color: @background;
+    border-radius: 12px 12px 0px 0px;
+    padding: 10px 5px 5px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#backlight.2, 
+#battery.2,
+#pulseaudio.2 {
+    background-color: @background-alt;
+    color: @foreground;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 0px 0px 12px 12px;
+    padding: 8px 5px 8px 5px;
+}
+
+#tags, #tray {
+    background-color: @background-alt;
+    border-radius: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#network,
+#bluetooth,
+#custom-menu,
+#custom-power,
+#custom-themes {
+    color: @background;
+    border-radius: 12px;
+    padding: 8px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#backlight.2, 
+#battery.2,
+#pulseaudio.2,
+#network,
+#bluetooth,
+#clock.2,
+#custom-menu,
+#custom-themes {
+    margin-bottom: 5px;
+}

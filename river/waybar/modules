@@ -1,0 +1,351 @@
+// Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+//
+// Waybar modules configuration
+{
+	// waybar-backlight
+    "backlight": {
+		"interval": 2,
+        //"device": "amdgpu_bl0",
+        "format": "{icon}",
+        "format-icons": ["", "", "", "", "", "", ""],
+        "on-scroll-up": "light -A 5%",
+        "on-scroll-down": "light -U 5%",
+        "smooth-scrolling-threshold": 1,
+    },
+    "backlight#2": {
+		"interval": 2,
+        //"device": "amdgpu_bl0",
+        "format": "{percent}%",
+        "on-scroll-up": "light -A 5%",
+        "on-scroll-down": "light -U 5%",
+        "smooth-scrolling-threshold": 1,
+    },
+
+	// waybar-battery
+    "battery": {
+		"interval": 60,
+		//"bat": "BAT1",
+		//"adapter": "ACAD",
+		"full-at": 100,
+		"design-capacity": false,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}",
+        "format-charging": "",
+        "format-plugged": "ﮣ",
+        "format-full": "",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "format-time": "{H}h {M}min",
+        "tooltip": true,
+    },
+    "battery#2": {
+		"interval": 60,
+		//"bat": "BAT1",
+		//"adapter": "ACAD",
+		"full-at": 100,
+		"design-capacity": false,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}%",
+        "format-charging": "{capacity}%",
+        "format-plugged": "{capacity}%",
+        "format-full": "Full",
+        "format-alt": "{time}",
+        "format-time": "{H}h",
+        "tooltip": false,
+    },
+
+	// waybar-bluetooth
+    "bluetooth": {
+        //"controller": "controller1",
+        //"format-device-preference": "",
+        "format": "",
+        "format-on": "",
+        "format-off": "",
+        "format-disabled": "",
+        "format-connected": "",
+        "format-connected-battery": "",
+        "tooltip": true,
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "~/.config/river/scripts/rofi_bluetooth",
+        "on-click-right": "blueman-manager",
+    },
+
+
+	// waybar-clock
+    "clock": {
+		"interval": 60,
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%I}",
+    },
+    "clock#2": {
+		"interval": 60,
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%M}",
+    },
+    "clock#3": {
+		"interval": 60,
+        "format": "{:%p}",
+    },
+
+	// waybar-cpu
+
+	// waybar-custom
+    "custom/themes": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "$HOME/.config/river/theme/theme.sh --pywal",
+        "on-click-right": "$HOME/.config/river/theme/theme.sh --default",
+    },
+
+	// waybar-custom
+    "custom/menu": {
+        "format": "﩯",
+        "tooltip": false,
+        //"on-click": "$HOME/.config/river/scripts/wofi_menu",
+        "on-click": "$HOME/.config/river/scripts/rofi_launcher",
+        "on-click-right": "$HOME/.config/river/scripts/rofi_runner",
+    },
+
+    "custom/power": {
+         "format": "襤",
+         "tooltip": false,
+         //"on-click": "$HOME/.config/river/scripts/wofi_powermenu",
+         "on-click": "$HOME/.config/river/scripts/rofi_powermenu",
+    },
+
+	// waybar-disk
+	// waybar-idle-inhibitor
+	// waybar-inhibitor
+	// waybar-keyboard-state
+	// waybar-memory
+
+	// waybar-spotify
+    "custom/spotify": {
+        "exec": "$HOME/.config/river/waybar/spotify",
+        "interval": 1,
+        "rotate": 90,
+        "format": "{}",
+        "tooltip": true,
+        "max-length": 20,
+        "on-click": "playerctl play-pause",
+        "on-click-middle": "playerctl previous",
+        "on-click-right": "playerctl next",
+        "on-scroll-up": "playerctl position 05+",
+        "on-scroll-down": "playerctl position 05-",
+        "smooth-scrolling-threshold": 1,
+    },
+
+	// waybar-mpd
+    "mpd": {
+        "interval": 1,
+        "unknown-tag": "N/A",
+        "format": "{stateIcon}",
+        "format-disconnected": "",
+        "format-paused": "{stateIcon}",
+        "format-stopped": "",
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "{artist} - {title} | 祥 {elapsedTime:%M:%S}",
+        "tooltip-format-disconnected": "MPD (disconnected)",
+		// Commands to execute on events
+        "on-click": "mpc toggle",
+        "on-scroll-up": "mpc seek +00:00:01",
+        "on-scroll-down": "mpc seek -00:00:01",
+        "smooth-scrolling-threshold": 1,
+    },
+    "mpd#2": {
+        "interval": 1,
+        "format": "玲",
+        "format-disconnected": "玲",
+        "format-paused": "玲",
+        "format-stopped": "玲",
+        "tooltip-format": "{artist} - {title} | 祥 {elapsedTime:%M:%S}",
+        "tooltip-format-disconnected": "MPD (disconnected)",
+		// Commands to execute on events
+        "on-click": "mpc prev",
+        "on-scroll-up": "mpc seek +00:00:01",
+        "on-scroll-down": "mpc seek -00:00:01",
+        "smooth-scrolling-threshold": 1,
+    },
+    "mpd#3": {
+        "interval": 1,
+        "format": "怜",
+        "format-disconnected": "怜",
+        "format-paused": "怜",
+        "format-stopped": "怜",
+        "tooltip-format": "{artist} - {title} | 祥 {elapsedTime:%M:%S}",
+        "tooltip-format-disconnected": "MPD (disconnected)",
+		// Commands to execute on events
+        "on-click": "mpc next",
+        "on-scroll-up": "mpc seek +00:00:01",
+        "on-scroll-down": "mpc seek -00:00:01",
+        "smooth-scrolling-threshold": 1,
+    },
+
+	// waybar-network
+    "network": {
+		"interval": 5,
+        //"interface": "wlan*", // (Optional) To force the use of this interface, set it for netspeed to work
+        "format-wifi": "直",
+        "format-ethernet": "",
+        "format-linked": "",
+        "format-disconnected": "睊",
+        "format-disabled": "睊",
+        "tooltip-format": "{essid} :  {bandwidthUpBits} |  {bandwidthDownBits}",
+        //"on-click": "[[ ! `pidof nm-connection-editor` ]] && nm-connection-editor || pkill nm-connection-e",
+        "on-click": "~/.config/river/scripts/rofi_network",
+    },
+
+	// waybar-pulseaudio
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "婢",
+        "format-bluetooth": "",
+        "format-bluetooth-muted": "",
+        "format-source": "",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "ﳌ",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["奄", "奔", "墳"]
+        },
+        "scroll-step": 5.0,
+        "on-click": "pulsemixer --toggle-mute",
+        "on-click-right": "pulsemixer --toggle-mute",
+        "smooth-scrolling-threshold": 1,
+    },
+    "pulseaudio#2": {
+        "format": "{volume}%",
+        "format-muted": "Mute",
+        "format-bluetooth": "{volume}%",
+        "format-bluetooth-muted": "Mute",
+        "format-source": "{volume}%",
+        "scroll-step": 5.0,
+        "on-click": "pulsemixer --toggle-mute",
+        "on-click-right": "pulsemixer --toggle-mute",
+        "smooth-scrolling-threshold": 1,
+    },
+
+	// waybar-river-tags
+    "river/tags": {
+        "num-tags": 9,
+        "tag-labels": ["", "", "", "", "", "漣", "", "", ""],
+        "disable-click": false,
+    },
+           
+	// waybar-river-window
+    "river/window": {
+        "format": "{}",
+		"align": 0,
+		"rotate": 0,
+		"max-length": 0,
+		"min-length": 0,
+    },
+           
+	// waybar-sndio
+	// waybar-states
+	// waybar-sway-language
+
+	// waybar-sway-mode
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+
+	// waybar-sway-window
+    "sway/window": {
+        "format": "{}",
+        "max-length": 50,
+        "icon": false,
+    },
+
+	// waybar-sway-workspaces
+    "sway/workspaces": {
+         "disable-scroll": false,
+         "disable-click": false,
+         "all-outputs": true,
+         "format": "{icon}",
+         "format-icons": {
+             "1": "",
+             "2": "",
+             "3": "",
+             "4": "",
+             "5": "",
+             "6": "漣",
+             "7": "",
+             "8": "",
+             "9": "",
+             "10": "ﳴ",
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         },
+        "smooth-scrolling-threshold": 1,
+        "disable-scroll-wraparound": false,
+        "enable-bar-scroll": false,
+        "disable-markup": false,
+        "current-only": false,
+    },
+
+	// waybar-temperature
+
+	// waybar-tray
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8,
+    },
+
+	// waybar-wlr-taskbar
+    "wlr/taskbar": {
+         "format": "{icon}",
+         "all-outputs": false,
+         "active-first": false,
+         "icon-size": 24,
+         "icon-theme": "Zafiro",
+         "tooltip-format": "{title}",
+         //"ignore-list": [
+         //    "Alacritty"
+         //],
+         "app_ids-mapping": {
+              "firefoxdeveloperedition": "firefox-developer-edition"
+         },
+         "on-click": "minimize-raise",
+         "on-click-middle": "close",
+         "on-click-right": "maximize",
+         "on-update": "",
+    },
+    
+	// waybar-wlr-workspaces
+    "wlr/workspaces": {
+         "format": "{icon}",
+         "format-icons": {
+             "1": "",
+             "2": "",
+             "3": "",
+             "4": "",
+             "5": "",
+             "6": "漣",
+             "7": "",
+             "8": "",
+             "9": "",
+             "10": "ﳴ",
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         }
+    }
+}

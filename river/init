@@ -1,0 +1,771 @@
+#!/usr/bin/lua5.4
+
+--[[
+
+## Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+##
+## River configuration file for Archcraft
+##
+## See the river(1), riverctl(1), and rivertile(1) man pages for complete
+## documentation.
+
+## NOTE:
+- execp() needs 'lua-posix' package
+- bitwise operands for tag mappings need Lua version >= 5.3
+
+--]]
+
+-- Convenient functions ────────────────────────────────────────────────────────
+
+-- Wrapper around table.concat() to also handle other types
+local function concat(...)
+  local list, sep, i, j = ...
+
+  if type(list) == 'table' then
+    return table.concat(list, sep, i, j)
+  else
+    return tostring(list)
+  end
+end
+
+-- Startup Programs ────────────────────────────────────────────────────────────
+
+local river_dir = os.getenv('HOME') .. '/.config/river'
+local script_dir = os.getenv('HOME') .. '/.config/river/scripts'
+
+local startup_commands = {
+  -- Inform dbus about the environment variables
+  {
+    'dbus-update-activation-environment',
+    'DISPLAY',
+    'WAYLAND_DISPLAY',
+    'XDG_SESSION_TYPE',
+    'XDG_CURRENT_DESKTOP',
+  },
+  -- Startup programs
+  '/usr/lib/xfce-polkit/xfce-polkit',
+  { 'swayidle', 'timeout 300', script_dir .. '/lockscreen' },
+  --{ 'swaybg', '--output "*"', '--mode fill', '--image', river_dir .. '/wallpapers/wallpaper.png' },
+  { 'nm-applet', '--indicator' },
+  script_dir .. '/wallpaper',
+  script_dir .. '/notifications',
+  script_dir .. '/statusbar',
+  'mpd',
+  { script_dir .. '/launch_xdg_portal', 'wlr' },
+  { script_dir .. '/launch_xdg_portal', 'gtk' },
+}
+
+-- Output/Display/Monitor Config ───────────────────────────────────────────────
+
+-- Using `wlr-randr` for managing outputs.
+local outputs = {
+  ['eDP-1'] = {
+    mode = '1920x1080',
+    pos = '0,0',
+    transform = 'normal',
+    scale = '1.000000',
+    preferred = true,
+  },
+--  ['HDMI-A-1'] = {
+--    mode = '1920x1080',
+--    pos = '0,0',
+--    transform = 'normal',
+--    scale = '1.000000',
+--    preferred = true,
+--  },
+}
+
+-- Input Devices Config ────────────────────────────────────────────────────────
+
+-- Use `riverctl list-inputs` cmd to list all the available devices and their names.
+local inputs = {
+  ['pointer-1267-12533-ELAN2204:00_04F3:30F5_Touchpad'] = {
+    ['events'] = 'disabled-on-external-mouse',
+    ['accel-profile'] = 'adaptive',
+    ['pointer-accel'] = '1.0',
+    ['drag'] = 'enabled',
+    ['tap'] = 'enabled',
+    ['tap-button-map'] = 'left-right-middle',
+    ['disable-while-typing'] = 'enabled',
+    ['natural-scroll'] = 'disabled',
+    ['scroll-method'] = 'two-finger',
+  },
+}
+
+-- General Configs and Theming ─────────────────────────────────────────────────
+
+-- Colors
+background_color = '0x2E3440'
+focused_border = '0x81A1C1'
+unfocused_border = '0x39404f'
+urgent_border = '0xBF616A'
+
+local river_options = {
+  -- Theme options
+  ['border-width'] = 2,
+  ['border-color-focused'] = focused_border,
+  ['border-color-unfocused'] = unfocused_border,
+  ['border-color-urgent'] = urgent_border,
+  ['xcursor-theme'] = { 'Qogirr', 16 },
+  --['background-color'] = background_color,
+
+  -- Other options
+  ['set-repeat'] = { 50, 300 },
+  ['focus-follows-cursor'] = 'normal',
+  ['set-cursor-warp'] = 'on-output-change',
+  ['attach-mode'] = 'bottom',
+  ['default-layout'] = 'rivertile',
+}
+
+-- GTK Theme, Icons & Cursor ───────────────────────────────────────────────────
+
+local gsettings = {
+  ['org.gnome.desktop.interface'] = {
+    ['gtk-theme'] = 'Arc-Dark',
+    ['icon-theme'] = 'Arc-Circle',
+    ['font-name'] = "'Noto Sans 9'",
+    ['cursor-theme'] = river_options['xcursor-theme'][1],
+    ['cursor-size'] = river_options['xcursor-theme'][2],
+  },
+}
+
+local gsettings_btn = {
+  ['org.gnome.desktop.wm.preferences'] = {
+    ['button-layout'] = ':close',
+--    ['button-layout'] = '""',
+  },
+}
+
+-- Window Rules ────────────────────────────────────────────────────────────────
+
+local window_rules = {
+  ['float-filter-add'] = {
+    ['app-id'] = {
+      'float', 'popup',
+      'alacritty-float', 'foot-float', 'foot-full',
+      'Yad', 'yad', 'nm-connection-editor', 'pavucontrol',
+      'xfce-polkit', 'kvantummanager', 'qt5ct', 
+      'feh', 'Viewnior', 'Gpicview', 'Gimp', 'MPlayer', 
+      'VirtualBox Manager', 'qemu', 'Qemu-system-x86_64', 
+      'io.calamares.calamares',
+      'swappy',
+      'wlogout',
+      'pinentry-qt',
+      'pavucontrol-qt',
+    },
+    ['title'] = {
+      'Picture-in-Picture',
+      'Archcraft Installer *',
+      'About *',
+    },
+  },
+  ['csd-filter-add'] = {
+    ['app-id'] = { 'swappy' },
+  },
+}
+
+-- Key Bindings ────────────────────────────────────────────────────────────────
+
+-- Additional modes and their mappings to switch between them and 'normal' mode
+--
+-- name: string (the name of the additional mode)
+-- mod: string|list (modifiers for key binding, concanated by '+')
+-- key: string
+local modes = {
+  {
+    name = 'passthrough',
+    mod = 'Super',
+    key = 'F11',
+  },
+}
+
+-- Each mapping contains 4 keys:
+--
+-- mod: string|list (modifiers, concanated by '+')
+-- key: string
+-- command: string|list (the command passed to riverctl)
+-- opt: string ('release' or 'repeat')
+
+local mappings = {
+  -- Key bindings
+  map = {
+    normal = {
+
+      -- Terminal : alacritty
+      {
+        mod = 'Super',
+        key = 'Return',
+        command = { 'spawn', string.format([['%s/alacritty']], script_dir) },
+      },
+      {
+        mod = { 'Super', 'Shift' },
+        key = 'Return',
+        command = { 'spawn', string.format([['%s/alacritty -f']], script_dir) },
+      },
+      {
+        mod = { 'Super', 'Alt' },
+        key = 'Return',
+        command = { 'spawn', string.format([['%s/alacritty -F']], script_dir) },
+      },
+
+      -- Terminal : foot
+      --{
+      --  mod = 'Super',
+      --  key = 'Return',
+      --  command = { 'spawn', string.format([['%s/foot']], script_dir) },
+      --},
+      --{
+      --  mod = { 'Super', 'Shift' },
+      --  key = 'Return',
+      --  command = { 'spawn', string.format([['%s/foot -f']], script_dir) },
+      --},
+      --{
+      --  mod = { 'Super', 'Alt' },
+      --  key = 'Return',
+      --  command = { 'spawn', string.format([['%s/foot -s']], script_dir) },
+      --},
+
+      -- Applications
+      {
+        mod = { 'Super', 'Shift' },
+        key = 'F',
+        command = { 'spawn', [['thunar']] },
+      },
+      {
+        mod = { 'Super', 'Shift' },
+        key = 'E',
+        command = { 'spawn', [['geany']] },
+      },
+      {
+        mod = { 'Super', 'Shift' },
+        key = 'W',
+        command = { 'spawn', [['firefox']] },
+      },
+
+      -- Rofi
+      {
+        mod = 'Super',
+        key = 'D',
+        command = { 'spawn', string.format([['%s/rofi_launcher']], script_dir) },
+      },
+      {
+        mod = 'Super',
+        key = 'B',
+        command = { 'spawn', string.format([['%s/rofi_bluetooth']], script_dir) },
+      },
+      {
+        mod = 'Super',
+        key = 'X',
+        command = { 'spawn', string.format([['%s/rofi_powermenu']], script_dir) },
+      },
+      {
+        mod = 'Super',
+        key = 'M',
+        command = { 'spawn', string.format([['%s/rofi_music']], script_dir) },
+      },
+      {
+        mod = 'Super',
+        key = 'N',
+        command = { 'spawn', string.format([['%s/rofi_network']], script_dir) },
+      },
+      {
+        mod = 'Super',
+        key = 'R',
+        command = { 'spawn', string.format([['%s/rofi_runner']], script_dir) },
+      },
+      {
+        mod = 'Super',
+        key = 'S',
+        command = { 'spawn', string.format([['%s/rofi_screenshot']], script_dir) },
+      },
+
+      -- Wofi
+      --{
+      --  mod = 'Super',
+      --  key = 'D',
+      --  command = { 'spawn', string.format([['%s/wofi_menu']], script_dir) },
+      --},
+      --{
+      --  mod = 'Super',
+      --  key = 'X',
+      --  command = { 'spawn', string.format([['%s/wofi_powermenu']], script_dir) },
+      --},
+      
+      -- Misc
+      --{
+      --  mod = 'Super',
+      --  key = 'N',
+      --  command = { 'spawn', [['nm-connection-editor']] },
+      --},
+      {
+        mod = 'Super',
+        key = 'P',
+        command = { 'spawn', string.format([['%s/colorpicker']], script_dir) },
+      },
+      {
+        mod = { 'Control', 'Alt' },
+        key = 'L',
+        command = { 'spawn', string.format([['%s/lockscreen']], script_dir) },
+      },
+      
+      -- Dismiss notifications
+      {
+        mod = { 'Control', 'Alt' },
+        key = 'Space',
+        command = { 'spawn', [['makoctl dismiss --all']] },
+      },
+
+      -- Exit River
+      {
+        mod = { 'Control', 'Alt' },
+        key = 'Delete',
+        command = { 'spawn', [['riverctl exit']] },
+      },
+
+      -- Taking Screenshots
+      {
+        mod = 'None',
+        key = 'Print',
+        command = { 'spawn', string.format([['%s/screenshot --now']], script_dir) },
+      },
+      {
+        mod = 'Alt',
+        key = 'Print',
+        command = { 'spawn', string.format([['%s/screenshot --in5']], script_dir) },
+      },
+      {
+        mod = 'Shift',
+        key = 'Print',
+        command = { 'spawn', string.format([['%s/screenshot --in10']], script_dir) },
+      },
+      {
+        mod = 'Super',
+        key = 'Print',
+        command = { 'spawn', string.format([['%s/screenshot --area']], script_dir) },
+      },
+
+      -- Super+Q/C to close the focused view
+      {
+        mod = 'Super',
+        key = 'Q',
+        command = 'close',
+      },
+      {
+        mod = 'Super',
+        key = 'C',
+        command = 'close',
+      },
+
+      -- Super+{<-,->} to focus next/previous view in the layout stack
+      {
+        mod = 'Super',
+        key = 'Left',
+        command = { 'focus-view', 'previous' },
+      },
+      {
+        mod = 'Super',
+        key = 'Right',
+        command = { 'focus-view', 'next' },
+      },
+
+      -- Super+Shift+{<-,->} to swap focused view with the next/previous view in the layout stack
+      {
+        mod = { 'Super', 'Shift' },
+        key = 'Left',
+        command = { 'swap', 'previous' },
+      },
+      {
+        mod = { 'Super', 'Shift' },
+        key = 'Right',
+        command = { 'swap', 'next' },
+      },
+
+      -- Super+{J,K} to focus next/previous output
+      {
+        mod = 'Super',
+        key = 'J',
+        command = { 'focus-output', 'previous' },
+      },
+      {
+        mod = 'Super',
+        key = 'K',
+        command = { 'focus-output', 'next' },
+      },
+
+      -- Super+Shift+{J,K} to send the focused view to next/previous output
+      {
+        mod = { 'Super', 'Shift' },
+        key = 'J',
+        command = { 'send-to-output', 'previous' },
+      },
+      {
+        mod = { 'Super', 'Shift' },
+        key = 'K',
+        command = { 'send-to-output', 'next' },
+      },
+
+      -- Super+E to bump the focused view to the top of the layout stack
+      {
+        mod = 'Super',
+        key = 'E',
+        command = 'zoom',
+      },
+
+      -- Super+{H,L} to decrease/increase the main_factor value of rivertile by 0.02
+      {
+        mod = 'Super',
+        key = 'H',
+        command = { 'send-layout-cmd', 'rivertile', [['main-ratio -0.02']] },
+      },
+      {
+        mod = 'Super',
+        key = 'L',
+        command = { 'send-layout-cmd', 'rivertile', [['main-ratio +0.02']] },
+      },
+
+      -- Super+Shift+{H,L} to increment/decrement the main_count value of rivertile
+      {
+        mod = { 'Super', 'Shift' },
+        key = 'H',
+        command = { 'send-layout-cmd', 'rivertile', [['main-count +1']] },
+      },
+      {
+        mod = { 'Super', 'Shift' },
+        key = 'L',
+        command = { 'send-layout-cmd', 'rivertile', [['main-count -1']] },
+      },
+
+      -- Control+Alt+{<-,down,up,->} to change layout orientation
+      {
+        mod = { 'Control', 'Alt' },
+        key = 'Left',
+        command = { 'send-layout-cmd', 'rivertile', [['main-location left']] },
+      },
+      {
+        mod = { 'Control', 'Alt' },
+        key = 'Down',
+        command = { 'send-layout-cmd', 'rivertile', [['main-location bottom']] },
+      },
+      {
+        mod = { 'Control', 'Alt' },
+        key = 'Up',
+        command = { 'send-layout-cmd', 'rivertile', [['main-location top']] },
+      },
+      {
+        mod = { 'Control', 'Alt' },
+        key = 'Right',
+        command = { 'send-layout-cmd', 'rivertile', [['main-location right']] },
+      },
+
+      -- Super+Alt+{<-,down,up,->} to move views (floating)
+      {
+        mod = { 'Super', 'Alt' },
+        key = 'Left',
+        command = { 'move', 'left', 50 },
+        opt = 'repeat',
+      },
+      {
+        mod = { 'Super', 'Alt' },
+        key = 'Down',
+        command = { 'move', 'down', 50 },
+        opt = 'repeat',
+      },
+      {
+        mod = { 'Super', 'Alt' },
+        key = 'Up',
+        command = { 'move', 'up', 50 },
+        opt = 'repeat',
+      },
+      {
+        mod = { 'Super', 'Alt' },
+        key = 'Right',
+        command = { 'move', 'right', 50 },
+        opt = 'repeat',
+      },
+
+      -- Super+Control+{<-,down,up,->} to resize views
+      {
+        mod = { 'Super', 'Control' },
+        key = 'Left',
+        command = { 'resize', 'horizontal', -50 },
+        opt = 'repeat',
+      },
+      {
+        mod = { 'Super', 'Control' },
+        key = 'Down',
+        command = { 'resize', 'vertical', 50 },
+        opt = 'repeat',
+      },
+      {
+        mod = { 'Super', 'Control' },
+        key = 'Up',
+        command = { 'resize', 'vertical', -50 },
+        opt = 'repeat',
+      },
+      {
+        mod = { 'Super', 'Control' },
+        key = 'Right',
+        command = { 'resize', 'horizontal', 50 },
+        opt = 'repeat',
+      },
+
+      -- Super+Alt+Control+{H,J,K,L} to snap views to screen edges
+      {
+        mod = { 'Super', 'Alt', 'Control' },
+        key = 'H',
+        command = { 'snap', 'left' },
+      },
+      {
+        mod = { 'Super', 'Alt', 'Control' },
+        key = 'J',
+        command = { 'snap', 'down' },
+      },
+      {
+        mod = { 'Super', 'Alt', 'Control' },
+        key = 'K',
+        command = { 'snap', 'up' },
+      },
+      {
+        mod = { 'Super', 'Alt', 'Control' },
+        key = 'L',
+        command = { 'snap', 'right' },
+      },
+
+      -- Super+Space to toggle float
+      {
+        mod = 'Super',
+        key = 'Space',
+        command = 'toggle-float',
+      },
+
+      -- Super+F to toggle fullscreen
+      {
+        mod = 'Super',
+        key = 'F',
+        command = 'toggle-fullscreen',
+      },
+    },
+
+    locked = {
+      -- Control pulseaudio volume
+      {
+        mod = 'None',
+        key = 'XF86AudioRaiseVolume',
+        command = { 'spawn', string.format([['%s/volume --inc']], script_dir) },
+        opt = 'repeat',
+      },
+      {
+        mod = 'None',
+        key = 'XF86AudioLowerVolume',
+        command = { 'spawn', string.format([['%s/volume --dec']], script_dir) },
+        opt = 'repeat',
+      },
+      {
+        mod = 'None',
+        key = 'XF86AudioMute',
+        command = { 'spawn', string.format([['%s/volume --toggle']], script_dir) },
+      },
+      {
+        mod = 'None',
+        key = 'XF86AudioMicMute',
+        command = { 'spawn', string.format([['%s/volume --toggle-mic']], script_dir) },
+      },
+
+      -- Control MPRIS aware media players with 'playerctl'
+      {
+        mod = 'None',
+        key = 'XF86AudioMedia',
+        command = { 'spawn', [['playerctl play-pause']] },
+      },
+      {
+        mod = 'None',
+        key = 'XF86AudioPlay',
+        command = { 'spawn', [['playerctl play-pause']] },
+      },
+      {
+        mod = 'None',
+        key = 'XF86AudioPrev',
+        command = { 'spawn', [['playerctl previous']] },
+      },
+      {
+        mod = 'None',
+        key = 'XF86AudioNext',
+        command = { 'spawn', [['playerctl next']] },
+      },
+
+      -- Control screen backlight brightness
+      {
+        mod = 'None',
+        key = 'XF86MonBrightnessUp',
+        command = { 'spawn', string.format([['%s/brightness --inc']], script_dir) },
+        opt = 'repeat',
+      },
+      {
+        mod = 'None',
+        key = 'XF86MonBrightnessDown',
+        command = { 'spawn', string.format([['%s/brightness --dec']], script_dir) },
+        opt = 'repeat',
+      },
+    },
+  },
+
+-- Mouse Mappings ──────────────────────────────────────────────────────────────
+
+  -- Mappings for pointer (mouse)
+  ['map-pointer'] = {
+    normal = {
+      -- Super + Left Mouse Button to move views
+      {
+        mod = 'Super',
+        key = 'BTN_LEFT',
+        command = 'move-view',
+      },
+      -- Super + Right Mouse Button to resize views
+      {
+        mod = 'Super',
+        key = 'BTN_RIGHT',
+        command = 'resize-view',
+      },
+    },
+  },
+}
+
+-- Workspaces / Tags ───────────────────────────────────────────────────────────
+-- These mappings are repeated, so they are separated from the mappings table
+local function tag_mappings()
+  for i = 1, 9 do
+    local tag_num = 1 << (i - 1)
+
+    -- Super+[1-9] to focus tag [0-8]
+    os.execute(string.format('riverctl map normal Super %s set-focused-tags %s', i, tag_num))
+
+    -- Super+Shift+[1-9] to tag focused view with tag [0-8]
+    os.execute(string.format('riverctl map normal Super+Shift %s set-view-tags %s', i, tag_num))
+
+    -- Super+Control+[1-9] to toggle focus of tag [0-8]
+    os.execute(string.format('riverctl map normal Super+Control %s toggle-focused-tags %s', i, tag_num))
+
+    -- Super+Alt+[1-9] to toggle tag [0-8] of focused view
+    os.execute(string.format('riverctl map normal Super+Alt %s toggle-view-tags %s', i, tag_num))
+  end
+
+  -- river has a total of 32 tags
+  local all_tags = (1 << 32) - 1
+  os.execute(string.format('riverctl map normal Super 0 set-focused-tags %s', all_tags))
+  os.execute(string.format('riverctl map normal Super+Shift 0 set-view-tags %s', all_tags))
+end
+
+-- Apply settings ──────────────────────────────────────────────────────────────
+
+-- Run startup commands
+-- 'riverctl spawn ...' always returns (even when the child process is a daemon)
+-- so we don't need to resort to posix.unistd.spawn()
+for _, cmd in ipairs(startup_commands) do
+  os.execute(string.format([[riverctl spawn '%s']], concat(cmd, ' ')))
+end
+
+-- Configure outputs
+local randr_cmd = 'wlr-randr'
+for output, options in pairs(outputs) do
+  randr_cmd = randr_cmd .. ' --output ' .. output
+
+  for opt, value in pairs(options) do
+    if opt ~= 'preferred' then
+      randr_cmd = string.format(randr_cmd .. ' --%s %s', opt, value)
+    end
+  end
+
+  -- Ensure '--preferred' is the last argument for each monitor
+  if options.preferred then
+    randr_cmd = randr_cmd .. ' --preferred'
+  end
+end
+os.execute(randr_cmd)
+
+-- Configure input devices
+for device, options in pairs(inputs) do
+  for key, val in pairs(options) do
+    os.execute(string.format('riverctl input %s %s %s', device, key, val))
+  end
+end
+
+-- GNOME-related settings
+for group, tbl in pairs(gsettings) do
+  for key, value in pairs(tbl) do
+    os.execute(string.format('gsettings set %s %s %s', group, key, value))
+  end
+end
+
+for group, tbl in pairs(gsettings_btn) do
+  for key, value in pairs(tbl) do
+    os.execute(string.format('gsettings set %s %s %s', group, key, value))
+  end
+end
+
+-- Set river's options
+for key, value in pairs(river_options) do
+  os.execute(string.format('riverctl %s %s', key, concat(value, ' ')))
+end
+
+-- Additional modes (beside 'normal' and 'locked')
+for _, mode in ipairs(modes) do
+  local mode_name = mode.name
+  local modifiers = concat(mode.mod, '+')
+
+  -- Declare the mode
+  os.execute('riverctl declare-mode ' .. mode_name)
+
+  -- Setup key bindings to enter/exit the mode
+  os.execute(string.format('riverctl map normal %s %s enter-mode %s', modifiers, mode.key, mode_name))
+  os.execute(string.format('riverctl map %s %s %s enter-mode normal', mode_name, modifiers, mode.key))
+end
+
+-- Keyboard and mouse bindings
+for map_type, tbl in pairs(mappings) do
+  for mode, value in pairs(tbl) do
+    for _, binding in ipairs(value) do
+      local modifiers = concat(binding.mod, '+')
+      local cmd = concat(binding.command, ' ')
+
+      -- Options -release and -repeat for 'map' and 'unmap' commands
+      local opt = binding.opt
+      if opt ~= 'release' and opt ~= 'repeat' then
+        opt = ''
+      else
+        opt = '-' .. opt
+      end
+
+      os.execute(string.format('riverctl %s %s %s %s %s %s', map_type, opt, mode, modifiers, binding.key, cmd))
+
+      -- Duplicate mappings of mode 'locked' for mode 'normal'
+      if mode == 'locked' then
+        os.execute(string.format('riverctl %s %s normal %s %s %s', map_type, opt, modifiers, binding.key, cmd))
+      end
+    end
+  end
+end
+
+-- Mappings for tag management
+tag_mappings()
+
+-- Window rules (float/csd filters)
+for key, value in pairs(window_rules) do
+  for type, patterns in pairs(value) do
+    for _, pattern in ipairs(patterns) do
+      os.execute(string.format('riverctl %s %s %s', key, type, pattern))
+    end
+  end
+end
+
+-- Launch the layout generator as the final initial process.
+-- River run the init file as a process group leader and send
+-- SIGTERM to the group on exit. Therefore, keep the main init
+-- process running (replace it with the layout generator process).
+local unistd = require('posix.unistd')
+unistd.execp('rivertile', {
+  '-view-padding', 5,
+  '-outer-padding', 5,
+  '-main-location', 'left',
+  '-main-count', 1,
+  '-main-ratio', 0.55,
+})
