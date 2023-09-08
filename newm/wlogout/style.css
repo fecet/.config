@@ -1,0 +1,61 @@
+/* 
+ * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+*/
+
+/** ********** Import Colors ********** **/
+@import "./colors.css";
+
+/** ********** Fonts ********** **/
+* {
+    font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/** ********** Main Window ********** **/
+window {
+    background-color: @background;
+}
+
+/** ********** Buttons ********** **/
+button {
+    background-color: @color-button;
+    color: @foreground;
+	border: 0px solid @color-border;
+	border-radius: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+
+button:focus, button:active, button:hover {
+    background-color: @color-select;
+	box-shadow: 0px 0px 25px 0px @color-shadow;
+	color: @background;
+	outline-style: none;
+}
+
+/** ********** Icons ********** **/
+#lock {
+    background-image: image(url("icons/lock.png"), url("/usr/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("icons/logout.png"), url("/usr/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("icons/suspend.png"), url("/usr/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("icons/hibernate.png"), url("/usr/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown.png"), url("/usr/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("icons/reboot.png"), url("/usr/share/wlogout/icons/reboot.png"));
+}

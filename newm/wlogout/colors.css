@@ -1,0 +1,11 @@
+/* 
+ * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+*/
+
+/** ********** Colors ********** **/
+@define-color background 	 rgba(46, 52, 64, 1.0);
+@define-color foreground 	 rgba(248, 248, 242, 1.0);
+@define-color color-button   rgba(255, 255, 255, 0.020);
+@define-color color-border   rgba(56, 62, 74, 1.0);
+@define-color color-select   rgba(150, 205, 251, 1.0);
+@define-color color-shadow   rgba(150, 205, 251, 0.85);
