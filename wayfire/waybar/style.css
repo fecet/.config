@@ -1,0 +1,370 @@
+/* 
+ * Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
+*/
+
+/** ********** Import Colors ********** **/
+@import "./colors.css";
+
+/** ********** Fonts ********** **/
+* {
+    font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
+    font-size: 12px;
+}
+
+/** ********** Waybar Window ********** **/
+window#waybar {
+    background-color: @background;
+	color: @foreground;
+    border-top: 2px solid @background-alt;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.5;
+}
+
+window#waybar.empty {
+}
+window#waybar.solo {
+}
+window#waybar.thunar {
+}
+window#waybar.geany {
+}
+
+/** ********** Backlight ********** **/
+#backlight {
+    border-bottom: 2px solid @blue;
+}
+
+/** ********** Battery ********** **/
+#battery {
+    border-bottom: 2px solid @red;
+}
+
+#battery.charging {
+}
+
+#battery.plugged {
+}
+
+@keyframes blink {
+    to {
+        color: @red;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: @white;
+    border-bottom: 2px solid @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/** ********** Clock ********** **/
+#clock {
+    border-bottom: 2px solid @green;
+}
+
+/** ********** Sway ********** **/
+#workspaces {
+	background-color: @background-alt;
+	color: @white;
+	border-radius: 0px 12px 0px 0px;
+	padding: 4px;
+}
+
+#workspaces button {
+	color: @white;
+	padding: 2px 6px;
+}
+
+#workspaces button:hover {
+	background-color: @background;
+	color: @white;
+	border: 0px solid @background;
+	border-radius: 12px;
+	padding: 2px 6px;
+}
+
+#workspaces button.visible {
+	background-image: linear-gradient(to right, @blue , @green);
+}
+
+#workspaces button.focused {
+	background-image: linear-gradient(to right, @red , @magenta);
+}
+
+#workspaces button.urgent {
+	background-image: linear-gradient(to right, @red , @yellow);
+}
+
+#workspaces button.persistent {
+	background-image: linear-gradient(to right, @yellow , @magenta);
+}
+
+#workspaces button.visible,
+#workspaces button.focused,
+#workspaces button.urgent,
+#workspaces button.persistent {
+	color: @background;
+	border-radius: 12px;
+	padding: 2px 6px;
+}
+
+#workspaces button.current_output {
+}
+
+#workspaces button#sway-workspace-1 {
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#mode {
+	background-color: @magenta;
+    font-weight: bold;
+}
+
+#window {
+	background-color: @background-alt;
+	color: @white;
+}
+window#waybar.empty #window {
+	background-color: transparent;
+}
+
+/** ********** Tray ********** **/
+#tray {
+    border-bottom: 2px solid @red;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+#tray > .active {
+}
+
+/** ********** MPD ********** **/
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#mpd {
+	color: @white;
+}
+
+#mpd.disconnected {
+	background-color: @red;
+	color: @background;
+    border-bottom: 0px solid @white;
+}
+
+#mpd.stopped {
+	background-image: linear-gradient(to right, @red , @cyan);
+	color: @background;
+}
+
+#mpd.playing {
+    background: linear-gradient(90deg, @green 25%, @magenta 50%, @cyan 75%, @yellow 100%); 
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+    color: @background;
+}
+
+#mpd.paused {
+    border-bottom: 2px solid @blue;
+}
+
+/** ********** Spotify ********** **/
+#custom-spotify {
+	color: @white;
+}
+
+#custom-spotify.paused {
+    border-bottom: 2px solid @blue;
+}
+
+#custom-spotify.playing {
+    background: linear-gradient(90deg, @green 25%, @magenta 50%, @cyan 75%, @yellow 100%); 
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+    color: @background;
+}
+
+#custom-spotify.offline {
+	background-color: @red;
+	color: @background;
+    border-bottom: 0px solid @white;
+}
+
+/** ********** Idle Inhibitor ********** **/
+#idle_inhibitor {
+    border-bottom: 2px solid @green;
+}
+#idle_inhibitor.deactivated {
+	color: @red;
+}
+
+/** ********** Pulseaudio ********** **/
+#pulseaudio {
+    border-bottom: 2px solid @yellow;
+}
+
+#pulseaudio.bluetooth {
+    border-bottom: 2px solid @yellow;
+}
+#pulseaudio.muted {
+	background-color: @red;
+	color: @background;
+    border-bottom: 0px solid @white;
+}
+
+/** ********** Network ********** **/
+#network {
+    border-bottom: 2px solid @cyan;
+}
+
+#network.disconnected {
+	background-color: @red;
+	color: @background;
+    border-bottom: 0px solid @white;
+}
+#network.disabled {
+	background-color: @red;
+	color: @background;
+}
+#network.linked {
+}
+#network.ethernet {
+}
+#network.wifi {
+}
+
+/** ********** Bluetooth ********** **/
+#bluetooth {
+    border-bottom: 2px solid @magenta;
+}
+#bluetooth.disabled{
+	background-color: @red;
+	color: @background;
+}
+#bluetooth.off{
+	background-color: @red;
+	color: @background;
+    border-bottom: 0px solid @white;
+}
+#bluetooth.on{
+}
+#bluetooth.connected{
+}
+#bluetooth.discoverable{
+}
+#bluetooth.discovering{
+}
+#bluetooth.pairable{
+}
+
+/** ********** Taskbar ********** **/
+#taskbar {
+/*    background-color: @background-alt;	*/
+	border-radius: 12px 12px 0px 0px;
+	margin-top: 6px;
+	padding: 0px 4px;
+}
+#taskbar button {
+	border-radius: 0px;
+	margin: 0px 4px;
+	padding: 0px 4px;
+}
+#taskbar button:hover {
+	background-color: @background-alt;
+	border-radius: 6px 6px 0px 0px;
+}
+#taskbar button.maximized {
+	border-bottom: 2px solid @cyan;
+}
+#taskbar button.minimized {
+	border-bottom: 2px solid @yellow;
+}
+#taskbar button.active {
+	border-bottom: 2px solid @green;
+}
+#taskbar button.fullscreen {
+	border-bottom: 2px solid @magenta;
+}
+
+/** ********** Workspace ********** **/
+/*#workspaces
+#workspaces button
+#workspaces button.active
+#workspaces button.urgent
+#workspaces button.hidden */
+
+/** ********** Custom ********** **/
+#custom-menu, #custom-power, #custom-themes {
+	color: @background;
+	margin: 6px 0px;
+	border-radius: 2px;
+}
+
+#custom-menu {
+	background-color: @magenta;
+	margin-left: 6px;
+	padding: 2px 6px;
+	font-size: 16px;
+}
+
+#custom-power {
+	background-color: @red;
+	margin-right: 6px;
+	padding: 2px 8px;
+	font-size: 20px;
+}
+
+#custom-themes {
+	background-color: @selected;
+	margin-right: 6px;
+	padding: 2px 8px;
+	font-size: 14px;
+}
+
+/** Common style **/
+#backlight, 
+#battery,
+#clock,
+#idle_inhibitor,
+#mode,
+#window,
+#tray,
+#mpd,
+#custom-spotify,
+#pulseaudio,
+#network,
+#bluetooth {
+    background-color: @background-alt;
+	border-radius: 2px;
+	margin: 6px 0px;
+	padding: 2px 10px;
+}
