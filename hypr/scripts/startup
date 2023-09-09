@@ -31,6 +31,9 @@ fi
 
 # Start network manager applet
 nm-applet --indicator &
+nutstore &
+clash-verge &
+fcitx5 &
 
 # Start mpd
 exec mpd &
