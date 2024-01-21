@@ -1,0 +1,30 @@
+#!/bin/bash
+xhost +
+
+dunst &
+# deadd-notification-center &
+
+# waybar &
+~/.config/hypr/bar/waybar/launch.sh &
+
+nm-applet &
+fcitx5 &
+gnome-keyring &
+nutstore &
+# birdtray &
+#yesplaymusic &
+# eval ~/Applications/Translatium.AppImage &
+
+# indicator-kdeconnect &
+
+barrier &
+# screenkey &
+# superpaper &
+mpris_proxy &
+clash-verge &
+mate-power-manager &
+hyprpaper &
+copyq --start-server &
+/bin/bash ~/scripts/wp-autochange.sh &
+discord --proxy-server=127.0.0.1:7890 --ozone-platform-hint=auto --enable-features=UseOzonePlatform --enable-features=WaylandWindowDecorations --enable-wayland-ime &
+keyd-application-mapper &

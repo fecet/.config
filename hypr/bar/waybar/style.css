@@ -1,0 +1,162 @@
+@import "color.css";
+
+* {
+    font-family: 'Symbols Nerd Font', 'Ubuntu Nerd Font', 'Iosevka Nerd Font';
+    font-size: 20px;
+    font-weight: bold;
+    color: @foreground;
+    border: none;
+}
+
+window#waybar {
+  background-color: @background;
+  border: 2px solid alpha(@color0, 0.3);
+}
+
+tooltip {
+  background-color: @color8;
+  border-radius: 12px;
+  border: 1px solid @background;
+  padding: 5px;
+}
+
+tooltip label {
+  color: @color5;
+  font-size: 16px;
+}
+
+#custom-dot {
+  font-family: 'Iosevka Nerd Font';
+  font-size: 14px;
+  color: alpha(@color7, 0.6);
+  background: transparent;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+#custom-dot-alt {
+  font-family: 'Iosevka Nerd Font';
+  font-size: 14px;
+  color: alpha(@color7, 0.8);
+  background: transparent;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+#workspaces {
+  font-family: 'Symbols Nerd Font';
+  font-size: 16px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 18px;
+  border: 2px solid alpha(@color7, 0.8);
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+#workspaces button:hover {
+  background: transparent;
+  border: none;
+}
+#workspaces button:hover label {
+  background: transparent;
+  color: @color5;
+  border: none;
+}
+
+#workspaces button label {
+  color: @color4;
+}
+
+#workspaces button.empty label {
+  color: alpha(@color7, 0.6);
+}
+
+#workspaces button.visible label{
+  color: @color4;
+}
+
+#workspaces button.active label {
+  color: @color2;
+}
+
+#workspaces button.urgent label{
+  background-color: @color1;
+  color: @foreground;
+}
+
+
+#cpu, 
+#clock, 
+#mpd, 
+#network, 
+#backlight, 
+#pulseaudio, 
+#battery, 
+#custom-sysmenu, 
+#tray{
+  /*margin-top: 5px;*/
+  /*margin-bottom: 5px;*/
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#tray {
+  background-color: alpha(@color7, 0.7);
+  border-radius: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  min-width: 20px;
+}
+
+#custom-sysmenu {
+  font-family: 'Symbols Nerd Font';
+  color: @color1;
+}
+
+#battery {
+  color: @color3;
+}
+
+#pulseaudio {
+  color: @color2;
+}
+
+#backlight {
+  color: @color6;
+}
+
+#network {
+  color: @color4;
+}
+
+#mpd {
+  color: @color5;
+  font-size: 16px;
+}
+
+#clock {
+  color: @color3;
+}
+
+#cpu {
+  color: @color9;
+}
+
+#custom-logo {
+  background-color: @background;
+  color: @color5;
+  margin-left: 20px;
+  margin-right: 10px;
+}
