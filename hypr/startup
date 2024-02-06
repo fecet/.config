@@ -21,8 +21,9 @@ barrier &
 # screenkey &
 # superpaper &
 mpris_proxy &
-clash-verge &
-mate-power-manager &
+# clash-verge &
+clash-nyanpasu &
+# mate-power-manager &
 hyprpaper &
 copyq --start-server &
 /bin/bash ~/scripts/wp-autochange.sh &

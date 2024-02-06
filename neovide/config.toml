@@ -2,7 +2,20 @@ wsl = false
 multigrid = true
 maximized = false
 srgb = true
-vsync=false
+vsync = false
 idle = false
 # neovim_bin = "/usr/bin/nvim"
 # frame = "Full"
+[font]
+# normal = ["Iosevka Nerd Font Mono","FiraCode Nerd Font Mono"]
+normal = ["VictorMono Nerd Font Mono","FiraCode Nerd Font Mono"]
+# normal = ["Iosevka Nerd Font"]
+# normal = ["FiraCode Nerd Font Mono"]
+# italic = ["Hack Nerd Font"]
+# bold_italic = ["VictorMono Nerd Font Mono"]
+italic = ["JetBrainsMono Nerd Font"]
+bold_italic = ["JetBrainsMono Nerd Font"]
+# italic = ["FiraCode Nerd Font Mono"]
+# bold_italic = ["FiraCode Nerd Font Mono"]
+
+size = 30
