@@ -17,7 +17,6 @@ nutstore &
 
 # indicator-kdeconnect &
 
-barrier &
 # screenkey &
 # superpaper &
 mpris_proxy &
@@ -25,6 +24,7 @@ mpris_proxy &
 clash-nyanpasu &
 # mate-power-manager &
 hyprpaper &
+swww init &
 copyq --start-server &
 /bin/bash ~/scripts/wp-autochange.sh &
 discord --proxy-server=127.0.0.1:7890 --ozone-platform-hint=auto --enable-features=UseOzonePlatform --enable-features=WaylandWindowDecorations --enable-wayland-ime &
